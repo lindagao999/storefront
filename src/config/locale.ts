@@ -62,6 +62,12 @@ export const LOCALE_DEFINITIONS = {
 		htmlLang: "nb",
 		ogLocale: "nb_NO",
 	},
+	zh: {
+		bcp47: "zh-CN",
+		graphqlLanguageCode: "ZH",
+		htmlLang: "zh",
+		ogLocale: "zh_CN",
+	},
 } as const satisfies Record<string, LocaleDefinition>;
 
 function parseEnvLocaleList(raw: string | undefined): LocaleSlug[] | null {

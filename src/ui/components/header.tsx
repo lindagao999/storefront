@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { Logo } from "./logo";
 import { AnFullyNavLinksDesktop, AnFullyNavLinksMobile } from "./nav/components/anfully-nav-links";
 import { CartNavItem } from "./nav/components/cart-nav-item";
+import { LanguageToggle } from "./language-toggle";
 import { UserMenuContainer } from "./nav/components/user-menu/user-menu-container";
 import { MobileMenu } from "./nav/components/mobile-menu";
 import { SearchBarWithSuggestions } from "./nav/components/search-bar-with-suggestions";
@@ -48,12 +49,7 @@ export async function Header({ locale, channel }: { locale: string; channel: str
 							</div>
 
 							{/* Language Toggle */}
-							<div className="hidden items-center gap-1 rounded-full border border-border px-2 py-1 sm:flex">
-								<button className="rounded-full px-3 py-1 text-sm text-muted-foreground hover:bg-muted">
-									ZH
-								</button>
-								<button className="rounded-full bg-[#1a237e] px-3 py-1 text-sm text-white">EN</button>
-							</div>
+							<LanguageToggle />
 
 							{/* User Menu */}
 							<UserMenuContainer locale={locale} channel={channel} />
