@@ -9,7 +9,7 @@ export interface Category {
 	slug: string;
 }
 
-export async function getAllCategories(channel: string, localeSlug: string): Promise<Category[]> {
+export async function getAllCategories(localeSlug: string): Promise<Category[]> {
 	"use cache";
 	applyCacheProfile(CACHE_PROFILES.categories, "all");
 
