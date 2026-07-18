@@ -24,7 +24,7 @@ export function ProductCardBase({
 }: ProductCardBaseProps) {
 	return (
 		<article className="group">
-			<div className="relative mb-4 aspect-[3/4] overflow-hidden rounded-card bg-secondary">
+			<div className="relative mb-4 aspect-[3/4] overflow-hidden rounded-card bg-[#1a237e]">
 				<Link
 					href={product.href}
 					prefetch={false}

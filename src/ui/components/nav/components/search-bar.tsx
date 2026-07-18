@@ -39,7 +39,7 @@ export const SearchBar = ({
 					placeholder={placeholder}
 					autoComplete="off"
 					required
-					className="hover:bg-secondary/80 focus:outline-hidden h-10 w-full rounded-lg border border-transparent bg-secondary py-2 pl-11 pr-4 text-sm text-foreground transition-all placeholder:text-muted-foreground hover:border-border focus:border-ring focus:bg-background focus:ring-1 focus:ring-ring"
+					className="h-10 w-full rounded-lg border border-border/60 bg-background py-2 pl-11 pr-4 text-sm text-foreground shadow-sm transition-all placeholder:text-muted-foreground/70 hover:border-[#1a237e]/30 hover:shadow-md focus:border-[#1a237e] focus:bg-background focus:outline-none focus:ring-2 focus:ring-[#1a237e]/20"
 				/>
 			</label>
 		</form>

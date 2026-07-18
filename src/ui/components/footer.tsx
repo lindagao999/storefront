@@ -1,87 +1,206 @@
 import Link from "next/link";
-import { StorefrontRegionPicker } from "./storefront-region-picker";
-import {
-	getStaticStorefrontChannelSlugs,
-	needsAsyncChannelDiscovery,
-	shouldFetchChannelMetadata,
-	toChannelSelectOptions,
-} from "@/config/channels";
-import { getCachedChannelsList } from "@/lib/channels/get-channels-data";
-import { getStorefrontChannelSlugs } from "@/lib/channel-slugs";
-import { getFooterMenuItems } from "@/lib/menus/get-menu-data";
-import { getStorefrontContent } from "@/lib/content/server";
-import { getStorefrontLocaleOptions } from "@/lib/locale-display";
-import { FooterMenuColumns } from "./footer-menu-columns";
-import { CopyrightText } from "./copyright-text";
-import { FooterAttribution } from "./footer-attribution";
-import { FooterPhotoCredits } from "./footer-photo-credits";
-import { brandConfig } from "@/config/brand";
 import { Logo } from "./shared/logo";
-
 import { buildStorefrontPath } from "@/lib/storefront-path";
+import { Phone, Mail, MapPin, ArrowRight } from "lucide-react";
+import { FooterYear } from "./footer-year";
+
+const quickLinks = [
+	{ label: "Products", href: "/categories" },
+	{ label: "Brands", href: "/brands" },
+	{ label: "Inquiry", href: "/inquiry" },
+	{ label: "Samples", href: "/sample" },
+];
+
+const aboutLinks = [
+	{ label: "Company Profile", href: "/about" },
+	{ label: "Corporate Culture", href: "/about" },
+	{ label: "Quality Assurance", href: "/support" },
+	{ label: "Contact Us", href: "/contact" },
+];
+
+const contactInfo = [
+	{
+		type: "phone" as const,
+		label: "0755-28198292 / 28198283",
+		href: "tel:0755-28198292",
+	},
+	{
+		type: "person" as const,
+		label: "Sky (Sales Dept)",
+		href: "/contact",
+	},
+	{
+		type: "person" as const,
+		label: "Fifi (Tech Support)",
+		href: "/contact",
+	},
+	{
+		type: "person" as const,
+		label: "Sister (Customer Service)",
+		href: "/contact",
+	},
+	{
+		type: "person" as const,
+		label: "Box (Business Inquiry)",
+		href: "/contact",
+	},
+	{
+		type: "address" as const,
+		label: "Room 1403, Building 2, Sanyi Yundu, Lanqing 2nd Road, Longhua, Shenzhen",
+		href: "#",
+	},
+];
 
 export async function Footer({ locale, channel }: { locale: string; channel: string }) {
-	const resolvedSlugs = needsAsyncChannelDiscovery()
-		? await getStorefrontChannelSlugs()
-		: getStaticStorefrontChannelSlugs();
-
-	const [menuItems, channels, content] = await Promise.all([
-		getFooterMenuItems(channel, locale),
-		shouldFetchChannelMetadata(resolvedSlugs) ? getCachedChannelsList() : Promise.resolve(null),
-		getStorefrontContent(channel, locale),
-	]);
-
-	const footerMenuItems = menuItems ?? [];
-	const localeOptions = getStorefrontLocaleOptions();
-	const selectorChannels =
-		channels?.channels && resolvedSlugs.length > 0
-			? toChannelSelectOptions(channels.channels, resolvedSlugs)
-			: [];
-
 	return (
-		<footer className="bg-foreground text-background">
-			{/* Extra bottom padding on mobile to account for sticky add-to-cart bar */}
-			<div className="container-content pb-24 pt-12 sm:pb-12 lg:py-16">
-				<div className="grid grid-cols-2 gap-8 md:grid-cols-4 lg:gap-12">
+		<footer className="relative overflow-hidden bg-gradient-to-br from-[#1a237e] via-[#1e3a8a] to-[#2b5ba9] text-white">
+			{/* 装饰背景 */}
+			<div className="pointer-events-none absolute inset-0 opacity-10">
+				<div className="absolute -left-20 -top-20 h-64 w-64 rounded-full bg-white/20 blur-3xl" />
+				<div className="absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-white/20 blur-3xl" />
+			</div>
+
+			<div className="container-content relative py-16">
+				<div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
 					{/* Brand */}
-					<div className="col-span-2 md:col-span-1">
-						<Link href={buildStorefrontPath(locale, channel)} prefetch={false} className="mb-4 inline-block">
-							<Logo className="h-7 w-auto" inverted />
+					<div className="lg:pr-4">
+						<Link href={buildStorefrontPath(locale, channel)} prefetch={false} className="mb-5 inline-block">
+							<Logo className="h-9 w-auto" inverted />
 						</Link>
-						<p className="mt-4 max-w-xs text-sm leading-relaxed text-inverse-subtle">{brandConfig.tagline}</p>
+						<p className="mb-6 text-sm leading-relaxed text-white/75">
+							One-stop electronic components procurement platform, providing stable, compliant and
+							cost-effective component supply services for global customers.
+						</p>
+						{/* 社交媒体 */}
+						<div className="flex gap-3">
+							{/* LinkedIn - B2B必备 */}
+							<a
+								href="#"
+								className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white/70 transition-all hover:bg-white/20 hover:text-white"
+							>
+								<svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+									<path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+								</svg>
+							</a>
+							{/* Twitter/X - 行业动态 */}
+							<a
+								href="#"
+								className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white/70 transition-all hover:bg-white/20 hover:text-white"
+							>
+								<svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+									<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+								</svg>
+							</a>
+							{/* YouTube - 产品视频 */}
+							<a
+								href="#"
+								className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white/70 transition-all hover:bg-white/20 hover:text-white"
+							>
+								<svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+									<path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+								</svg>
+							</a>
+							{/* Facebook - 品牌宣传 */}
+							<a
+								href="#"
+								className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white/70 transition-all hover:bg-white/20 hover:text-white"
+							>
+								<svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+									<path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+								</svg>
+							</a>
+						</div>
 					</div>
 
-					<FooterMenuColumns items={footerMenuItems} />
+					{/* Quick Links */}
+					<div>
+						<h3 className="mb-5 flex items-center gap-2 text-base font-semibold">
+							<span className="h-5 w-1 rounded-full bg-white/50" />
+							Quick Links
+						</h3>
+						<ul className="space-y-3">
+							{quickLinks.map((link) => (
+								<li key={link.label}>
+									<Link
+										href={link.href}
+										prefetch={false}
+										className="group flex items-center gap-1 text-sm text-white/70 transition-all hover:translate-x-1 hover:text-white"
+									>
+										<ArrowRight className="h-3 w-3 opacity-0 transition-all group-hover:opacity-100" />
+										{link.label}
+									</Link>
+								</li>
+							))}
+						</ul>
+					</div>
+
+					{/* About Us */}
+					<div>
+						<h3 className="mb-5 flex items-center gap-2 text-base font-semibold">
+							<span className="h-5 w-1 rounded-full bg-white/50" />
+							About Us
+						</h3>
+						<ul className="space-y-3">
+							{aboutLinks.map((link) => (
+								<li key={link.label}>
+									<Link
+										href={link.href}
+										prefetch={false}
+										className="group flex items-center gap-1 text-sm text-white/70 transition-all hover:translate-x-1 hover:text-white"
+									>
+										<ArrowRight className="h-3 w-3 opacity-0 transition-all group-hover:opacity-100" />
+										{link.label}
+									</Link>
+								</li>
+							))}
+						</ul>
+					</div>
+
+					{/* Contact Info */}
+					<div>
+						<h3 className="mb-5 flex items-center gap-2 text-base font-semibold">
+							<span className="h-5 w-1 rounded-full bg-white/50" />
+							Contact Us
+						</h3>
+						<ul className="space-y-3">
+							{contactInfo.map((item, index) => (
+								<li key={index}>
+									<Link
+										href={item.href}
+										prefetch={false}
+										className="group flex items-start gap-2 text-sm text-white/70 transition-colors hover:text-white"
+									>
+										{item.type === "phone" && <Phone className="mt-0.5 h-3.5 w-3.5 shrink-0 text-white/50" />}
+										{item.type === "address" && (
+											<MapPin className="mt-0.5 h-3.5 w-3.5 shrink-0 text-white/50" />
+										)}
+										{item.type === "person" && <Mail className="mt-0.5 h-3.5 w-3.5 shrink-0 text-white/50" />}
+										<span className="leading-relaxed">{item.label}</span>
+									</Link>
+								</li>
+							))}
+						</ul>
+					</div>
 				</div>
 
-				{/* Language + market — hidden when only one option on each axis */}
-				{(localeOptions.length > 1 || selectorChannels.length > 1) && (
-					<div className="mt-10">
-						<StorefrontRegionPicker locales={localeOptions} channels={selectorChannels} variant="inverted" />
-					</div>
-				)}
-
 				{/* Bottom bar */}
-				<div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-inverse pt-8 sm:flex-row">
-					<div className="flex flex-col items-center gap-2 text-center sm:items-start sm:text-left">
-						<p className="text-xs text-inverse-muted">
-							<CopyrightText />
-						</p>
-						<FooterAttribution />
-						<FooterPhotoCredits credits={content.surfaces.homepage.photoCredits} />
-					</div>
+				<div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/20 pt-8 sm:flex-row">
+					<p className="text-sm text-white/60">
+						© <FooterYear /> AnFully. All rights reserved.
+					</p>
 					<div className="flex items-center gap-6">
 						<Link
 							href="/privacy"
 							prefetch={false}
-							className="text-xs text-inverse-muted transition-colors hover:text-inverse-subtle"
+							className="text-sm text-white/60 transition-colors hover:text-white"
 						>
 							Privacy Policy
 						</Link>
+						<span className="text-white/30">|</span>
 						<Link
 							href="/terms"
 							prefetch={false}
-							className="text-xs text-inverse-muted transition-colors hover:text-inverse-subtle"
+							className="text-sm text-white/60 transition-colors hover:text-white"
 						>
 							Terms of Service
 						</Link>

@@ -50,9 +50,9 @@ export function SectionHeader({
 			)}
 		>
 			<div className={cn(isCenter && "max-w-prose")}>
-				{eyebrow ? <p className="text-eyebrow uppercase text-muted-foreground">{eyebrow}</p> : null}
+				{eyebrow ? <p className="mb-1 text-eyebrow uppercase text-[#2b5ba9]">{eyebrow}</p> : null}
 				{heading ? (
-					<h2 id={id} className={cn("text-balance text-h2", eyebrow && "mt-3", headingClassName)}>
+					<h2 id={id} className={cn("text-balance text-h2 text-[#1a237e]", headingClassName)}>
 						{heading}
 					</h2>
 				) : null}

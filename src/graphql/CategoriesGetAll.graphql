@@ -1,0 +1,14 @@
+query CategoriesGetAll($channel: String!, $languageCode: LanguageCodeEnum!) {
+	categories(first: 100, channel: $channel) {
+		edges {
+			node {
+				id
+				name
+				slug
+				translation(languageCode: $languageCode) {
+					name
+				}
+			}
+		}
+	}
+}

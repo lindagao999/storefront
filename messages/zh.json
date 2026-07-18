@@ -1,0 +1,13 @@
+{
+	"nav": {
+		"home": "首页",
+		"products": "产品中心",
+		"brands": "核心品牌",
+		"news": "新闻动态",
+		"support": "技术支持",
+		"inquiry": "在线询价",
+		"sample": "样品申请",
+		"about": "关于我们",
+		"contact": "联系我们"
+	}
+}

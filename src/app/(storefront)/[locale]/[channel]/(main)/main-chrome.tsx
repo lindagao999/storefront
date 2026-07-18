@@ -3,8 +3,9 @@ import { Footer } from "@/ui/components/footer";
 import { Header } from "@/ui/components/header";
 import { ScrollToTopOnNavigate } from "@/ui/components/shared/scroll-to-top-on-navigate";
 import { Logo } from "@/ui/components/shared/logo";
-import { AnnouncementBarSkeleton } from "@/ui/sections/announcement-bar/announcement-bar";
-import { AnnouncementBarSlot, type BrowseRouteParams } from "./browse-chrome-slots";
+// import { AnnouncementBarSkeleton } from "@/ui/sections/announcement-bar/announcement-bar";
+// import { AnnouncementBarSlot, type BrowseRouteParams } from "./browse-chrome-slots";
+import { type BrowseRouteParams } from "./browse-chrome-slots";
 
 function HeaderSkeleton() {
 	return (
@@ -86,9 +87,10 @@ export function MainChrome({ params, children }: { params: BrowseRouteParams; ch
 			<Suspense fallback={null}>
 				<ScrollToTopOnNavigate />
 			</Suspense>
-			<Suspense fallback={<AnnouncementBarSkeleton />}>
+			{/* Announcement Bar - hidden for AnFully design */}
+			{/* <Suspense fallback={<AnnouncementBarSkeleton />}>
 				<AnnouncementBarSlot params={params} />
-			</Suspense>
+			</Suspense> */}
 			<Suspense fallback={<HeaderSkeleton />}>
 				<HeaderSlot params={params} />
 			</Suspense>

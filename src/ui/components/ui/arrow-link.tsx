@@ -16,8 +16,8 @@ export interface ArrowLinkProps {
  */
 export function ArrowLink({ href, children, className }: ArrowLinkProps) {
 	const classes = cn(
-		"group/arrow inline-flex items-center gap-1.5 whitespace-nowrap text-sm font-medium text-foreground",
-		"underline-offset-4 hover:underline",
+		"group/arrow inline-flex items-center gap-1.5 whitespace-nowrap text-sm font-medium text-[#2b5ba9]",
+		"underline-offset-4 hover:underline hover:text-[#1a237e]",
 		"focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
 		className,
 	);
