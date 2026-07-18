@@ -1,5 +1,5 @@
-query CategoriesGetAll($channel: String!, $languageCode: LanguageCodeEnum!) {
-	categories(first: 100, channel: $channel) {
+query CategoriesGetAll($languageCode: LanguageCodeEnum!) {
+	categories(first: 100) {
 		edges {
 			node {
 				id
@@ -12,3 +12,4 @@ query CategoriesGetAll($channel: String!, $languageCode: LanguageCodeEnum!) {
 		}
 	}
 }
+
