@@ -1,4 +1,5 @@
 import { brandConfig } from "@/config/brand";
+import { getTranslations } from "next-intl/server";
 import { getFeaturedProducts } from "@/lib/catalog/get-featured-products";
 import { getStorefrontContent } from "@/lib/content/server";
 import { CategorySidebar, type CategoryItem } from "@/ui/components/category-sidebar/category-sidebar";
@@ -154,16 +155,24 @@ const hotSearchKeywords = [
 	"7805",
 ];
 
-// Stats - from original AnFully English version
-const defaultStats = [
+// Stats - English version
+const defaultStatsEn = [
 	{ number: "100,000+", label: "Stock SKUs" },
 	{ number: "50+", label: "Partner Brands" },
 	{ number: "98%", label: "In Stock Rate" },
 	{ number: "24h", label: "Fast Shipping" },
 ];
 
-// Core values - from original AnFully English version
-const defaultCoreValues = [
+// Stats - Chinese version
+const defaultStatsZh = [
+	{ number: "100,000+", label: "现货SKU" },
+	{ number: "50+", label: "合作品牌" },
+	{ number: "98%", label: "现货率" },
+	{ number: "24h", label: "极速发货" },
+];
+
+// Core values - English version
+const defaultCoreValuesEn = [
 	{
 		icon: "🎯",
 		title: "Focus",
@@ -184,8 +193,27 @@ const defaultCoreValues = [
 	},
 ];
 
-// Why us items - from original AnFully English version
-const defaultWhyUs = [
+// Core values - Chinese version
+const defaultCoreValuesZh = [
+	{
+		icon: "🎯",
+		title: "专注",
+		description: "专注于电子元器件分销，深耕MLCC、电阻、电感等核心品类",
+	},
+	{
+		icon: "🛡️",
+		title: "信赖",
+		description: "原厂正品保障，严格品控，全追溯体系",
+	},
+	{
+		icon: "🤝",
+		title: "长期",
+		description: "坚持长期经营理念，与客户和供应商建立互信合作",
+	},
+];
+
+// Why us items - English version
+const defaultWhyUsEn = [
 	{
 		icon: "✓",
 		title: "Genuine Guarantee",
@@ -210,6 +238,30 @@ const defaultWhyUs = [
 	},
 ];
 
+// Why us items - Chinese version
+const defaultWhyUsZh = [
+	{
+		icon: "✓",
+		title: "正品保证",
+		description: "所有物料原厂直供，不翻新、不拆包、不售假货",
+	},
+	{
+		icon: "⚡",
+		title: "极速响应物流",
+		description: "深圳香港双仓，1-3天发货，急单优先",
+	},
+	{
+		icon: "🌐",
+		title: "全球物流支持",
+		description: "覆盖国内外物流渠道，支持空运、海运、快递",
+	},
+	{
+		icon: "🔧",
+		title: "专业技术支持",
+		description: "原厂认证工程师，提供选型替代和电路优化",
+	},
+];
+
 /**
  * Core Values Section - Server Component version (no useState)
  */
@@ -220,7 +272,7 @@ function CoreValuesSection({
 }: {
 	heading: string;
 	subheading: string;
-	values: typeof defaultCoreValues;
+	values: typeof defaultCoreValuesEn;
 }) {
 	return (
 		<section className="mx-10 mb-8 rounded-xl bg-gradient-to-br from-[#1a237e] to-[#2b5ba9] px-14 py-12 text-white">
@@ -256,7 +308,7 @@ function WhyUsSection({
 }: {
 	heading: string;
 	subheading: string;
-	items: typeof defaultWhyUs;
+	items: typeof defaultWhyUsEn;
 }) {
 	const gradients = [
 		["oklch(var(--primary))", "oklch(var(--secondary))"],
@@ -301,6 +353,8 @@ function WhyUsSection({
  */
 export default async function Page({ params }: { params: Promise<{ locale: string; channel: string }> }) {
 	const { locale, channel } = await params;
+	const t = await getTranslations({ locale, namespace: "home" });
+	const isZh = locale === "zh";
 
 	// Fetch data with error handling - using AnFully English version defaults
 	let collectionSlug = "featured-products";
@@ -341,7 +395,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 			<div className="mx-10 mt-6 flex gap-6">
 				<CategorySidebar
 					categories={categoryItems}
-					heading="Products"
+					heading={t("categorySidebar")}
 					allCategoriesHref={buildStorefrontPath(locale, channel, "/products")}
 				/>
 				<div className="flex flex-1 flex-col gap-5">
@@ -351,30 +405,26 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 						suppressHydrationWarning
 					>
 						<h1 id="homepage-hero-heading" className="mb-3 text-[40px] font-bold leading-tight">
-							Small Components, Big Impact
+							{t("heroTitle")}
 						</h1>
-						<p className="mb-5 text-[22px] opacity-95">Making Great Designs Come True</p>
-						<p className="mb-8 max-w-2xl text-[15px] leading-relaxed opacity-90">
-							Focused on electronic component supply chain services, covering MLCC capacitors, resistors,
-							inductors and other core categories, providing stable and reliable component procurement and
-							technical support services for global customers.
-						</p>
+						<p className="mb-5 text-[22px] opacity-95">{t("heroSubtitle")}</p>
+						<p className="mb-8 max-w-2xl text-[15px] leading-relaxed opacity-90">{t("heroDesc")}</p>
 						<div className="flex gap-4">
 							<NavHrefLink
 								href="/inquiry"
 								className="rounded-lg bg-white px-8 py-3 text-[15px] font-semibold text-[#1a237e] transition-all hover:shadow-lg"
 							>
-								Quick Quote
+								{t("quickQuote")}
 							</NavHrefLink>
 							<NavHrefLink
 								href="/products"
 								className="rounded-lg border-2 border-white/50 px-8 py-3 text-[15px] font-medium text-white transition-all hover:bg-white/10"
 							>
-								View Products
+								{t("viewProducts")}
 							</NavHrefLink>
 						</div>
 					</section>
-					<StatsBar stats={defaultStats} />
+					<StatsBar stats={isZh ? defaultStatsZh : defaultStatsEn} />
 
 					{/* 特色服务快捷入口 */}
 					<div className="grid grid-cols-4 gap-4">
@@ -385,8 +435,8 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 							<div className="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-[#1a237e]/10 text-2xl transition-colors group-hover:bg-[#1a237e] group-hover:text-white">
 								📋
 							</div>
-							<h3 className="text-sm font-semibold text-[#1a237e]">Quick Quote</h3>
-							<p className="mt-1 text-xs text-muted-foreground">Upload BOM</p>
+							<h3 className="text-sm font-semibold text-[#1a237e]">{t("serviceQuote")}</h3>
+							<p className="mt-1 text-xs text-muted-foreground">{t("serviceQuoteSub")}</p>
 						</NavHrefLink>
 						<NavHrefLink
 							href="/sample"
@@ -395,8 +445,8 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 							<div className="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-[#1a237e]/10 text-2xl transition-colors group-hover:bg-[#1a237e] group-hover:text-white">
 								🧪
 							</div>
-							<h3 className="text-sm font-semibold text-[#1a237e]">Free Sample</h3>
-							<p className="mt-1 text-xs text-muted-foreground">Apply Now</p>
+							<h3 className="text-sm font-semibold text-[#1a237e]">{t("serviceSample")}</h3>
+							<p className="mt-1 text-xs text-muted-foreground">{t("serviceSampleSub")}</p>
 						</NavHrefLink>
 						<NavHrefLink
 							href="/support"
@@ -405,8 +455,8 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 							<div className="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-[#1a237e]/10 text-2xl transition-colors group-hover:bg-[#1a237e] group-hover:text-white">
 								🔧
 							</div>
-							<h3 className="text-sm font-semibold text-[#1a237e]">Technical Support</h3>
-							<p className="mt-1 text-xs text-muted-foreground">Engineer Help</p>
+							<h3 className="text-sm font-semibold text-[#1a237e]">{t("serviceSupport")}</h3>
+							<p className="mt-1 text-xs text-muted-foreground">{t("serviceSupportSub")}</p>
 						</NavHrefLink>
 						<NavHrefLink
 							href="/brands"
@@ -415,8 +465,8 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 							<div className="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-[#1a237e]/10 text-2xl transition-colors group-hover:bg-[#1a237e] group-hover:text-white">
 								🏭
 							</div>
-							<h3 className="text-sm font-semibold text-[#1a237e]">Brand Auth</h3>
-							<p className="mt-1 text-xs text-muted-foreground">Original Factory</p>
+							<h3 className="text-sm font-semibold text-[#1a237e]">{t("serviceBrand")}</h3>
+							<p className="mt-1 text-xs text-muted-foreground">{t("serviceBrandSub")}</p>
 						</NavHrefLink>
 					</div>
 
@@ -424,7 +474,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 					<div className="rounded-xl bg-white p-5 shadow-sm">
 						<div className="mb-3 flex items-center gap-2">
 							<span className="text-[#1a237e]">🔥</span>
-							<h3 className="font-semibold text-[#1a237e]">Hot Search</h3>
+							<h3 className="font-semibold text-[#1a237e]">{t("hotSearch")}</h3>
 						</div>
 						<div className="flex flex-wrap gap-2">
 							{hotSearchKeywords.map((keyword) => (
@@ -446,8 +496,8 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 								✓
 							</div>
 							<div>
-								<h4 className="text-sm font-semibold">Genuine Guarantee</h4>
-								<p className="text-xs opacity-80">Original Factory Direct</p>
+								<h4 className="text-sm font-semibold">{t("genuineGuarantee")}</h4>
+								<p className="text-xs opacity-80">{t("originalDirect")}</p>
 							</div>
 						</div>
 						<div className="flex items-center gap-3 rounded-xl bg-gradient-to-br from-[#1a237e] to-[#2b5ba9] p-4 text-white">
@@ -455,8 +505,8 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 								⚡
 							</div>
 							<div>
-								<h4 className="text-sm font-semibold">Fast Shipping</h4>
-								<p className="text-xs opacity-80">24h Delivery</p>
+								<h4 className="text-sm font-semibold">{t("fastShipping")}</h4>
+								<p className="text-xs opacity-80">{t("delivery24h")}</p>
 							</div>
 						</div>
 						<div className="flex items-center gap-3 rounded-xl bg-gradient-to-br from-[#1a237e] to-[#2b5ba9] p-4 text-white">
@@ -464,8 +514,8 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 								🌐
 							</div>
 							<div>
-								<h4 className="text-sm font-semibold">Global Logistics</h4>
-								<p className="text-xs opacity-80">Air & Sea Freight</p>
+								<h4 className="text-sm font-semibold">{t("globalLogistics")}</h4>
+								<p className="text-xs opacity-80">{t("airSeaFreight")}</p>
 							</div>
 						</div>
 					</div>
@@ -475,12 +525,12 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 			{/* Hot Products - 热销产品 */}
 			<section className="mx-10 mb-20 mt-10">
 				<div className="mb-8 flex items-center justify-between">
-					<h2 className="text-[28px] font-bold text-[#1a237e]">Hot Products</h2>
+					<h2 className="text-[28px] font-bold text-[#1a237e]">{t("hotProducts")}</h2>
 					<NavHrefLink
 						href="/products"
 						className="text-sm font-medium text-[#2b5ba9] hover:text-[#1a237e] hover:underline"
 					>
-						View All →
+						{t("viewAll")}
 					</NavHrefLink>
 				</div>
 				<div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
@@ -494,7 +544,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 							<span
 								className={`absolute right-3 top-3 rounded-full px-2 py-0.5 text-xs font-medium ${product.inStock ? "bg-green-100 text-green-700" : "bg-amber-100 text-amber-700"}`}
 							>
-								{product.inStock ? "In Stock" : "Limited"}
+								{product.inStock ? t("inStock") : t("limited")}
 							</span>
 
 							{/* 产品图片占位 */}
@@ -522,47 +572,48 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 			{/* Brands */}
 			<div className="mb-20">
 				<BrandShowcase
-					heading="Core Brands"
-					subheading="Full coverage of MLCC, resistors, inductors with genuine guarantee"
+					heading={t("coreBrands")}
+					subheading={t("coreBrandsSub")}
 					brands={defaultBrands}
 					viewAllHref={buildStorefrontPath(locale, channel, "/brands")}
+					viewAllLabel={t("viewAll")}
 				/>
 			</div>
 
 			{/* Core Values - Server Component */}
 			<div className="mb-20">
 				<CoreValuesSection
-					heading="Focus · Trust · Long-term"
-					subheading="Focus on customer value, uphold quality commitment, pursue win-win outcomes"
-					values={defaultCoreValues}
+					heading={t("focusTrustLongTerm")}
+					subheading={t("focusSub")}
+					values={isZh ? defaultCoreValuesZh : defaultCoreValuesEn}
 				/>
 			</div>
 
 			{/* Why Us - Server Component */}
 			<div className="mb-20">
 				<WhyUsSection
-					heading="Why Choose AnFully?"
-					subheading="Core advantages that make us your preferred procurement partner"
-					items={defaultWhyUs}
+					heading={t("whyChoose")}
+					subheading={t("whyChooseSub")}
+					items={isZh ? defaultWhyUsZh : defaultWhyUsEn}
 				/>
 			</div>
 
 			{/* CTA */}
 			<section className="mx-10 mb-8 rounded-xl bg-gradient-to-r from-[#1a237e] to-[#2b5ba9] px-14 py-14 text-center text-white">
-				<h2 className="mb-3 text-[32px] font-bold">Ready to Start Procurement?</h2>
-				<p className="mb-6 text-base opacity-90">Upload BOM or search part numbers to get quick quotes</p>
+				<h2 className="mb-3 text-[32px] font-bold">{t("ctaTitle")}</h2>
+				<p className="mb-6 text-base opacity-90">{t("ctaSub")}</p>
 				<div className="flex justify-center gap-4">
 					<NavHrefLink
 						href="/inquiry"
 						className="rounded-lg bg-white px-8 py-3.5 font-semibold text-[#1a237e] transition-all hover:shadow-lg"
 					>
-						⚡ Get Quote Now
+						{t("getQuote")}
 					</NavHrefLink>
 					<NavHrefLink
 						href="/sample"
 						className="rounded-lg border-2 border-white/50 px-8 py-3.5 font-medium transition-all hover:bg-white/10"
 					>
-						🧪 Free Samples
+						{t("freeSamples")}
 					</NavHrefLink>
 				</div>
 			</section>

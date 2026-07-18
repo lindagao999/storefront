@@ -3,19 +3,20 @@ import { Logo } from "./shared/logo";
 import { buildStorefrontPath } from "@/lib/storefront-path";
 import { Phone, Mail, MapPin, ArrowRight } from "lucide-react";
 import { FooterYear } from "./footer-year";
+import { getTranslations } from "next-intl/server";
 
 const quickLinks = [
-	{ label: "Products", href: "/categories" },
-	{ label: "Brands", href: "/brands" },
-	{ label: "Inquiry", href: "/inquiry" },
-	{ label: "Samples", href: "/sample" },
+	{ labelKey: "products", href: "/categories" },
+	{ labelKey: "brands", href: "/brands" },
+	{ labelKey: "inquiry", href: "/inquiry" },
+	{ labelKey: "sample", href: "/sample" },
 ];
 
 const aboutLinks = [
-	{ label: "Company Profile", href: "/about" },
-	{ label: "Corporate Culture", href: "/about" },
-	{ label: "Quality Assurance", href: "/support" },
-	{ label: "Contact Us", href: "/contact" },
+	{ labelKey: "companyProfile", href: "/about" },
+	{ labelKey: "corporateCulture", href: "/about" },
+	{ labelKey: "qualityAssurance", href: "/support" },
+	{ labelKey: "contactUs", href: "/contact" },
 ];
 
 const contactInfo = [
@@ -26,32 +27,34 @@ const contactInfo = [
 	},
 	{
 		type: "person" as const,
-		label: "Sky (Sales Dept)",
+		labelKey: "skySales",
 		href: "/contact",
 	},
 	{
 		type: "person" as const,
-		label: "Fifi (Tech Support)",
+		labelKey: "fifiSupport",
 		href: "/contact",
 	},
 	{
 		type: "person" as const,
-		label: "Sister (Customer Service)",
+		labelKey: "sisterService",
 		href: "/contact",
 	},
 	{
 		type: "person" as const,
-		label: "Box (Business Inquiry)",
+		labelKey: "boxBiz",
 		href: "/contact",
 	},
 	{
 		type: "address" as const,
-		label: "Room 1403, Building 2, Sanyi Yundu, Lanqing 2nd Road, Longhua, Shenzhen",
+		labelKey: "addressFull",
 		href: "#",
 	},
 ];
 
 export async function Footer({ locale, channel }: { locale: string; channel: string }) {
+	const t = (await getTranslations("footer")) as unknown as (key: string) => string;
+	const tContact = (await getTranslations("contact")) as unknown as (key: string) => string;
 	return (
 		<footer className="relative overflow-hidden bg-gradient-to-br from-[#1a237e] via-[#1e3a8a] to-[#2b5ba9] text-white">
 			{/* 装饰背景 */}
@@ -65,12 +68,9 @@ export async function Footer({ locale, channel }: { locale: string; channel: str
 					{/* Brand */}
 					<div className="lg:pr-4">
 						<Link href={buildStorefrontPath(locale, channel)} prefetch={false} className="mb-5 inline-block">
-							<Logo className="h-9 w-auto" inverted />
+							<Logo className="h-9 w-auto" inverted showSubtitle={false} />
 						</Link>
-						<p className="mb-6 text-sm leading-relaxed text-white/75">
-							One-stop electronic components procurement platform, providing stable, compliant and
-							cost-effective component supply services for global customers.
-						</p>
+						<p className="mb-6 text-sm leading-relaxed text-white/75">{t("description")}</p>
 						{/* 社交媒体 */}
 						<div className="flex gap-3">
 							{/* LinkedIn - B2B必备 */}
@@ -116,18 +116,18 @@ export async function Footer({ locale, channel }: { locale: string; channel: str
 					<div>
 						<h3 className="mb-5 flex items-center gap-2 text-base font-semibold">
 							<span className="h-5 w-1 rounded-full bg-white/50" />
-							Quick Links
+							{t("quickLinks")}
 						</h3>
 						<ul className="space-y-3">
 							{quickLinks.map((link) => (
-								<li key={link.label}>
+								<li key={link.labelKey}>
 									<Link
 										href={link.href}
 										prefetch={false}
 										className="group flex items-center gap-1 text-sm text-white/70 transition-all hover:translate-x-1 hover:text-white"
 									>
 										<ArrowRight className="h-3 w-3 opacity-0 transition-all group-hover:opacity-100" />
-										{link.label}
+										{t(link.labelKey)}
 									</Link>
 								</li>
 							))}
@@ -138,18 +138,18 @@ export async function Footer({ locale, channel }: { locale: string; channel: str
 					<div>
 						<h3 className="mb-5 flex items-center gap-2 text-base font-semibold">
 							<span className="h-5 w-1 rounded-full bg-white/50" />
-							About Us
+							{t("aboutUs")}
 						</h3>
 						<ul className="space-y-3">
 							{aboutLinks.map((link) => (
-								<li key={link.label}>
+								<li key={link.labelKey}>
 									<Link
 										href={link.href}
 										prefetch={false}
 										className="group flex items-center gap-1 text-sm text-white/70 transition-all hover:translate-x-1 hover:text-white"
 									>
 										<ArrowRight className="h-3 w-3 opacity-0 transition-all group-hover:opacity-100" />
-										{link.label}
+										{t(link.labelKey)}
 									</Link>
 								</li>
 							))}
@@ -160,7 +160,7 @@ export async function Footer({ locale, channel }: { locale: string; channel: str
 					<div>
 						<h3 className="mb-5 flex items-center gap-2 text-base font-semibold">
 							<span className="h-5 w-1 rounded-full bg-white/50" />
-							Contact Us
+							{t("contactUs")}
 						</h3>
 						<ul className="space-y-3">
 							{contactInfo.map((item, index) => (
@@ -175,7 +175,9 @@ export async function Footer({ locale, channel }: { locale: string; channel: str
 											<MapPin className="mt-0.5 h-3.5 w-3.5 shrink-0 text-white/50" />
 										)}
 										{item.type === "person" && <Mail className="mt-0.5 h-3.5 w-3.5 shrink-0 text-white/50" />}
-										<span className="leading-relaxed">{item.label}</span>
+										<span className="leading-relaxed">
+											{item.type === "phone" ? item.label : tContact(item.labelKey)}
+										</span>
 									</Link>
 								</li>
 							))}
@@ -194,7 +196,7 @@ export async function Footer({ locale, channel }: { locale: string; channel: str
 							prefetch={false}
 							className="text-sm text-white/60 transition-colors hover:text-white"
 						>
-							Privacy Policy
+							{t("privacyPolicy")}
 						</Link>
 						<span className="text-white/30">|</span>
 						<Link
@@ -202,7 +204,7 @@ export async function Footer({ locale, channel }: { locale: string; channel: str
 							prefetch={false}
 							className="text-sm text-white/60 transition-colors hover:text-white"
 						>
-							Terms of Service
+							{t("termsOfService")}
 						</Link>
 					</div>
 				</div>

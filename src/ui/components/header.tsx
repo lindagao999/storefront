@@ -10,6 +10,7 @@ import { SearchBarWithSuggestions } from "./nav/components/search-bar-with-sugge
 
 export async function Header({ locale, channel }: { locale: string; channel: string }) {
 	const tSearchBar = await getTranslations({ locale, namespace: "search.bar" });
+	const tHome = await getTranslations({ locale, namespace: "home" });
 
 	return (
 		<header id="storefront-header" className="sticky top-0 z-40 bg-background">
@@ -17,9 +18,9 @@ export async function Header({ locale, channel }: { locale: string; channel: str
 			<div className="bg-[#1a237e] text-white">
 				<div className="container-nav flex h-10 items-center justify-between text-sm">
 					<span className="flex items-center gap-1">
-						<span className="text-white/90">✓ Premium Quality · Quality Assurance · Fast Shipping</span>
+						<span className="text-white/90">{tHome("topBarQuality")}</span>
 					</span>
-					<span className="hidden text-white/80 sm:inline">100,000+ SKUs in Stock, Ships in 1-3 Days</span>
+					<span className="hidden text-white/80 sm:inline">{tHome("topBarStock")}</span>
 				</div>
 			</div>
 
@@ -45,7 +46,7 @@ export async function Header({ locale, channel }: { locale: string; channel: str
 							{/* Phone */}
 							<div className="hidden text-right lg:block">
 								<div className="text-lg font-bold text-[#1a237e]">0755-28198292</div>
-								<div className="text-xs text-muted-foreground">Mon-Fri 9:00-20:00</div>
+								<div className="text-xs text-muted-foreground">{tHome("phoneHours")}</div>
 							</div>
 
 							{/* Language Toggle */}

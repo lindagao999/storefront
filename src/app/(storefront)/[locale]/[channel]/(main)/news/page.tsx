@@ -1,5 +1,74 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import { NewsPageClient } from "./news-page-client";
+
+interface NewsArticle {
+	title: string;
+	url: string;
+	date: string;
+	excerpt: string;
+	category: string;
+}
+
+interface CategoryGroup {
+	category: string;
+	articles: (NewsArticle & { num: number })[];
+}
+
+async function loadNewsData(): Promise<{ articles: NewsArticle[]; updated: string; total: number }> {
+	try {
+		const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"}/news_data.json`, {
+			cache: "force-cache",
+		});
+		return res.json() as Promise<{ articles: NewsArticle[]; updated: string; total: number }>;
+	} catch {
+		return { articles: [], updated: "", total: 0 };
+	}
+}
+
+function groupByCategory(articles: NewsArticle[]): CategoryGroup[] {
+	const categoryOrder = [
+		"Latest",
+		"Capacitors",
+		"Inductors",
+		"Resistors",
+		"Circuit Protection Devices",
+		"Fuses",
+		"Filters",
+		"Automotive",
+		"Aerospace & Defence",
+		"Antenna",
+		"Market & Supply Chain",
+		"Market Insights",
+		"New Technologies",
+		"New Materials & Supply",
+		"RF & Microwave",
+		"Telecommunication",
+		"Medical",
+		"Oscillators",
+		"Passive Sensors News",
+		"Non-linear Passives",
+		"Integrated Passives",
+		"Electro-mechanical News",
+		"Inter-connect News",
+		"Modelling and Simulation",
+		"Weekly Digest",
+		"Applications",
+	];
+
+	const grouped: Record<string, NewsArticle[]> = {};
+	articles.forEach((a) => {
+		if (!grouped[a.category]) grouped[a.category] = [];
+		grouped[a.category].push(a);
+	});
+
+	return categoryOrder
+		.filter((cat) => grouped[cat])
+		.map((cat) => ({
+			category: cat,
+			articles: grouped[cat].map((a, i) => ({ ...a, num: i + 1 })),
+		}));
+}
 
 export async function generateMetadata({
 	params,
@@ -17,71 +86,22 @@ export async function generateMetadata({
 export default async function NewsPage({ params }: { params: Promise<{ locale: string }> }) {
 	const { locale } = await params;
 	const t = await getTranslations({ locale, namespace: "news" });
+	const { articles, updated, total } = await loadNewsData();
+	const groups = groupByCategory(articles);
 
-	const newsItems = [
-		{
-			date: "2024-07-15",
-			title: t("news1Title"),
-			desc: t("news1Desc"),
-			tagLabel: t("tag_company"),
-		},
-		{
-			date: "2024-07-10",
-			title: t("news2Title"),
-			desc: t("news2Desc"),
-			tagLabel: t("tag_product"),
-		},
-		{
-			date: "2024-07-05",
-			title: t("news3Title"),
-			desc: t("news3Desc"),
-			tagLabel: t("tag_industry"),
-		},
-		{
-			date: "2024-06-28",
-			title: t("news4Title"),
-			desc: t("news4Desc"),
-			tagLabel: t("tag_company"),
-		},
-	];
+	const breadcrumbHome = t("breadcrumbHome");
+	const breadcrumbCurrent = t("breadcrumbCurrent");
+	const pageTitle = t("pageTitle");
 
 	return (
-		<div className="container-content py-8 pb-16">
-			{/* Breadcrumb */}
-			<nav className="mb-6 text-sm">
-				<span className="text-muted-foreground">{t("breadcrumbHome")}</span>
-				<span className="mx-2 text-muted-foreground">›</span>
-				<span className="text-foreground">{t("breadcrumbCurrent")}</span>
-			</nav>
-
-			<h1 className="mb-8 text-center text-3xl font-bold text-[#1a237e] md:text-4xl">{t("pageTitle")}</h1>
-
-			{/* News Grid */}
-			<div className="grid gap-6 md:grid-cols-2">
-				{newsItems.map((news, index) => (
-					<article
-						key={index}
-						className="group overflow-hidden rounded-xl bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
-					>
-						<div className="h-2 bg-gradient-to-r from-[#1a237e] to-[#2b5ba9]" />
-						<div className="p-6">
-							<div className="mb-3 flex items-center gap-3">
-								<span className="rounded-full bg-[#e8f0fe] px-3 py-1 text-xs font-medium text-[#1a237e]">
-									{news.tagLabel}
-								</span>
-								<span className="text-sm text-muted-foreground">{news.date}</span>
-							</div>
-							<h2 className="mb-2 text-lg font-semibold text-foreground transition-colors group-hover:text-[#1a237e]">
-								{news.title}
-							</h2>
-							<p className="text-sm leading-relaxed text-muted-foreground">{news.desc}</p>
-							<div className="mt-4">
-								<span className="text-sm font-medium text-[#2b5ba9]">{t("readMore")} →</span>
-							</div>
-						</div>
-					</article>
-				))}
-			</div>
-		</div>
+		<NewsPageClient
+			groups={groups}
+			updated={updated}
+			total={total}
+			breadcrumbHome={breadcrumbHome}
+			breadcrumbCurrent={breadcrumbCurrent}
+			pageTitle={pageTitle}
+			locale={locale}
+		/>
 	);
 }

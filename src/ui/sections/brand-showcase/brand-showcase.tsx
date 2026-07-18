@@ -14,6 +14,7 @@ export interface BrandShowcaseProps {
 	subheading?: string;
 	brands: BrandItem[];
 	viewAllHref?: string;
+	viewAllLabel?: string;
 	className?: string;
 }
 
@@ -22,6 +23,7 @@ export function BrandShowcase({
 	subheading = "精选全球知名电子元器件品牌",
 	brands,
 	viewAllHref = "/brands",
+	viewAllLabel = "查看全部",
 	className,
 }: BrandShowcaseProps) {
 	return (
@@ -30,7 +32,7 @@ export function BrandShowcase({
 				id="brands-heading"
 				heading={heading}
 				eyebrow={subheading}
-				cta={viewAllHref ? { label: "查看全部", href: viewAllHref } : undefined}
+				cta={viewAllHref ? { label: viewAllLabel, href: viewAllHref } : undefined}
 				className="mb-5"
 			/>
 

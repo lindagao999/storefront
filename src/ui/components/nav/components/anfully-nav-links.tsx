@@ -1,26 +1,28 @@
 "use client";
 
 import { usePathname, useParams } from "next/navigation";
+import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { LinkWithChannel } from "@/ui/atoms/link-with-channel";
 import { stripStorefrontPrefix } from "@/lib/storefront-path";
 
 // 导航数据 - 匹配原始 AnFully 样式
 const navItems = [
-	{ label: "Home", href: "/", exact: true },
-	{ label: "Products", href: "/products" },
-	{ label: "Brands", href: "/brands" },
-	{ label: "News", href: "/news" },
-	{ label: "Support", href: "/support" },
-	{ label: "Inquiry", href: "/inquiry" },
-	{ label: "Samples", href: "/sample" },
-	{ label: "About", href: "/about" },
-	{ label: "Contact", href: "/contact" },
+	{ labelKey: "home", href: "/", exact: true },
+	{ labelKey: "products", href: "/products" },
+	{ labelKey: "brands", href: "/brands" },
+	{ labelKey: "news", href: "/news" },
+	{ labelKey: "support", href: "/support" },
+	{ labelKey: "inquiry", href: "/inquiry" },
+	{ labelKey: "sample", href: "/sample" },
+	{ labelKey: "about", href: "/about" },
+	{ labelKey: "contact", href: "/contact" },
 ];
 
 export function AnFullyNavLinksDesktop() {
 	const pathname = usePathname();
 	const { locale, channel } = useParams<{ locale?: string; channel?: string }>();
+	const t = useTranslations("nav") as unknown as (key: string) => string;
 
 	const matchedPath = locale && channel ? stripStorefrontPrefix(pathname, locale, channel) : pathname;
 
@@ -45,7 +47,7 @@ export function AnFullyNavLinksDesktop() {
 						)}
 						prefetch={false}
 					>
-						{item.label}
+						{t(item.labelKey)}
 					</LinkWithChannel>
 				);
 			})}
@@ -56,6 +58,7 @@ export function AnFullyNavLinksDesktop() {
 export function AnFullyNavLinksMobile() {
 	const pathname = usePathname();
 	const { locale, channel } = useParams<{ locale?: string; channel?: string }>();
+	const t = useTranslations("nav") as unknown as (key: string) => string;
 
 	const matchedPath = locale && channel ? stripStorefrontPrefix(pathname, locale, channel) : pathname;
 
@@ -81,7 +84,7 @@ export function AnFullyNavLinksMobile() {
 							)}
 							prefetch={false}
 						>
-							{item.label}
+							{t(item.labelKey)}
 						</LinkWithChannel>
 					</li>
 				);

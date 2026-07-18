@@ -24,7 +24,8 @@ export const Logo = ({
 	ariaLabel = "AnFully - One-Stop Electronic Components Platform",
 	inverted = false,
 	showSubtitle = true,
-}: LogoProps) => {
+	subtitle,
+}: LogoProps & { subtitle?: string }) => {
 	const textColor = inverted ? "text-white" : "text-[oklch(var(--primary))]";
 	const subtitleColor = inverted ? "text-white/70" : "text-muted-foreground";
 	const iconFill = inverted ? "%23ffffff" : "%231a237e";
@@ -43,7 +44,9 @@ export const Logo = ({
 			<div className="flex flex-col">
 				<span className={`text-xl font-bold leading-tight ${textColor}`}>AnFully</span>
 				{showSubtitle && (
-					<span className={`text-xs ${subtitleColor}`}>One-Stop Electronic Components Platform</span>
+					<span className={`text-xs ${subtitleColor}`}>
+						{subtitle ?? "One-Stop Electronic Components Platform"}
+					</span>
 				)}
 			</div>
 		</div>

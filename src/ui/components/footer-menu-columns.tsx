@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { MenuItem } from "@/lib/menus/get-menu-data";
 import { LinkWithChannel } from "@/ui/atoms/link-with-channel";
 import { NavHrefLink } from "@/ui/atoms/nav-href-link";
+import { getTranslations } from "next-intl/server";
 
 const defaultFooterLinks = {
 	support: [
@@ -62,12 +63,14 @@ function FooterMenuChildLink({ child }: { child: MenuItem }) {
 	return null;
 }
 
-export function FooterMenuColumns({ items }: { items: MenuItem[] }) {
+export async function FooterMenuColumns({ items }: { items: MenuItem[] }) {
+	const t = (await getTranslations("footer")) as unknown as (key: string) => string;
+
 	if (items.length === 0) {
 		return (
 			<>
 				<div>
-					<h4 className="mb-4 text-sm font-medium text-white">Support</h4>
+					<h4 className="mb-4 text-sm font-medium text-white">{t("supportHeading")}</h4>
 					<ul className="space-y-3">
 						{defaultFooterLinks.support.map((link) => (
 							<li key={link.href}>
@@ -83,7 +86,7 @@ export function FooterMenuColumns({ items }: { items: MenuItem[] }) {
 					</ul>
 				</div>
 				<div>
-					<h4 className="mb-4 text-sm font-medium text-white">Company</h4>
+					<h4 className="mb-4 text-sm font-medium text-white">{t("companyHeading")}</h4>
 					<ul className="space-y-3">
 						{defaultFooterLinks.company.map((link) => (
 							<li key={link.href}>

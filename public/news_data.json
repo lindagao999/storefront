@@ -1,0 +1,2842 @@
+{
+	"updated": "2026-06-28 00:18:06",
+	"total": 401,
+	"articles": [
+		{
+			"title": "Skeleton Supercapacitor Achieves UL‑certified 3,500 A Peak Current for AI Data Centers",
+			"url": "https://passive-components.eu/skeleton-supercapacitor-achieves-ul-certified-3500-a-peak-current-for-ai-data-centers/",
+			"date": "26.6.2026",
+			"excerpt": "",
+			"category": "Latest"
+		},
+		{
+			"title": "Bourns Planar Transformers for SiC and GaN Gate Driver Isolation",
+			"url": "https://passive-components.eu/bourns-planar-transformers-for-sic-and-gan-gate-driver-isolation/",
+			"date": "26.6.2026",
+			"excerpt": "Bourns SM9127AL planar isolation transformers help cut EMI in modern SiC and GaN gate‑driver PSUs by turning PCB geometry into...",
+			"category": "Latest"
+		},
+		{
+			"title": "100 V Hybrid Polymer Capacitor from VINA Enesol Targets 48–72 V Power Platforms",
+			"url": "https://passive-components.eu/100-v-hybrid-polymer-capacitor-from-vina-enesol-targets-48-72-v-power-platforms/",
+			"date": "26.6.2026",
+			"excerpt": "VINA Enesol, part of VINATech group, has introduced a 100 V hybrid polymer aluminium capacitor targeting next‑generation 48–72 V DC...",
+			"category": "Latest"
+		},
+		{
+			"title": "Panasonic Releases Relays for IEC 62955 Compliant Single‑Phase EV Wallboxes",
+			"url": "https://passive-components.eu/panasonic-releases-relays-for-iec-62955-compliant-single-phase-ev-wallboxes/",
+			"date": "25.6.2026",
+			"excerpt": "Panasonic’s new HE‑S SC relay family is a compact PCB relay solution designed as the main switching element in next‑generation...",
+			"category": "Latest"
+		},
+		{
+			"title": "KYOCERA AVX Releases NTN Antenna Selection Guide Brochure",
+			"url": "https://passive-components.eu/kyocera-avx-releases-ntn-antenna-selection-guide-brochure/",
+			"date": "25.6.2026",
+			"excerpt": "Non‑terrestrial networks (NTN) are rapidly becoming a core connectivity option for IoT and wireless devices operating beyond the reach of...",
+			"category": "Latest"
+		},
+		{
+			"title": "Coilcraft Releases 0402 Ferrite-Core Wirewound Chip Inductors for RF and EMI Control",
+			"url": "https://passive-components.eu/coilcraft-releases-0402-ferrite-core-wirewound-chip-inductors-for-rf-and-emi-control/",
+			"date": "25.6.2026",
+			"excerpt": "Coilcraft introduces 016008F ferrite-core wirewound chip inductors - ultra‑miniature RF chokes in 0402 (metric 01005) format, designed for high‑frequency circuits...",
+			"category": "Latest"
+		},
+		{
+			"title": "DigiKey Releases Season Two of Sustainable Futures Series",
+			"url": "https://passive-components.eu/digikey-releases-season-two-of-sustainable-futures-series/",
+			"date": "24.6.2026",
+			"excerpt": "DigiKey has released the second season of its Sustainable Futures video series, focusing on how advanced electronics enable cleaner energy,...",
+			"category": "Latest"
+		},
+		{
+			"title": "Using a Virtual Anode Thermal Model to Evaluate Miniaturization Risk in Tantalum Capacitors",
+			"url": "https://passive-components.eu/using-a-virtual-anode-thermal-model-to-evaluate-miniaturization-risk-in-tantalum-capacitors/",
+			"date": "24.6.2026",
+			"excerpt": "In this article, Dr. Vladimir Azbel presents a virtual anode thermal model that allows engineers to evaluate how far a tantalum...",
+			"category": "Latest"
+		},
+		{
+			"title": "Bourns Introduced High-Current Coupled Inductor for 48 V Hybrid and IBC Converters",
+			"url": "https://passive-components.eu/bourns-introduced-high-current-coupled-inductor-for-48-v-hybrid-and-ibc-converters/",
+			"date": "24.6.2026",
+			"excerpt": "Bourns has introduced the MAG-3002562, a high-current coupled inductor optimized for 48 V to 12 V DC-DC conversion in hybrid...",
+			"category": "Latest"
+		},
+		{
+			"title": "Würth Elektronik Expands Nanocrystalline Cable Cores for Broadband EMI Suppression",
+			"url": "https://passive-components.eu/wurth-elektronik-expands-nanocrystalline-cable-cores-for-broadband-emi-suppression/",
+			"date": "23.6.2026",
+			"excerpt": "Nanocrystalline cable cores of the WE‑NCC series from Würth Elektronik are designed for broadband suppression of conducted electromagnetic interference on...",
+			"category": "Latest"
+		},
+		{
+			"title": "High‑Speed Supercapacitor Balancing for AI Data Center Power Systems",
+			"url": "https://passive-components.eu/high-speed-supercapacitor-balancing-for-ai-data-center-power-systems/",
+			"date": "23.6.2026",
+			"excerpt": "The rapid adoption of artificial intelligence is reshaping the electrical profile of modern data centers. Unlike legacy compute workloads, AI...",
+			"category": "Latest"
+		},
+		{
+			"title": "PSMA Capacitor Committee Webinar: High Voltage Pulse Capacitors",
+			"url": "https://passive-components.eu/event/psma-capacitor-committee-webinar-high-voltage-pulse-capacitors/",
+			"date": "17:00-18:00CEST",
+			"excerpt": "",
+			"category": "Latest"
+		},
+		{
+			"title": "EMC Design Essentials: Mastering Varistors and Common Mode Chokes",
+			"url": "https://passive-components.eu/event/emc-design-essentials-mastering-varistors-and-common-mode-chokes/",
+			"date": "16:00-17:00CEST",
+			"excerpt": "",
+			"category": "Latest"
+		},
+		{
+			"title": "Safety by design: X and Y Interference suppression capacitors for power line filters",
+			"url": "https://passive-components.eu/event/safety-by-design-x-and-y-interference-suppression-capacitors-for-power-line-filters/",
+			"date": "16:00-17:00CEST",
+			"excerpt": "",
+			"category": "Latest"
+		},
+		{
+			"title": "Bourns Introduced Automotive TVS Diodes for Compact ESD Protection",
+			"url": "https://passive-components.eu/bourns-introduced-automotive-tvs-diodes-for-compact-esd-protection/",
+			"date": "23.6.2026",
+			"excerpt": "Bourns has introduced the CDSOD323-TxxC-Q Series, an automotive‑grade bidirectional TVS diode family targeting ESD and surge protection on single high‑speed...",
+			"category": "Latest"
+		},
+		{
+			"title": "EMC‑Compliant PCB and Connector Design Guidelines",
+			"url": "https://passive-components.eu/emc-compliant-pcb-and-connector-design-guidelines/",
+			"date": "22.6.2026",
+			"excerpt": "Electromagnetic compatibility (EMC) is decided in the schematic and layout, not in the test chamber. This article distills key lessons...",
+			"category": "Latest"
+		},
+		{
+			"title": "Practical Value of Structural Diagnostics for Tantalum Capacitor Anodes",
+			"url": "https://passive-components.eu/practical-value-of-structural-diagnostics-for-tantalum-capacitor-anodes/",
+			"date": "22.6.2026",
+			"excerpt": "This article, written by Vladimir Azbel, Ph.D., a semiconductor process reliability engineering consultant, and adapted and edited for passive-components.eu, rovides an overview...",
+			"category": "Latest"
+		},
+		{
+			"title": "Hall-Effect Sensing for Harsh Environments: TT Electronics Selected in NASA’s Dragonfly Fan",
+			"url": "https://passive-components.eu/hall-effect-sensing-for-harsh-environments-tt-electronics-selected-in-nasas-dragonfly-fan/",
+			"date": "22.6.2026",
+			"excerpt": "TT Electronics has announced that Hallogic OMH3075S Hall‑effect sensors from its Optek portfolio have been selected for integration into fan...",
+			"category": "Latest"
+		},
+		{
+			"title": "Bourns Releases Automotive Gate Driver Transformer for Isolated Power",
+			"url": "https://passive-components.eu/bourns-releases-automotive-gate-driver-transformer-for-isolated-power/",
+			"date": "22.6.2026",
+			"excerpt": "Bourns has introduced the HVMA03F45A‑ST8S, a 3‑watt surface‑mount gate driver transformer designed for automotive and industrial applications requiring robust isolation...",
+			"category": "Latest"
+		},
+		{
+			"title": "Stackpole Releases High-Frequency Thin Film Chip Resistors for RF up to 50 GHz",
+			"url": "https://passive-components.eu/stackpole-releases-high-frequency-thin-film-chip-resistors-for-rf-up-to-50-ghz/",
+			"date": "19.6.2026",
+			"excerpt": "Stackpole Electronics has introduced the RNCQ series of high-frequency thin film chip resistors optimized for RF and microwave circuits up...",
+			"category": "Latest"
+		},
+		{
+			"title": "Knowles Expands High‑Q Ceramic Core Inductors for RF designs",
+			"url": "https://passive-components.eu/knowles-expands-high-q-ceramic-core-inductors-for-rf-designs/",
+			"date": "19.6.2026",
+			"excerpt": "Knowles Precision Devices has expanded its ceramic core inductor portfolio to address a wider range of RF and microwave designs...",
+			"category": "Latest"
+		},
+		{
+			"title": "Vishay Unveils 1.5 kV IHDV High Voltage Power Inductors for EV and Industrial Converters",
+			"url": "https://passive-components.eu/vishay-unveils-1-5-kv-ihdv-high-voltage-power-inductors-for-ev-and-industrial-converters/",
+			"date": "19.6.2026",
+			"excerpt": "Vishay has introduced the first four members of a new IHDV high voltage power inductor family designed for next‑generation automotive,...",
+			"category": "Latest"
+		},
+		{
+			"title": "SCHURTER Introduces PPTC Resettable Overcurrent Protection for Compact Electronics",
+			"url": "https://passive-components.eu/schurter-introduces-pptc-resettable-overcurrent-protection-for-compact-electronics/",
+			"date": "18.6.2026",
+			"excerpt": "SCHURTER has introduced a new family of polymer PTC (PPTC) resettable fuses in both radial and SMD formats that target...",
+			"category": "Latest"
+		},
+		{
+			"title": "TrendForce: CSP in‑house AI ASIC Boom Reshapes Capacitor Demand",
+			"url": "https://passive-components.eu/trendforce-csp-in-house-ai-asic-boom-reshapes-high-end-mlcc-demand/",
+			"date": "18.6.2026",
+			"excerpt": "TrendForce’s latest MLCC industry research reveals that the AI arms race among global cloud service providers (CSPs) is driving demand...",
+			"category": "Latest"
+		},
+		{
+			"title": "Samsung Introduces Automotive 1206 100uF X7T MLCC for Power Rails in ADAS and SoCs",
+			"url": "https://passive-components.eu/samsung-introduces-automotive-1206-100uf-x7t-mlcc-for-power-rails-in-adas-and-socs/",
+			"date": "17.6.2026",
+			"excerpt": "Samsung Electro-Mechanics has introduced an automotive-grade multilayer ceramic capacitor (MLCC) that combines 100 µF capacitance and 4 V rating in...",
+			"category": "Capacitors"
+		},
+		{
+			"title": "YMIN Hybrid Aluminum Capacitors for Automotive LiDAR Power Rails",
+			"url": "https://passive-components.eu/ymin-hybrid-aluminum-capacitors-for-automotive-lidar-power-rails/",
+			"date": "17.6.2026",
+			"excerpt": "YMIN presents hybrid aluminum electrolytic capacitors from its VHT series as bulk and output filtering options for LiDAR power stages,...",
+			"category": "Capacitors"
+		},
+		{
+			"title": "Samsung Presents Ultra‑Thin Silicon Capacitors for AI and Server PDN",
+			"url": "https://passive-components.eu/samsung-presents-ultra-thin-silicon-capacitors-for-ai-and-server-pdn/",
+			"date": "17.6.2026",
+			"excerpt": "Samsung Electro‑Mechanics has introduced a dedicated silicon capacitor lineup targeting high‑performance semiconductor packages, AI servers, advanced automotive and aerospace electronics....",
+			"category": "Capacitors"
+		},
+		{
+			"title": "YAGEO Introduces 310VAC SMD Y2 Safety MP Capacitors for Compact EMI Filtering",
+			"url": "https://passive-components.eu/yageo-introduces-310vac-smd-y2-safety-mp-capacitors-for-compact-emi-filtering/",
+			"date": "16.6.2026",
+			"excerpt": "YAGEO Group’s SMP253 series is a surface‑mount Y2 safety metallized paper capacitor family rated 310 VAC for line‑to‑earth EMI suppression...",
+			"category": "Capacitors"
+		},
+		{
+			"title": "DMASS: European Components Distribution Returns To Growth In Q1 2026",
+			"url": "https://passive-components.eu/dmass-european-components-distribution-returns-to-growth-in-q1-2026/",
+			"date": "16.6.2026",
+			"excerpt": "The European electronic components distribution market delivered a robust return to growth in the first quarter of 2026, but DMASS...",
+			"category": "Capacitors"
+		},
+		{
+			"title": "German Component Distribution Market Rebounds in Q1 2026 According to FBDi",
+			"url": "https://passive-components.eu/german-component-distribution-market-rebounds-in-q1-2026-according-to-fbdi/",
+			"date": "16.6.2026",
+			"excerpt": "The German component distribution market returned to solid growth in Q1 2026, driven by strong order intake and a sharp...",
+			"category": "Capacitors"
+		},
+		{
+			"title": "Nippon Chemi-Con Announces New Capacitor series for AI, Automotive and Immersion Cooling",
+			"url": "https://passive-components.eu/nippon-chemi-con-announces-new-capacitor-series-for-ai-automotive-and-immersion-cooling/",
+			"date": "16.6.2026",
+			"excerpt": "Nippon Chemi-Con has announced a comprehensive update of its new/under development capacitor portfolio with multiple new and upgraded series targeting...",
+			"category": "Capacitors"
+		},
+		{
+			"title": "Ultrahigh Energy Storage in Lead‑Free BiFeO₃‑Based Ceramic Capacitors via Local Polar Structure Design",
+			"url": "https://passive-components.eu/ultrahigh-energy-storage-in-lead-free-bifeo%e2%82%83-based-ceramic-capacitors-via-local-polar-structure-design/",
+			"date": "16.6.2026",
+			"excerpt": "Researchers Ji Zhang, and col., working in materials science and electronic ceramics research institutions in China and Australia published their...",
+			"category": "Capacitors"
+		},
+		{
+			"title": "Murata Expands Ansys Simulation Models for RF inductors, MLCCs, and Power Inductors",
+			"url": "https://passive-components.eu/murata-expands-ansys-simulation-models-for-rf-inductors-mlccs-and-power-inductors/",
+			"date": "16.6.2026",
+			"excerpt": "Murata has expanded its simulation support for engineers using Ansys tools by making downloadable component models available directly through its...",
+			"category": "Capacitors"
+		},
+		{
+			"title": "Knowles Releases 3825 X1/Y2 Safety MLCCs for High‑Voltage Applications",
+			"url": "https://passive-components.eu/knowles-releases-3825-x1-y2-safety-mlccs-for-high-voltage-applications/",
+			"date": "11.6.2026",
+			"excerpt": "Knowles Precision Devices has expanded its X1/Y2 safety‑certified multilayer ceramic capacitor (MLCC) portfolio with a new 3825 case size aimed...",
+			"category": "Capacitors"
+		},
+		{
+			"title": "TAIYO YUDEN Releases 220uF 1210 Automotive MLCC",
+			"url": "https://passive-components.eu/taiyo-yuden-releases-220uf-1210-automotive-mlcc/",
+			"date": "11.6.2026",
+			"excerpt": "TAIYO YUDEN has released a new automotive‑grade multilayer ceramic capacitor (MLCC), type MAASA32MAD7227MP1D71, offering 220 µF in a 3225 (1210)...",
+			"category": "Capacitors"
+		},
+		{
+			"title": "HEICO’s Exxelia Expands High-Voltage Ceramic Capacitor Portfolio with CalRamic Acquisition",
+			"url": "https://passive-components.eu/heicos-exxelia-expands-high-voltage-ceramic-capacitor-portfolio-with-calramic-acquisition/",
+			"date": "10.6.2026",
+			"excerpt": "HEICO Corporation has announced that its Exxelia subsidiary has acquired a 90% stake in CalRamic Technologies, a U.S.-based specialist in...",
+			"category": "Capacitors"
+		},
+		{
+			"title": "CapXon Earns EcoVadis Bronze Medal for Sustainability Performance",
+			"url": "https://passive-components.eu/capxon-earns-ecovadis-bronze-medal-for-sustainability-performance/",
+			"date": "10.6.2026",
+			"excerpt": "CapXon has been awarded the EcoVadis Bronze Medal, recognizing the company’s sustainability performance and placing it among the leading organizations...",
+			"category": "Capacitors"
+		},
+		{
+			"title": "All‑Water Supercapacitor Based on 1‑nm Clay Channels and Nanoconfined Water Electrolyte",
+			"url": "https://passive-components.eu/all-water-supercapacitor-based-on-1-nm-clay-channels-and-nanoconfined-water-electrolyte/",
+			"date": "10.6.2026",
+			"excerpt": "Researchers in Europe with expertise in nanofluidics, electrochemistry, clay mineralogy, and electron microscopy to design and characterize a new type...",
+			"category": "Capacitors"
+		},
+		{
+			"title": "Sumida Introduces SMD Metal Inductors for High‑Current Automotive DC/DC Converters",
+			"url": "https://passive-components.eu/sumida-introduces-smd-metal-inductors-for-high-current-automotive-dc-dc-converters/",
+			"date": "15.6.2026",
+			"excerpt": "Sumida has introduced the WMT1513T150/DS family of AEC‑Q200 qualified SMD metal inductors aimed at high‑reliability automotive DC/DC converter stages. These...",
+			"category": "Inductors"
+		},
+		{
+			"title": "Knowles Expands High Q Ceramic Core Inductors",
+			"url": "https://passive-components.eu/knowles-expands-high-q-ceramic-core-inductors/",
+			"date": "11.6.2026",
+			"excerpt": "Knowles Precision Devices has expanded its ceramic core inductor portfolio to address a broader range of RF and microwave designs...",
+			"category": "Inductors"
+		},
+		{
+			"title": "Vishay Extends Automotive Ferrite Beads for High‑Current EMC Noise Filtering",
+			"url": "https://passive-components.eu/vishay-extends-automotive-ferrite-beads-for-high-current-emc-noise-filtering/",
+			"date": "10.6.2026",
+			"excerpt": "Vishay has expanded its ILHB series of Automotive Grade multilayer chip ferrite beads, adding higher current capability, smaller case sizes,...",
+			"category": "Inductors"
+		},
+		{
+			"title": "Modelithics Releases COMPLETE Library v26.2 for Keysight Genesys",
+			"url": "https://passive-components.eu/modelithics-releases-complete-library-v26-2-for-keysight-genesys/",
+			"date": "8.6.2026",
+			"excerpt": "Modelithics has released version 26.2 of its COMPLETE Library for Keysight RF Synthesis (Genesys), adding dozens of new measurement‑based models...",
+			"category": "Inductors"
+		},
+		{
+			"title": "Power Converter Dossier: Passive Components Design and Selection Guide 2026",
+			"url": "https://passive-components.eu/power-converter-dossier-passive-components-design-and-selection-guide-2026/",
+			"date": "5.6.2026",
+			"excerpt": "Passive Components Blog has released the Passive Components for Power Converters Dossier, a 63‑page, application‑driven analysis of how passive components...",
+			"category": "Inductors"
+		},
+		{
+			"title": "Bourns Offers Custom Magnetics for 3‑Phase Flying Capacitor Inverters",
+			"url": "https://passive-components.eu/bourns-offers-custom-magnetics-for-3-phase-flying-capacitor-inverters/",
+			"date": "3.6.2026",
+			"excerpt": "Bourns has released two custom magnetic components, the MAG‑3002584 inductor and the MAG‑3002585 four‑phase line choke, originally developed for Texas...",
+			"category": "Inductors"
+		},
+		{
+			"title": "Passive Components in 2026: From Invisible Commodity to Design Parameter",
+			"url": "https://passive-components.eu/passive-components-in-2026-from-invisible-commodity-to-design-parameter/",
+			"date": "15.6.2026",
+			"excerpt": "Passive components rarely make headlines, yet they quietly determine whether new designs can be built on time and at the...",
+			"category": "Inductors"
+		},
+		{
+			"title": "Bourns Introduces High Current Chip Ferrite Beads for Dense Power Rails",
+			"url": "https://passive-components.eu/bourns-introduces-high-current-chip-ferrite-beads-for-dense-power-rails/",
+			"date": "1.6.2026",
+			"excerpt": "Bourns has introduced the MH3261‑T Series high current chip ferrite beads, a 1206 (3216 metric) SMD family aimed at EMI...",
+			"category": "Inductors"
+		},
+		{
+			"title": "Vishay Releases High‑Current Radial Inductors up to 209 A",
+			"url": "https://passive-components.eu/vishay-releases-high-current-radial-inductors-up-to-209-a/",
+			"date": "29.5.2026",
+			"excerpt": "Vishay has expanded its IHXL family of radial through‑hole power inductors with four new high‑current parts targeting demanding automotive and...",
+			"category": "Inductors"
+		},
+		{
+			"title": "May 2026 Interconnect, Passives and Electromechanical Components Market Insights",
+			"url": "https://passive-components.eu/may-2026-interconnect-passives-and-electromechanical-components-market-insights/",
+			"date": "29.5.2026",
+			"excerpt": "Edgewater Research’s latest IP&E update argues that fears of a prolonged ‘hybrid for longer’ AI cycle and excessive copper exposure...",
+			"category": "Inductors"
+		},
+		{
+			"title": "Passive Components Enable Safe and Reliable ADAS Architectures",
+			"url": "https://passive-components.eu/passive-components-enable-safe-and-reliable-adas-architectures/",
+			"date": "28.5.2026",
+			"excerpt": "This paper provides a comprehensive overview of passive component requirements in ADAS architectures, illustrated with detailed camera and radar system...",
+			"category": "Inductors"
+		},
+		{
+			"title": "Current Sense Transformer Datasheet and Design‑in Guide",
+			"url": "https://passive-components.eu/current-sense-transformer-datasheet-and-design-in-guide/",
+			"date": "27.5.2026",
+			"excerpt": "This article based on prof. Sam Ben-Yaakov video summarizes how current sense transformers work, how to interpret their datasheet parameters...",
+			"category": "Inductors"
+		},
+		{
+			"title": "Designing a USB Type‑C Flyback Planar Transformer with Frenetic’s Planar Tool",
+			"url": "https://passive-components.eu/designing-a-usb-type-c-flyback-planar-transformer-with-frenetics-planar-tool/",
+			"date": "27.5.2026",
+			"excerpt": "Planar magnetics are becoming a key enabler for compact, high‑efficiency USB Type‑C power adapters and embedded power stages. This article...",
+			"category": "Inductors"
+		},
+		{
+			"title": "Stackpole Introduces 1400A Busbar Shunt Resistors",
+			"url": "https://passive-components.eu/stackpole-introduces-1400a-busbar-shunt-resistors/",
+			"date": "2.6.2026",
+			"excerpt": "Stackpole Electronics has introduced the HCC series of high current over 1400A busbar shunt resistors, targeting current measurement in battery...",
+			"category": "Resistors"
+		},
+		{
+			"title": "Stackpole Introduces High‑Voltage Low VCR Chip Resistors",
+			"url": "https://passive-components.eu/stackpole-introduces-high-voltage-low-vcr-chip-resistors/",
+			"date": "25.5.2026",
+			"excerpt": "Stackpole Electronics has introduced the RVCU series of high‑voltage chip resistors, targeting precision voltage divider, sensing, and measurement circuits operating...",
+			"category": "Resistors"
+		},
+		{
+			"title": "Industrial Passive Components Markets and Technologies 2026",
+			"url": "https://passive-components.eu/industrial-passive-components-markets-and-technologies-2026/",
+			"date": "21.5.2026",
+			"excerpt": "This post based on article by Dennis Zogbi, Paumanok Inc. published by TTI Market Eye provides an overview and mapping...",
+			"category": "Resistors"
+		},
+		{
+			"title": "Automotive Passive Components Technology Dossier",
+			"url": "https://passive-components.eu/automotive-passive-components-technology-dossier/",
+			"date": "5.6.2026",
+			"excerpt": "Passive Components Blog has released the Annual Automotive Passive Components Technology Dossier, a 36‑page comprehensive analysis about automotive passive components and...",
+			"category": "Resistors"
+		},
+		{
+			"title": "ESA SPCD 26 Registration Open",
+			"url": "https://passive-components.eu/esa-spcd-26-registration-open/",
+			"date": "15.5.2026",
+			"excerpt": "ESA SPCD organizing committee is delighted to announce that the Registration for the 6th edition of the International Symposium: Space...",
+			"category": "Resistors"
+		},
+		{
+			"title": "Stackpole Releases Automotive Wide‑Termination Resistors",
+			"url": "https://passive-components.eu/stackpole-releases-automotive-wide-termination-resistors/",
+			"date": "14.5.2026",
+			"excerpt": "Stackpole Electronics has introduced the RMWA series of automotive‑grade wide termination thick film chip resistors designed for high power density...",
+			"category": "Resistors"
+		},
+		{
+			"title": "Molecular Memristor Shows Record 145 kH Emergent Inductance",
+			"url": "https://passive-components.eu/molecular-memristor-shows-record-145-kh-emergent-inductance/",
+			"date": "12.5.2026",
+			"excerpt": "Researchers from RIKEN Pioneering Research Institute, Nagoya University, and Tohoku University demonstrated in article published by Nature that a molecular...",
+			"category": "Resistors"
+		},
+		{
+			"title": "Stackpole Expanded its AlN Thick Film Chip Resistors",
+			"url": "https://passive-components.eu/stackpole-expanded-its-aln-thick-film-chip-resistors/",
+			"date": "6.5.2026",
+			"excerpt": "Stackpole Electronics has expanded its RMAN series of thick film chip resistors, which use aluminum nitride substrates instead of conventional...",
+			"category": "Resistors"
+		},
+		{
+			"title": "Modelithics Releases COMPLETE v26.1 for Keysight ADS",
+			"url": "https://passive-components.eu/modelithics-releases-complete-v26-1-for-keysight-ads/",
+			"date": "23.4.2026",
+			"excerpt": "Modelithics has released version 26.1 of its Modelithics COMPLETE Library for Keysight Advanced Design System (ADS), extending high‑accuracy RF and...",
+			"category": "Resistors"
+		},
+		{
+			"title": "April 2026 Interconnect, Passives and Electromechanical Components Market Insights",
+			"url": "https://passive-components.eu/april-2026-interconnect-passives-and-electromechanical-components-market-insights/",
+			"date": "22.4.2026",
+			"excerpt": "Edgewater Research’s IP&E report suggests that the momentum for recovery is continuing to build and strengthen. However, the roadmaps for...",
+			"category": "Resistors"
+		},
+		{
+			"title": "ECIA March 2026 Industry Pulse Points to Best Sales Climate in Five Years",
+			"url": "https://passive-components.eu/ecia-march-2026-industry-pulse-points-to-best-sales-climate-in-five-years/",
+			"date": "13.4.2026",
+			"excerpt": "Sales confidence in the electronic components industry surged in March 2026, with the latest ECIA Industry Pulse survey reporting the...",
+			"category": "Resistors"
+		},
+		{
+			"title": "March 2026 Interconnect, Passives and Electromechanical Components Market Insights",
+			"url": "https://passive-components.eu/march-2026-interconnect-passives-and-electromechanical-components-market-insights/",
+			"date": "2.4.2026",
+			"excerpt": "Edgewater Research’s IP&E report indicates that the recovery trend continued to strengthen through the end of 1Q, with book-to-bill ratios...",
+			"category": "Resistors"
+		},
+		{
+			"title": "APEC 2026 Power Electronics Trends and Implications for Passive Components",
+			"url": "https://passive-components.eu/apec-2026-power-electronics-trends-and-implications-for-passive-components/",
+			"date": "1.4.2026",
+			"excerpt": "The Applied Power Electronics Conference (APEC) 2026 confirmed how quickly power conversion is evolving across AI data centers, EVs, industrial...",
+			"category": "Resistors"
+		},
+		{
+			"title": "Würth Elektroniks Flexible EMI Shielding Sheets Provides Quick and Easy Schielding Solution",
+			"url": "https://passive-components.eu/wurth-elektroniks-flexible-emi-shielding-sheets-provides-quick-and-easy-schielding-solution/",
+			"date": "17.6.2026",
+			"excerpt": "Würth Elektronik’s new WE‑FNCS flexible nanocrystalline sheets target exactly this need by providing a thin, easy‑to‑apply magnetic shield for enclosures...",
+			"category": "Circuit Protection Devices"
+		},
+		{
+			"title": "GDT Gas Discharge Tubes: Surge Protection Fundamentals, Selection, and Design‑in Tips",
+			"url": "https://passive-components.eu/gdt-gas-discharge-tubes-surge-protection-fundamentals-selection-and-design-in-tips/",
+			"date": "25.5.2026",
+			"excerpt": "This article summarizes how GDT (Gas Discharge Tube) work, how they differ from other surge protectors, and what design engineers...",
+			"category": "Circuit Protection Devices"
+		},
+		{
+			"title": "Murata Expands Thermistor Production Capacity at Yokaichi Plant",
+			"url": "https://passive-components.eu/murata-expands-thermistor-production-capacity-at-yokaichi-plant/",
+			"date": "21.5.2026",
+			"excerpt": "Murata Manufacturing has announced the construction of a new production building at its Yokaichi Plant in Higashiomi, Shiga, Japan, with...",
+			"category": "Circuit Protection Devices"
+		},
+		{
+			"title": "Circuit Protection Technology Annual Dossier",
+			"url": "https://passive-components.eu/circuit-protection-technology-annual-dossier/",
+			"date": "15.5.2026",
+			"excerpt": "Passive Components Blog has released the 2026 Annual Circuit Protection Technology Dossier, a 40‑page comprehensive analysis about circuit protection components and...",
+			"category": "Circuit Protection Devices"
+		},
+		{
+			"title": "SCHURTER Buys Biaodi to Boost High-Voltage Protection Portfolio",
+			"url": "https://passive-components.eu/schurter-buys-biaodi-to-boost-high-voltage-protection-portfolio/",
+			"date": "14.5.2026",
+			"excerpt": "SCHURTER has acquired a majority stake in Biaodi, a China-based developer of high-voltage circuit protection solutions, significantly expanding its capabilities...",
+			"category": "Circuit Protection Devices"
+		},
+		{
+			"title": "KYOCERA AVX Extends MLV Varistors for 48V Automotive Protection",
+			"url": "https://passive-components.eu/kyocera-avx-extends-mlv-varistors-for-48v-automotive-protection/",
+			"date": "5.5.2026",
+			"excerpt": "KYOCERA AVX has extended its TransGuard VT Series of multilayer varistors (MLVs) with new versions optimized for 48V automotive power...",
+			"category": "Circuit Protection Devices"
+		},
+		{
+			"title": "Littelfuse Expands High-Voltage TVS Diodes",
+			"url": "https://passive-components.eu/littelfuse-expands-high-voltage-tvs-diodes/",
+			"date": "29.4.2026",
+			"excerpt": "Littelfuse has expanded its TP Series with high-voltage TPSMC TPSMD and TP5.0SMDJ transient voltage suppression (TVS) diodes designed for automotive...",
+			"category": "Circuit Protection Devices"
+		},
+		{
+			"title": "SPICE Simulation of Non-Linear Resistors: Vishay’s Thermistor and PPTC Modelling Ecosystem",
+			"url": "https://passive-components.eu/spice-simulation-of-non-linear-resistors-vishays-thermistor-and-pptc-modelling-ecosystem/",
+			"date": "22.4.2026",
+			"excerpt": "This article walks through the current state of Vishay's non-linear resistor (NLR) simulation toolkit and explains what it means for...",
+			"category": "Circuit Protection Devices"
+		},
+		{
+			"title": "TDK Extends Compact ThermoFuse Varistors up to 50 kA",
+			"url": "https://passive-components.eu/tdk-extends-compact-thermofuse-varistors-up-to-50-ka/",
+			"date": "5.3.2026",
+			"excerpt": "TDK has introduced the MT40 series of ThermoFuse varistors (ordering code B72240M), a new generation of surge protection components combining...",
+			"category": "Circuit Protection Devices"
+		},
+		{
+			"title": "Bourns Extends PPTC Resettable High‑Power, High‑Voltage Protection Fuses",
+			"url": "https://passive-components.eu/bourns-extends-pptc-resettable-high-power-high-voltage-protection-fuses/",
+			"date": "2.3.2026",
+			"excerpt": "Bourns has introduced new Multifuse polymeric positive temperature coefficient (PPTC) resettable fuse models that extend its MF2603 and MF‑LSMF families...",
+			"category": "Circuit Protection Devices"
+		},
+		{
+			"title": "Bourns Unveils High Volt GDT for High‑Energy Surge Protection",
+			"url": "https://passive-components.eu/bourns-unveils-high-volt-gdt-for-high-energy-surge-protection/",
+			"date": "23.2.2026",
+			"excerpt": "Bourns has introduced the GDT225HE Series, a new family of high voltage, high energy gas discharge tubes (GDTs) designed for...",
+			"category": "Circuit Protection Devices"
+		},
+		{
+			"title": "Würth Elektronik Component Data Live in Accuris",
+			"url": "https://passive-components.eu/wurth-elektronik-component-data-live-in-accuris/",
+			"date": "19.2.2026",
+			"excerpt": "Würth Elektronik is providing live, manufacturer‑verified data for more than 22,000 electronic and electromechanical components to the Accuris Parts Intelligence...",
+			"category": "Circuit Protection Devices"
+		},
+		{
+			"title": "TDK Releases High Temp 175C Automotive NTC thermistors",
+			"url": "https://passive-components.eu/tdk-releases-high-temp-175c-automotive-ntc-thermistors/",
+			"date": "17.2.2026",
+			"excerpt": "TDK has extended its NTCSP chip thermistor family with new automotive‑grade parts qualified up to 175 °C for conductive‑glue mounting...",
+			"category": "Circuit Protection Devices"
+		},
+		{
+			"title": "0603 Automotive Chip Varistors as TVS Diode Replacements, TDK Tech Note",
+			"url": "https://passive-components.eu/0603-automotive-chip-varistors-as-tvs-diode-replacements-tdk-tech-note/",
+			"date": "21.1.2026",
+			"excerpt": "Automotive Ethernet, ADAS and telematics are pushing more high‑speed, space‑constrained interfaces into every ECU, making robust ESD protection a layout...",
+			"category": "Circuit Protection Devices"
+		},
+		{
+			"title": "YAGEO Offers Automotive MOVs for EV and AI power",
+			"url": "https://passive-components.eu/yageo-offers-automotive-movs-for-ev-and-ai-power/",
+			"date": "19.1.2026",
+			"excerpt": "The KH-AT Series from YAGEO Group is a family of automotive‑grade metal oxide varistors (MOVs) targeting surge and overvoltage protection...",
+			"category": "Circuit Protection Devices"
+		},
+		{
+			"title": "YAGEO Acquires 100% of Shares of Shibaura Electronics",
+			"url": "https://passive-components.eu/yageo-acquires-100-of-shares-of-shibaura-electronics/",
+			"date": "19.1.2026",
+			"excerpt": "YAGEO Completes Acquisition of SHIBAURA ELECTRONICS, Delists from Tokyo Stock Exchange YAGEO, a leading global provider of passive electronic components,...",
+			"category": "Circuit Protection Devices"
+		},
+		{
+			"title": "Bourns Releases 500VDC 690VAC Fuse to Protect Power Semiconductors",
+			"url": "https://passive-components.eu/bourns-releases-500vdc-690vac-fuse-to-protect-power-semiconductors/",
+			"date": "19.12.2025",
+			"excerpt": "Bourns® introduced PF-SRC50E fuse series offering a compact high-voltage protection solution that complies with UL 248-13 and IEC 60269-4 (aR...",
+			"category": "Circuit Protection Devices"
+		},
+		{
+			"title": "Littelfuse Unveils High‑Current 48V SMD Fuse for AI Data Center Protection",
+			"url": "https://passive-components.eu/littelfuse-unveils-high-current-48v-smd-fuse-for-ai-data-center-protection/",
+			"date": "9.6.2026",
+			"excerpt": "Littelfuse introduces NANO² SMD 708 Series - a compact, surface‑mount fuse family designed for high‑current 48 VDC power architectures in...",
+			"category": "Fuses"
+		},
+		{
+			"title": "Bourns Expands 1000V High‑Power Fuses for Semiconductor and Battery Protection",
+			"url": "https://passive-components.eu/bourns-expands-1000v-high-power-fuses-for-semiconductor-and-battery-protection/",
+			"date": "2.6.2026",
+			"excerpt": "Bourns has expanded its POWrFuse high‑power fuse family with three new 1000 VDC semiconductor aR Class fuse series targeting power...",
+			"category": "Fuses"
+		},
+		{
+			"title": "Littelfuse NANO2 415 SMD Fuse Wins 2025 Product of the Year",
+			"url": "https://passive-components.eu/littelfuse-nano2-415-smd-fuse-wins-2025-product-of-the-year/",
+			"date": "26.2.2026",
+			"excerpt": "Littelfuse has announced that its NANO2 415 Series surface‑mount fuse has received a 2025 Product of the Year award, highlighting...",
+			"category": "Fuses"
+		},
+		{
+			"title": "SCHURTER Introduces 2410 SMD Fuse for Robust AC/DC Protection",
+			"url": "https://passive-components.eu/schurter-introduces-2410-smd-fuse-for-robust-ac-dc-protection/",
+			"date": "17.2.2026",
+			"excerpt": "SCHURTER’s USE 2410 is a quick-acting, wire-in-air surface‑mount fuse in the compact 2410 footprint, designed for both AC and DC...",
+			"category": "Fuses"
+		},
+		{
+			"title": "Schurter Releases EKO HV Fuses up to 1000 VDC, 1100 A",
+			"url": "https://passive-components.eu/schurter-releases-eko-hv-fuses-up-to-1000-vdc-1100-a/",
+			"date": "11.2.2026",
+			"excerpt": "Schurter’s EKO series is a new family of square‑body high‑voltage fuses designed for DC and AC power systems up to...",
+			"category": "Fuses"
+		},
+		{
+			"title": "Enabling Software‑Defined Vehicle Architectures: Automotive Ethernet and Zonal Smart Power",
+			"url": "https://passive-components.eu/enabling-software-defined-vehicle-architectures-automotive-ethernet-and-zonal-smart-power/",
+			"date": "2.2.2026",
+			"excerpt": "This article, based on the Würth Elektronik and onsemi webinar “Simplifying Vehicle Development with Automotive Ethernet and Zonal Smart Switch...",
+			"category": "Fuses"
+		},
+		{
+			"title": "Vishay Releases Fast Acting Thin Film Chip Fuses",
+			"url": "https://passive-components.eu/vishay-releases-fast-acting-thin-film-chip-fuses/",
+			"date": "18.12.2025",
+			"excerpt": "Vishay Intertechnology, Inc. introduced two new series of thin film chip fuses with fast and very fast acting performance. The...",
+			"category": "Fuses"
+		},
+		{
+			"title": "SCHURTER APO Pyrofuse Brings Active Safety for High-Voltage Systems",
+			"url": "https://passive-components.eu/schurter-apo-pyrofuse-brings-active-safety-for-high-voltage-systems/",
+			"date": "17.12.2025",
+			"excerpt": "SCHURTER has introduced a new fuse technology, the Pyrofuse-APO Series, designed to meet the increasing demand for reliable protection in high-voltage...",
+			"category": "Fuses"
+		},
+		{
+			"title": "Bourns Extends Performance of its High Power PPTC Fuses",
+			"url": "https://passive-components.eu/bourns-extends-performance-of-its-high-power-pptc-fuses/",
+			"date": "1.12.2025",
+			"excerpt": "The greatly expanded Bourns MF-MSMF series high power PPTC fuses broadens hold current range up to 3.0 A and increases...",
+			"category": "Fuses"
+		},
+		{
+			"title": "Passive Components J-STD-075 Process Sensitivity Level Classification And Labeling",
+			"url": "https://passive-components.eu/passive-components-j-std-075-process-sensitivity-level-classification-and-labeling/",
+			"date": "25.9.2025",
+			"excerpt": "The paper “Protecting the Quality & Reliability of Passive (and Active) Components: the J-STD-075 PSL Classification & Labeling” was presented...",
+			"category": "Fuses"
+		},
+		{
+			"title": "Littelfuse Launches Industry-First 1000V Automotive Fuses",
+			"url": "https://passive-components.eu/littelfuse-launches-industry-first-1000v-automotive-fuses/",
+			"date": "19.9.2025",
+			"excerpt": "Littelfuse, Inc., a diversified, industrial technology manufacturing company empowering a sustainable, connected, and safer world, announced the release of the 828...",
+			"category": "Fuses"
+		},
+		{
+			"title": "SCHURTER Releases High Performance EV-Fuse",
+			"url": "https://passive-components.eu/schurter-releases-high-performance-ev-fuse/",
+			"date": "15.9.2025",
+			"excerpt": "The new SCHURTER high-performance ALO fuse series has been specially developed for high-voltage electric vehicle applications and covers voltages up...",
+			"category": "Fuses"
+		},
+		{
+			"title": "SCHURTER Releases Chip Fuse for ATEX and Precision Applications",
+			"url": "https://passive-components.eu/schurter-releases-chip-fuse-for-atex-and-precision-applications/",
+			"date": "4.8.2025",
+			"excerpt": "SCHURTER is introducing the USL 0603: a new standard in low-current fuses for safety-critical applications. In response to the growing...",
+			"category": "Fuses"
+		},
+		{
+			"title": "SCHURTER Unveils High Voltage Fuses for EV Applications",
+			"url": "https://passive-components.eu/schurter-unveils-high-voltage-fuses-for-ev-applications/",
+			"date": "30.6.2025",
+			"excerpt": "SCHURTER unveils new ADO series fuses for high-performance electric vehicle applications. SCHURTER announces the launch of its innovative ADO series...",
+			"category": "Fuses"
+		},
+		{
+			"title": "PPTC Resettable Fuses Fundaments and Applications",
+			"url": "https://passive-components.eu/pptc-resettable-fuses-fundaments-and-applications/",
+			"date": "22.6.2026",
+			"excerpt": "This article presents a practical guide to polymer PTC (PPTC) resettable fuses for board-level overcurrent protection in electronic systems. Key...",
+			"category": "Fuses"
+		},
+		{
+			"title": "Littelfuse Releases Industry-First SMD Fuse with 1500A Interrupting Rating at 277V",
+			"url": "https://passive-components.eu/littelfuse-releases-industry-first-smd-fuse-with-1500a-interrupting-rating-at-277v/",
+			"date": "14.5.2025",
+			"excerpt": "Littelfuse, Inc., an industrial technology manufacturing company empowering a sustainable, connected, and safer world, announced the launch of the Nano2® 415...",
+			"category": "Fuses"
+		},
+		{
+			"title": "Littelfuse Introduces High-Voltage 1kV SMD Fuse for Automotive Applications",
+			"url": "https://passive-components.eu/littelfuse-introduces-high-voltage-1kv-smd-fuse-for-automotive-applications/",
+			"date": "14.3.2025",
+			"excerpt": "Littelfuse, Inc., a diversified, industrial technology manufacturing company empowering a sustainable, connected, and safer world, announced the release of its...",
+			"category": "Fuses"
+		},
+		{
+			"title": "SCHURTER Expands SMT Chip Fuses up to 35A Ratings",
+			"url": "https://passive-components.eu/schurter-expands-smt-chip-fuses-up-to-35a-ratings/",
+			"date": "7.2.2025",
+			"excerpt": "SCHURTER announced extension of its SMT fuse chip range that offers now up to 35A in 1206 size. The SCHURTER...",
+			"category": "Fuses"
+		},
+		{
+			"title": "Designing 800 V DC EMC Filters: Calculation, Simulation and Measurement",
+			"url": "https://passive-components.eu/designing-800-v-dc-emc-filters-calculation-simulation-and-measurement/",
+			"date": "4.6.2026",
+			"excerpt": "",
+			"category": "Filters"
+		},
+		{
+			"title": "Qi2 Wireless Charging: Inductors, Capacitors and EMC Filters",
+			"url": "https://passive-components.eu/qi2-wireless-charging-inductors-capacitors-and-emc-filters/",
+			"date": "21.5.2026",
+			"excerpt": "Qi2 wireless power is pushing classic power‑electronics issues—EMC, magnetics and filter design—into very compact, consumer‑grade hardware. This Würth Elektronik webinar...",
+			"category": "Filters"
+		},
+		{
+			"title": "TDK Releases Ultra‑small EMI Noise Suppression Filters",
+			"url": "https://passive-components.eu/tdk-releases-ultra-small-emi-noise-suppression-filters/",
+			"date": "8.4.2026",
+			"excerpt": "TDK has introduced the MAF0603GWY series of ultra‑small noise suppression filters for audio lines in compact consumer devices such as...",
+			"category": "Filters"
+		},
+		{
+			"title": "Kyocera Offers Small SAW Filters for IoT RF Modules",
+			"url": "https://passive-components.eu/kyocera-offers-small-saw-filters-for-iot-rf-modules/",
+			"date": "23.2.2026",
+			"excerpt": "Kyocera has introduced a family of compact SAW (Surface Acoustic Wave) filters optimized for low‑power wireless communication in IoT devices...",
+			"category": "Filters"
+		},
+		{
+			"title": "Transient Suppression Guide",
+			"url": "https://passive-components.eu/transient-suppression-guide/",
+			"date": "22.5.2026",
+			"excerpt": "This presentation from Würth Elektronik provides brief overview of transient suppression guide for beginners. As the number of electronic devices connected to...",
+			"category": "Filters"
+		},
+		{
+			"title": "Overvoltage and Transient Protection for DC/DC Power Modules",
+			"url": "https://passive-components.eu/overvoltage-and-transient-protection-for-dc-dc-power-modules/",
+			"date": "13.11.2025",
+			"excerpt": "This presentation from Würth Elektronik by Timur Uludag delves into overvoltage protection for safe operation-transient protection for non-isolated DC/DC Power Modules in...",
+			"category": "Filters"
+		},
+		{
+			"title": "3-Phase EMI Filter Design, Simulation, Calculation and Test",
+			"url": "https://passive-components.eu/3-phase-emi-filter-design-simulation-calculation-and-test/",
+			"date": "22.5.2026",
+			"excerpt": "This presentation from Würth Elektronik by Andreas Nadle provides an in-depth walkthrough for designing, simulating, and validating 3-phase EMI filters based on...",
+			"category": "Filters"
+		},
+		{
+			"title": "Kyocera Launches New SAW Filter for GNSS 1.6GHz Satellite Communications",
+			"url": "https://passive-components.eu/kyocera-launches-new-saw-filter-for-gnss-1-6ghz-satellite-communications/",
+			"date": "30.9.2025",
+			"excerpt": "Kyocera Corporation is pleased to announce the release of its new Surface Acoustic Wave (SAW) Filter for Global Navigation Satellite...",
+			"category": "Filters"
+		},
+		{
+			"title": "Space Evaluation Testing on SAW Filter Based on Piezo-On-Insulator Technology",
+			"url": "https://passive-components.eu/space-evaluation-testing-on-saw-filter-based-on-piezo-on-insulator-technology/",
+			"date": "29.9.2025",
+			"excerpt": "The paper “Space Evaluation Testing on SAW Filter Based on POI Technology” was presented by Kaoutar Zeljami, ALTER Technology TÜV...",
+			"category": "Filters"
+		},
+		{
+			"title": "EMI Noise Mitigation in Automotive 48V Power Supply Systems",
+			"url": "https://passive-components.eu/emi-noise-mitigation-in-automotive-48v-power-supply-systems/",
+			"date": "24.9.2025",
+			"excerpt": "This article based on TDK blog article discus a technical perspective of EMI electromagnetic noise mitigation in automotive 48v power...",
+			"category": "Filters"
+		},
+		{
+			"title": "KYOCERA AVX Releases 600MHz Band71 Compact SAW Duplexer",
+			"url": "https://passive-components.eu/kyocera-avx-releases-600mhz-band71-compact-saw-duplexer/",
+			"date": "30.7.2025",
+			"excerpt": "KYOCERA AVX announced advanced Band71 (600 MHz) compact 1814 size SAW duplexer for next-generation smartphones and communication devices. Kyocera Corporation...",
+			"category": "Filters"
+		},
+		{
+			"title": "Murata Releases First High-Frequency XBAR Filter for Next-Gen Networks",
+			"url": "https://passive-components.eu/murata-releases-first-high-frequency-xbar-filter-for-next-gen-networks/",
+			"date": "8.7.2025",
+			"excerpt": "Murata Manufacturing Co., Ltd. has announced the mass production and commercial shipment of the world’s first*1 high-frequency filter using XBAR technology*2....",
+			"category": "Filters"
+		},
+		{
+			"title": "TDK Introduces High Current 80VDC Board-Mount EMI Filters",
+			"url": "https://passive-components.eu/tdk-introduces-high-current-80vdc-board-mount-emi-filters/",
+			"date": "2.7.2025",
+			"excerpt": "TDK introduces 20 and 40A, 80Vdc board-mount EMI Filters, reducing differential mode conducted emissions for switching power supplies with high...",
+			"category": "Filters"
+		},
+		{
+			"title": "Role of High-Q Ceramic Filters to Overcome GNSS Jamming",
+			"url": "https://passive-components.eu/role-of-high-q-ceramic-filters-to-overcome-gnss-jamming/",
+			"date": "19.6.2025",
+			"excerpt": "This article based on Knowles Precision Devices blog explains how high-Q ceramic filters help engineers to overcome GNSS jamming. Engineers are integrating...",
+			"category": "Filters"
+		},
+		{
+			"title": "Bourns Introduces 1206 Multilayer Common Mode Filters",
+			"url": "https://passive-components.eu/bourns-introduces-1206-multilayer-common-mode-filters/",
+			"date": "16.6.2025",
+			"excerpt": "Bourns Magnetics Product Line proudly announces the launch of the CCF1206 Series Multilayer Common Mode Filters, engineered to deliver reliable...",
+			"category": "Filters"
+		},
+		{
+			"title": "Bourns Releases New SMD Line Filter for Enhanced EMI Suppression",
+			"url": "https://passive-components.eu/bourns-releases-new-smd-line-filter-for-enhanced-emi-suppression/",
+			"date": "4.6.2025",
+			"excerpt": "Bourns Magnetics Product Line announces the launch of its latest innovation, the SRF1360 Series SMD Line Filters. Engineered with advanced...",
+			"category": "Filters"
+		},
+		{
+			"title": "TDK Expands 3-terminal Automotive SMD Chip Filters to 35V",
+			"url": "https://passive-components.eu/tdk-expands-3-terminal-automotive-smd-chip-filters-to-35v/",
+			"date": "4.6.2025",
+			"excerpt": "TDK offers new 3-terminal filters for automotive applications, including 35V products with 0.22µF and 10V products with 4.7µF. These filters...",
+			"category": "Filters"
+		},
+		{
+			"title": "Kyocera Introducing SAW Filters for Implantable Medical and AED Applications",
+			"url": "https://passive-components.eu/kyocera-introducing-saw-filters-for-implantable-medical-and-aed-applications/",
+			"date": "15.4.2025",
+			"excerpt": "Kyocera introduces SAW filters dedicated for use in implantable pacemakers and automated external defibrillators (AEDs). To contribute to people's daily...",
+			"category": "Filters"
+		},
+		{
+			"title": "Bourns Releases Automotive Grade Line Filters",
+			"url": "https://passive-components.eu/bourns-releases-automotive-grade-line-filters/",
+			"date": "1.4.2025",
+			"excerpt": "Bourns Magnetics Product Line is introducing the new Automotive Grade SRF9005A Line Filter Series. These filters are constructed with a...",
+			"category": "Filters"
+		},
+		{
+			"title": "KYOCERA AVX Extends Small, High-Power, Thin-Film Band-Pass Filters",
+			"url": "https://passive-components.eu/kyocera-avx-extends-small-high-power-thin-film-band-pass-filters/",
+			"date": "29.1.2025",
+			"excerpt": "KYOCERA AVX, a global leader in advanced electronic components, has introduced two new series of compact and thin-film band-pass filters....",
+			"category": "Filters"
+		},
+		{
+			"title": "EMC Challenges for High Speed Signal Immunity and Low EMI Power Delivery",
+			"url": "https://passive-components.eu/emc-challenges-for-high-speed-signal-immunity-and-low-emi-power-delivery/",
+			"date": "17.1.2025",
+			"excerpt": "This Würth Elektronik webinar presented by Lorandt Foelkel and Arnold Distel, FAE at Valence Semiconductor discusses EMC challenges in flyback...",
+			"category": "Filters"
+		},
+		{
+			"title": "Murata Introduces World First 2.2uF 100V Soft‑Term MLCC in 0805 Size for Automotive",
+			"url": "https://passive-components.eu/murata-introduces-2-2uf-100v-0805-soft-termination-mlcc-for-automotive/",
+			"date": "4.6.2026",
+			"excerpt": "Murata has introduced GCJ21BD72A225KE02, an automotive‑grade soft‑termination multilayer ceramic capacitor (MLCC) that delivers World First 2.2µF at 100 V DC...",
+			"category": "Automotive"
+		},
+		{
+			"title": "Tecate Unveils High‑temp 105C Supercapacitors for Harsh‑Environment Designs",
+			"url": "https://passive-components.eu/tecate-unveils-high-temp-105c-supercapacitors-for-harsh-environment-designs/",
+			"date": "2.6.2026",
+			"excerpt": "Tecate Group has introduced a new series of 2.3 V supercapacitor cells rated for continuous operation up to 105°C, targeting...",
+			"category": "Automotive"
+		},
+		{
+			"title": "Exxelia Extends Temperature Range of its PP Film Capacitors to 140C",
+			"url": "https://passive-components.eu/exxelia-extends-temperature-range-of-its-pp-film-capacitors-to-140c/",
+			"date": "1.6.2026",
+			"excerpt": "Exxelia’s CF-PP140 polypropylene film capacitors extend the usable temperature range of PP technology up to 140 °C while delivering high...",
+			"category": "Automotive"
+		},
+		{
+			"title": "Molex Expanded AirBorn SInergy Hybrid Connectors with 25 A Power Modules",
+			"url": "https://passive-components.eu/molex-expanded-airborn-sinergy-hybrid-connectors-with-25-a-power-modules/",
+			"date": "16.6.2026",
+			"excerpt": "Molex has expanded its AirBorn SInergy modular high-speed hybrid connector platform with new high-power modules that deliver up to 25.0...",
+			"category": "Aerospace & Defence"
+		},
+		{
+			"title": "Bourns Completes Rakon Acquisition, Enters Timing Market",
+			"url": "https://passive-components.eu/bourns-completes-rakon-acquisition-enters-timing-market/",
+			"date": "12.6.2026",
+			"excerpt": "Bourns has completed its acquisition of Rakon and is formally entering the high-performance frequency control and timing market with an...",
+			"category": "Aerospace & Defence"
+		},
+		{
+			"title": "Evans Group Unifies Four High-Rel Capacitor Leaders",
+			"url": "https://passive-components.eu/evans-group-unifies-four-high-rel-capacitor-leaders/",
+			"date": "5.6.2026",
+			"excerpt": "Evans Group has introduced a unified brand identity that brings together four established high-reliability capacitor manufacturers—Evans, Paktron, UTC, and Eulex—under...",
+			"category": "Aerospace & Defence"
+		},
+		{
+			"title": "Murata and Xona Partner on LEO Satellite Navigation for Industrial Applications",
+			"url": "https://passive-components.eu/murata-and-xona-partner-on-leo-satellite-navigation-for-industrial-applications/",
+			"date": "3.6.2026",
+			"excerpt": "Murata Manufacturing has signed a memorandum of understanding (MOU) with Xona Space Systems to jointly develop next-generation satellite positioning, navigation,...",
+			"category": "Aerospace & Defence"
+		},
+		{
+			"title": "How Long-Term Storage Causes Aging in Electronic Components",
+			"url": "https://passive-components.eu/how-long-term-storage-causes-aging-in-electronic-components/",
+			"date": "26.5.2026",
+			"excerpt": "Electronic components are often treated as static building blocks once sealed in bags and placed on warehouse shelves. In reality,...",
+			"category": "Aerospace & Defence"
+		},
+		{
+			"title": "Using Stress–Strain Curves to Diagnose Tantalum Powders for Capacitors",
+			"url": "https://passive-components.eu/using-stress-strain-curves-to-diagnose-tantalum-powders-for-capacitors/",
+			"date": "20.5.2026",
+			"excerpt": "This article based on edited report written by Vladimir Azbel, Ph.D., a semiconductor process reliability engineer consultant, explains and discuss why stress–strain curves...",
+			"category": "Aerospace & Defence"
+		},
+		{
+			"title": "Vishay Introduced Thin Film Submount Platform for Optical and RF Modules",
+			"url": "https://passive-components.eu/vishay-introduced-thin-film-submount-platform-for-optical-and-rf-modules/",
+			"date": "30.4.2026",
+			"excerpt": "Vishay has introduced a thin film submount platform aimed at high speed optical transceivers, RF modules, and advanced electronic packaging...",
+			"category": "Aerospace & Defence"
+		},
+		{
+			"title": "Exxelia Introduces SMD High‑Voltage Mica Capacitors",
+			"url": "https://passive-components.eu/exxelia-introduces-smd-high-voltage-mica-capacitors/",
+			"date": "28.4.2026",
+			"excerpt": "Exxelia’s CM‑HVLP series introduces a new generation of SMD high‑voltage reconstituted mica capacitors for designers who need both pulse handling...",
+			"category": "Aerospace & Defence"
+		},
+		{
+			"title": "YAGEO Introduces High Rel MLCCs Beyond MIL-Spec Limits",
+			"url": "https://passive-components.eu/yageo-introduces-high-rel-mlccs-beyond-mil-spec-limits/",
+			"date": "16.4.2026",
+			"excerpt": "The YAGEO KEMET HRA Z‑Level series extends high‑reliability multilayer ceramic capacitors (MLCCs) beyond traditional MIL‑SPEC capacitance limits, while aligning its...",
+			"category": "Aerospace & Defence"
+		},
+		{
+			"title": "KYOCERA AVX MIL-PRF-32535 BME NP0 MLCCs Approved to the DLA QPD",
+			"url": "https://passive-components.eu/kyocera-avx-mil-prf-32535-bme-np0-mlccs-approved-to-the-dla-qpd/",
+			"date": "16.4.2026",
+			"excerpt": "KYOCERA AVX has expanded its series of MIL‑PRF‑32535 base metal electrode (BME) NP0 multilayer ceramic capacitors (MLCCs) qualified by the...",
+			"category": "Aerospace & Defence"
+		},
+		{
+			"title": "Exxelia Releases Updated Microwave Materials and Frequency Tuning Catalogues",
+			"url": "https://passive-components.eu/exxelia-releases-updated-microwave-materials-and-frequency-tuning-catalogues/",
+			"date": "8.4.2026",
+			"excerpt": "Exxelia has released two updated catalogues dedicated to RF and microwave design, covering microwave materials and frequency tuning components for...",
+			"category": "Aerospace & Defence"
+		},
+		{
+			"title": "Molex Completes Acquisition of Smiths Interconnect, Expanding Portfolio of High-Reliability Connectivity Solutions",
+			"url": "https://passive-components.eu/molex-completes-acquisition-of-smiths-interconnect-expanding-portfolio-of-high-reliability-connectivity-solutions/",
+			"date": "1.4.2026",
+			"excerpt": "Molex, a global electronics leader and connectivity innovator, has completed the acquisition of Smiths Interconnect, a subsidiary of United Kingdom-based...",
+			"category": "Aerospace & Defence"
+		},
+		{
+			"title": "New J‑STD‑075B Standard Elevates Process Sensitivity Classification for Passive and Solid-State Components",
+			"url": "https://passive-components.eu/new-j-std-075b-standard-elevates-process-sensitivity-classification-for-passive-and-solid-state-components/",
+			"date": "27.3.2026",
+			"excerpt": "The global electronics industry has gained a significant update to one of its key assembly-process standards with the release of...",
+			"category": "Aerospace & Defence"
+		},
+		{
+			"title": "Exxelia Miniaturized 400 MHz Inverted‑F Antenna",
+			"url": "https://passive-components.eu/exxelia-miniaturized-400-mhz-inverted-f-antenna/",
+			"date": "24.3.2026",
+			"excerpt": "Exxelia, in collaboration with CEA‑Leti, has demonstrated a miniaturized inverted‑F antenna (IFA) operating around 400 MHz by loading it with...",
+			"category": "Aerospace & Defence"
+		},
+		{
+			"title": "Samsung Electro-Mechanics Enters LEO Satellite Market With High‑Reliability MLCCs",
+			"url": "https://passive-components.eu/samsung-electro-mechanics-enters-leo-satellite-market-with-high-reliability-mlccs/",
+			"date": "19.3.2026",
+			"excerpt": "Samsung Electro-Mechanics is expanding its multilayer ceramic capacitor business into the low-Earth-orbit satellite sector, supplying high‑reliability MLCCs to a leading...",
+			"category": "Aerospace & Defence"
+		},
+		{
+			"title": "YAGEO Extends Antenna Portfolio with Wi‑Fi 6E/7 and Tri‑band GNSS Solutions",
+			"url": "https://passive-components.eu/yageo-extends-antenna-portfolio-with-wi-fi-6e-7-and-tri-band-gnss-solutions/",
+			"date": "17.2.2026",
+			"excerpt": "YAGEO Group has introduced three new antennas that target high‑reliability wireless connectivity and precision positioning: a compact 2×2 MiMo Wi‑Fi...",
+			"category": "Antenna"
+		},
+		{
+			"title": "YAGEO Unveils Compact 2.4 GHz SMD Antenna",
+			"url": "https://passive-components.eu/yageo-unveils-compact-2-4-ghz-smd-antenna/",
+			"date": "6.11.2025",
+			"excerpt": "YAGEO Group Unveils SWA434D: Compact 2.4 GHz SMD Antenna Revolutionizing On-Ground Wireless Design. YAGEO Group is proud to introduce the...",
+			"category": "Antenna"
+		},
+		{
+			"title": "KYOCERA AVX Releases Antenna for Iridium Satellite IoT Applications",
+			"url": "https://passive-components.eu/kyocera-avx-releases-antenna-for-iridium-satellite-iot-applications/",
+			"date": "6.11.2025",
+			"excerpt": "KYOCERA AVX Launches a new LDS Cap Antenna for Iridium Satellite IoT Applications. Developed in collaboration with Iridium and qualified...",
+			"category": "Antenna"
+		},
+		{
+			"title": "Modelithics Welcomes CapV as a Sponsoring MVP",
+			"url": "https://passive-components.eu/modelithics-welcomes-capv-as-a-sponsoring-mvp/",
+			"date": "7.10.2025",
+			"excerpt": "Modelithics, the industry leader in providing innovative and high-quality custom measurement and modeling services for RF, microwave, and millimeter-wave electronic...",
+			"category": "Antenna"
+		},
+		{
+			"title": "Textile-Based Antennas",
+			"url": "https://passive-components.eu/textile-based-antennas/",
+			"date": "29.9.2025",
+			"excerpt": "The paper “Textile-Based Antennas” was presented by Tomas Blecha, University of West Bohemia, Pilsen, Czech Republic at the 5th PCNS Passive Components...",
+			"category": "Antenna"
+		},
+		{
+			"title": "Optimization of IoT for GEO NB-NTN Hybrid Connectivity",
+			"url": "https://passive-components.eu/optimization-of-iot-for-geo-nb-ntn-hybrid-connectivity/",
+			"date": "19.6.2025",
+			"excerpt": "KYOCERA AVX has released white paper Optimizing IoT Devices for GEO NB-NTN Hybrid Connectivity written in collaboration with Telefonica, Viasat,...",
+			"category": "Antenna"
+		},
+		{
+			"title": "KYOCERA AVX Presents Chip Antennas for SiP Market",
+			"url": "https://passive-components.eu/kyocera-avx-presents-chip-antennas-for-sip-market/",
+			"date": "16.6.2025",
+			"excerpt": "KYOCERA AVX, a global leader in advanced electronic components, offers a range of exceptionally compact and high-performance internal, on-board, multiprotocol,...",
+			"category": "Antenna"
+		},
+		{
+			"title": "KYOCERA AVX Antennas Joins the STM Partner Program",
+			"url": "https://passive-components.eu/kyocera-avx-antennas-joins-the-stm-partner-program/",
+			"date": "11.3.2025",
+			"excerpt": "The new chapter in collaboration combines KYOCERA AVX expertise in antenna products and services with STMicroelectronics expertise in semiconductors to...",
+			"category": "Antenna"
+		},
+		{
+			"title": "KYOCERA AVX Releases Award-Winning Ultra-Wideband LDS Tulip Antenna",
+			"url": "https://passive-components.eu/kyocera-avx-releases-award-winning-ultra-wideband-lds-tulip-antenna/",
+			"date": "10.10.2024",
+			"excerpt": "KYOCERA AVX, a leading global manufacturer of advanced electronic components engineered to accelerate technological innovation and build a better future,...",
+			"category": "Antenna"
+		},
+		{
+			"title": "KYOCERA AVX Releases Slim GPS Ceramic Patch Antenna",
+			"url": "https://passive-components.eu/kyocerea-avx-releases-slim-gps-ceramic-patch-antenna/",
+			"date": "24.9.2024",
+			"excerpt": "KYOCERA AVX 9003160 slim GPS Ceramic Patch Antenna delivers on the key needs of device designers for higher functionality with...",
+			"category": "Antenna"
+		},
+		{
+			"title": "Murata Releases Innovative 0603 Radisol to Suppress Antennas Interference",
+			"url": "https://passive-components.eu/murata-releases-innovative-0603-radisol-component-to-suppress-interference-between-nearby-antennas/",
+			"date": "5.8.2024",
+			"excerpt": "Murata Manufacturing Co. Ltd announces the launch of Radisol – an innovative product designed to suppress interference between nearby antennas...",
+			"category": "Antenna"
+		},
+		{
+			"title": "Small Ceramic Chip Antennas Enable IoT Satellite Connectivity",
+			"url": "https://passive-components.eu/small-ceramic-chip-antennas-enable-iot-satellite-connectivity/",
+			"date": "16.4.2024",
+			"excerpt": "This article written by Maria El Bacha & Carmen Redondo  KYOCERA-AVX Corporation and Brett Collis, EchoStar Mobile presents a case study...",
+			"category": "Antenna"
+		},
+		{
+			"title": "KYOCERA AVX Unveils New Series of Low-Profile Automotive Antennas",
+			"url": "https://passive-components.eu/kyocera-avx-unveils-new-series-of-low-profile-automotive-antennas/",
+			"date": "10.1.2024",
+			"excerpt": "KYOCERA AVX introduces new A-Series with industry’s widest range of AEC-Q200-compliant antennas for automotive applications, including wireless battery management systems,...",
+			"category": "Antenna"
+		},
+		{
+			"title": "Electromagnetic Simulation in Mobile Antenna Design",
+			"url": "https://passive-components.eu/electromagnetic-simulation-in-mobile-antenna-design/",
+			"date": "22.12.2023",
+			"excerpt": "This article written by Xiaoyan Yuan, KYOCERA-AVX Corporation discusses the case for electromagnetic simulation in mobile antenna design. As the frequency, bandwidth,...",
+			"category": "Antenna"
+		},
+		{
+			"title": "World’s First Murata Parasitic Element Coupling Device Boost Wi-Fi Antenna Efficiency",
+			"url": "https://passive-components.eu/worlds-first-murata-parasitic-element-coupling-device-boost-wi-fi-antenna-efficiency/",
+			"date": "7.12.2023",
+			"excerpt": "Murata has announced its new Parasitic Element Coupling Device. This state-of-the-art solution improves antenna efficiency by magnetically coupling the parasitic...",
+			"category": "Antenna"
+		},
+		{
+			"title": "Laser Direct Structuring Technology Benefits for RF Components Applications",
+			"url": "https://passive-components.eu/laser-direct-structuring-technology-benefits-for-rf-components-applications/",
+			"date": "7.12.2023",
+			"excerpt": "This article written by Youssef Laamimat, KYOCERA-AVX Corporation describes Laser Direct Structuring (LDS) technology as a revolutionary approach offering a streamlined and...",
+			"category": "Antenna"
+		},
+		{
+			"title": "KYOCERA AVX Antenna Simulation Models are now Available in Ansys Simulation Software",
+			"url": "https://passive-components.eu/kyocera-avx-antenna-simulation-models-are-now-available-in-ansys-simulation-software/",
+			"date": "28.3.2023",
+			"excerpt": "The latest release of the globally renowned software, Ansys 2023 R1, features direct links to simulation models for 13 of...",
+			"category": "Antenna"
+		},
+		{
+			"title": "Würth Elektronik Expands Range of Small MCA Dual-Band Chip Antennas",
+			"url": "https://passive-components.eu/wurth-elektronik-expands-range-of-small-mca-dual-band-chip-antennas/",
+			"date": "7.7.2022",
+			"excerpt": "Würth Elektronik is now launching an additional MCA multilayer chip antenna for the miniaturization of radio applications. Measuring just 40...",
+			"category": "Antenna"
+		},
+		{
+			"title": "Nvidia Vera Rubin: Why One AI Rack Needs So Many More MLCC Capacitors",
+			"url": "https://passive-components.eu/nvidia-vera-rubin-why-one-ai-rack-needs-so-many-more-mlcc-capacitors/",
+			"date": "15.6.2026",
+			"excerpt": "Nvidia’s Vera Rubin VR200 NVL72 AI rack uses an estimated 182% more MLCC value than its GB300‑based predecessor, turning multilayer...",
+			"category": "Market & Supply Chain"
+		},
+		{
+			"title": "ECIA Industry Pulse April 2026: Sentiment Cools but Stays Strong",
+			"url": "https://passive-components.eu/ecia-industry-pulse-april-2026-sentiment-cools-but-stays-strong/",
+			"date": "21.5.2026",
+			"excerpt": "Overall ECIA’s April 2026 Industry Pulse shows sales sentiment in the electronic components market remaining robust compared to 2025, but...",
+			"category": "Market & Supply Chain"
+		},
+		{
+			"title": "Samsung Electro-Mechanics Signs 1.5T KRW Silicon Capacitor AI Contract",
+			"url": "https://passive-components.eu/samsung-electro-mechanics-signs-1-5t-krw-silicon-capacitor-ai-contract/",
+			"date": "15.6.2026",
+			"excerpt": "Samsung Electro-Mechanics has signed a large-scale silicon capacitor supply contract worth approximately 1.5 trillion KRW with a global large-scale technology...",
+			"category": "Market & Supply Chain"
+		},
+		{
+			"title": "European Components Distribution Shows Strong Q1 2026 Growth Amid Geopolitical Uncertainty",
+			"url": "https://passive-components.eu/european-components-distribution-shows-strong-q1-2026-growth-amid-geopolitical-uncertainty/",
+			"date": "7.5.2026",
+			"excerpt": "European electronic components distribution grew 16.9 percent to €4.63 billion in the first quarter of 2026, marking a solid return...",
+			"category": "Market & Supply Chain"
+		},
+		{
+			"title": "DigiKey Adds 31k New In‑Stock Parts in Q1 2026",
+			"url": "https://passive-components.eu/digikey-adds-31k-new-in-stock-parts-in-q1-2026/",
+			"date": "29.4.2026",
+			"excerpt": "DigiKey significantly expanded its in‑stock portfolio in Q1 2026, adding tens of thousands of new stocking parts and nearly one...",
+			"category": "Market & Supply Chain"
+		},
+		{
+			"title": "Middle East Conflict: The Potential Impact to Passive Components",
+			"url": "https://passive-components.eu/middle-east-conflict-the-potential-impact-to-passive-components/",
+			"date": "23.3.2026",
+			"excerpt": "This article, based on multiple sources, study how the current Middle East conflict, through its impact on oil, petrochemicals and...",
+			"category": "Market Insights"
+		},
+		{
+			"title": "Inductor Technology Dossier",
+			"url": "https://passive-components.eu/inductor-technology-dossier/",
+			"date": "19.3.2026",
+			"excerpt": "Passive Components Blog has released the 2026 Annual Inductor, Transformer & Magnetics Technology Dossier, a 28‑page comprehensive analysis of how inductors...",
+			"category": "Market Insights"
+		},
+		{
+			"title": "February 2026 Interconnect, Passives and Electromechanical Components Market Insights",
+			"url": "https://passive-components.eu/february-2026-interconnect-passives-and-electromechanical-components-market-insights/",
+			"date": "9.3.2026",
+			"excerpt": "Edgewater researchers report IP&E demand and pricing are strengthening on the back of AI and industrial recovery, with tight passive...",
+			"category": "Market Insights"
+		},
+		{
+			"title": "ECIA February 2026 Industry Pulse Signals Strong Component Growth",
+			"url": "https://passive-components.eu/ecia-february-2026-industry-pulse-signals-strong-component-growth/",
+			"date": "6.3.2026",
+			"excerpt": "ECIA’s latest Industry Pulse survey for February 2026 confirms that sales optimism continues to climb across every major sector of...",
+			"category": "Market Insights"
+		},
+		{
+			"title": "Inductors and Ferrite Beads Price Hikes",
+			"url": "https://passive-components.eu/inductors-and-ferrite-beads-price-hikes/",
+			"date": "8.4.2026",
+			"excerpt": "The passive components market has entered a new price‑hike cycle in 2026 that impacts also magnetics, with inductors and ferrite...",
+			"category": "Market Insights"
+		},
+		{
+			"title": "Resistor Technology Dossier",
+			"url": "https://passive-components.eu/resistor-technology-dossier/",
+			"date": "4.3.2026",
+			"excerpt": "Passive Components Blog has released the 2026 Annual Resistor Dossier, a 69‑page deep dive into how resistors moved from low‑margin...",
+			"category": "Market Insights"
+		},
+		{
+			"title": "Imec Presents High-density MIMCAP RF interposer for III-V chiplets",
+			"url": "https://passive-components.eu/imec-presents-high-density-mimcap-rf-interposer-for-iii-v-chiplets/",
+			"date": "15.6.2026",
+			"excerpt": "Imec has extended its 300 mm RF silicon interposer platform with high‑density metal–insulator–metal capacitors (MIMCAPs), a scalable passive modeling framework and...",
+			"category": "New Technologies"
+		},
+		{
+			"title": "Researchers Propose Next‑Gen Compact Memory Using Ultra-thin Ferroelectric Capacitors",
+			"url": "https://passive-components.eu/researchers-propose-next-gen-compact-memory-using-ultra-thin-ferroelectric-capacitors/",
+			"date": "11.5.2026",
+			"excerpt": "Researchers from Japanese research institutes investigated how to make ferroelectric memory components much thinner without losing performance. Their work, published...",
+			"category": "New Technologies"
+		},
+		{
+			"title": "Electrocaloric Multilayer Capacitors: Towards Quiet, Solid‑State Cooling Around Room Temperature",
+			"url": "https://passive-components.eu/electrocaloric-multilayer-capacitors-towards-quiet-solid-state-cooling-around-room-temperature/",
+			"date": "7.5.2026",
+			"excerpt": "Researchers from University of Cambridge, UK, led by M. Romero and colleagues, have reported a new class of electrocaloric multilayer...",
+			"category": "New Technologies"
+		},
+		{
+			"title": "High-Crystallinity Nanocrystalline Composites for MHz Chip Inductors",
+			"url": "https://passive-components.eu/high-crystallinity-nanocrystalline-composites-for-mhz-chip-inductors/",
+			"date": "7.5.2026",
+			"excerpt": "Researchers from Northeastern University, Shenyang and the State Key Laboratory of Digital Steel and Hengdian Group DMEGC Magnetics Co., China...",
+			"category": "New Technologies"
+		},
+		{
+			"title": "Nanocrystalline Cores for Low‑Loss MHz Chip Inductors",
+			"url": "https://passive-components.eu/nanocrystalline-cores-for-low-loss-mhz-chip-inductors/",
+			"date": "25.3.2026",
+			"excerpt": "Researchers from State Key Laboratory of Digital Steel, Northeastern University, Shenyang, China developed high‑crystallinity Fe‑based nanocrystalline soft magnetic composites that...",
+			"category": "New Technologies"
+		},
+		{
+			"title": "Researchers Presented Lignin-based Electrolyte for 4V Supercapacitors with Low Self‑Discharge",
+			"url": "https://passive-components.eu/researchers-presented-lignin-based-electrolyte-for-4v-supercapacitors-with-low-self-discharge/",
+			"date": "19.3.2026",
+			"excerpt": "Researchers from Nanjing University in China published an article about upgrade of EDLC supercapacitors by a lignin-derived hierarchical porous carbon...",
+			"category": "New Technologies"
+		},
+		{
+			"title": "Penn State Demonstrated Polymer Alloy Capacitor Film with 4× Energy Density up to 250C",
+			"url": "https://passive-components.eu/penn-state-demonstrated-polymer-alloy-capacitor-film-with-4x-energy-density-up-to-250c/",
+			"date": "19.2.2026",
+			"excerpt": "A Penn State–led team has developed a new polymer “alloy” capacitor film that stores up to four times more energy...",
+			"category": "New Technologies"
+		},
+		{
+			"title": "TU Wien Sets New Benchmark in Superconducting Vacuum Gap nanoCapacitors",
+			"url": "https://passive-components.eu/tu-wien-sets-new-benchmark-in-superconducting-vacuum-gap-nanocapacitors/",
+			"date": "16.2.2026",
+			"excerpt": "Researchers at TU Wien have developed a high‑aspect‑ratio superconducting vacuum gap capacitor NEMS structure with plate distances down to just...",
+			"category": "New Technologies"
+		},
+		{
+			"title": "Researchers Demonstrated 32nm Aluminum Vacuum Gap Capacitor",
+			"url": "https://passive-components.eu/researchers-demonstrated-32nm-aluminum-vacuum-gap-capacitor/",
+			"date": "20.1.2026",
+			"excerpt": "Nanomechanical systems developed at TU Wien have achieved unprecedented precision and miniaturization, paving the way for their integration into ultra-high-resolution...",
+			"category": "New Technologies"
+		},
+		{
+			"title": "Researchers Demonstrated 30nm Ferroelectric Capacitor for Compact Memory",
+			"url": "https://passive-components.eu/researchers-demonstrated-30nm-ferroelectric-capacitor-for-compact-memory/",
+			"date": "2.1.2026",
+			"excerpt": "Researchers from the Institute of Science Tokyo demonstrated ultrathin ferroelectric capacitor stack with a total thickness of only 30 nm...",
+			"category": "New Technologies"
+		},
+		{
+			"title": "Reliability Improvement in BaTiO3 MLCCs Using Ni–Sn and Ni–In Alloy Electrodes",
+			"url": "https://passive-components.eu/reliability-improvement-in-batio3-mlccs-using-ni-sn-and-ni-in-alloy-electrodes/",
+			"date": "19.12.2025",
+			"excerpt": "According to article by Wu et al. from YAGEO researcher team in the International Journal of Applied Ceramic Technology, alloying nickel...",
+			"category": "New Technologies"
+		},
+		{
+			"title": "Researchers Present Novel Graphene-Based Material for Supercapacitors",
+			"url": "https://passive-components.eu/researchers-present-novel-graphene-based-material-for-supercapacitors/",
+			"date": "3.12.2025",
+			"excerpt": "In a study published in Nature Communications, researchers from Monash University have introduced a new graphene-based material that promises to...",
+			"category": "New Technologies"
+		},
+		{
+			"title": "Lightweight Model for MLCC Appearance Defect Detection",
+			"url": "https://passive-components.eu/lightweight-model-for-mlcc-appearance-defect-detection/",
+			"date": "3.11.2025",
+			"excerpt": "Researchers from China and Japan proposed a \"lightweight and multi-scale model for MLCC appearance defect detection\" in their work published...",
+			"category": "New Technologies"
+		},
+		{
+			"title": "High Energy Density Polymer Film Capacitors via Molecular and Interfacial Design",
+			"url": "https://passive-components.eu/high-energy-density-polymer-film-capacitors-via-molecular-and-interfacial-design/",
+			"date": "15.10.2025",
+			"excerpt": "Team of researchers from China and Spain published article Breaking the energy density barrier in polymer film capacitors via molecular...",
+			"category": "New Technologies"
+		},
+		{
+			"title": "Enhancing Energy Density in Nanocomposite Dielectric Capacitors",
+			"url": "https://passive-components.eu/enhancing-energy-density-in-nanocomposite-dielectric-capacitors/",
+			"date": "9.10.2025",
+			"excerpt": "Bartosz Gackowski at col from SDU University in Denmark published their paper \"Enhancing energy density in thin-film nanocomposite dielectric capacitors...",
+			"category": "New Technologies"
+		},
+		{
+			"title": "Researchers Proposed Enhanced Energy Storage MLCC",
+			"url": "https://passive-components.eu/researchers-proposed-enhanced-energy-storage-mlcc/",
+			"date": "1.10.2025",
+			"excerpt": "This post presents the findings from the research article titled “Enhanced energy-storage in lead-free multilayer capacitors via entropy-assisted polymorphic domain...",
+			"category": "New Technologies"
+		},
+		{
+			"title": "Development of Nitrogen-Doped Graphene Supercapacitors",
+			"url": "https://passive-components.eu/development-of-nitrogen-doped-graphene-supercapacitors/",
+			"date": "30.9.2025",
+			"excerpt": "The paper “Development and Prototyping of Nitrogen-Doped Graphene Supercapacitors ” was presented by Veronika Šedajová, Regional Centre of Advanced Technologies and...",
+			"category": "New Technologies"
+		},
+		{
+			"title": "Researchers Developed Reduced Graphene Oxide (rGO) High Energy Density Graphene Supercapacitors",
+			"url": "https://passive-components.eu/researchers-developed-reduced-graphene-oxide-rgo-high-energy-density-graphene-supercapacitors/",
+			"date": "18.9.2025",
+			"excerpt": "Researchers from Monash University, Australia developed and demonstrated novel reduced graphene oxide (rGO) graphene based material for high energy and...",
+			"category": "New Technologies"
+		},
+		{
+			"title": "Kyocera Developed Multilayer Ceramic Core Substrate for AI Packages",
+			"url": "https://passive-components.eu/kyocera-developed-multilayer-ceramic-core-substrate-for-ai-packages/",
+			"date": "30.4.2026",
+			"excerpt": "Kyocera has introduced a multilayer ceramic core substrate aimed at advanced AI semiconductor packages such as high‑end xPUs and switch...",
+			"category": "New Materials & Supply"
+		},
+		{
+			"title": "Peak Nano to Develop Fusion Grade High Energy Film Capacitors",
+			"url": "https://passive-components.eu/peak-nano-to-develop-fusion-grade-high-energy-film-capacitors/",
+			"date": "11.3.2026",
+			"excerpt": "Peak Nano and E&P Technologies have announced a partnership to co‑develop fusion‑grade, high‑energy‑density film capacitors based on Peak Nano’s NanoPlex...",
+			"category": "New Materials & Supply"
+		},
+		{
+			"title": "Paumanok Unveils Aluminum Capacitor Foils World Markets Study 2025-2030",
+			"url": "https://passive-components.eu/paumanok-unveils-aluminum-capacitor-foils-world-markets-study-2025-2030/",
+			"date": "6.11.2025",
+			"excerpt": "Paumanok Publications Releases Definitive Study on Capacitor Foils: World Markets, Technologies & Opportunities 2025-2030. Paumanok Publications, Inc. announces the release of...",
+			"category": "New Materials & Supply"
+		},
+		{
+			"title": "Murata and QuantumScape Joint Development for Solid Batteries Ceramic Separators",
+			"url": "https://passive-components.eu/murata-and-quantumscape-joint-development-for-solid-batteries-ceramic-separators/",
+			"date": "14.10.2025",
+			"excerpt": "Murata and QuantumScape have entered into a joint development agreement aimed at high-volume production of ceramic separators for QuantumScape’s solid-state...",
+			"category": "New Materials & Supply"
+		},
+		{
+			"title": "Researchers Demonstrated High Energy Ceramic Capacitors Stable in Wide Temperature Range",
+			"url": "https://passive-components.eu/researchers-demonstrated-high-energy-ceramic-capacitors-stable-in-wide-temperature-range/",
+			"date": "2.10.2025",
+			"excerpt": "Researchers from Shanghai, China published paper in Nature Communications Journal that explores a high-entropy engineering strategy applied to relaxor ferroelectric...",
+			"category": "New Materials & Supply"
+		},
+		{
+			"title": "Improving SMPS Performance with Thermal Interface Material",
+			"url": "https://passive-components.eu/improving-smps-performance-with-thermal-interface-material/",
+			"date": "30.9.2025",
+			"excerpt": "The paper “Improving Switched-Mode Power Supplies Performance with Modified Thermal Interface Material” was presented by Víctor Solera, Department of Electronic...",
+			"category": "New Materials & Supply"
+		},
+		{
+			"title": "Flaked Tantalum Powders: High Capacitance Powders for High Reliable Tantalum Capacitors",
+			"url": "https://passive-components.eu/flaked-tantalum-powders-high-capacitance-powders-for-high-reliable-tantalum-capacitors/",
+			"date": "29.9.2025",
+			"excerpt": "The paper “Flaked Tantalum Powders: High Capacitance Powders for High Reliable Tantalum Capacitors” was presented by Gordon Smith, Global Advanced Metals,...",
+			"category": "New Materials & Supply"
+		},
+		{
+			"title": "Life Cycle Assessment of a Graphene-Based Supercapacitor",
+			"url": "https://passive-components.eu/life-cycle-assessment-of-a-graphene-based-supercapacitor/",
+			"date": "26.9.2025",
+			"excerpt": "The paper “Life Cycle Assessment of a Graphene-Based Supercapacitor: Environmental Hotspots and End-of-Life Strategies for Sustainable Energy Storage” was presented...",
+			"category": "New Materials & Supply"
+		},
+		{
+			"title": "Advancements in Flexible End Terminations for Robust MLCCs in EV",
+			"url": "https://passive-components.eu/advancements-in-flexible-end-terminations-for-robust-mlccs-in-ev/",
+			"date": "26.9.2025",
+			"excerpt": "The paper “Advancements in Flexible End Terminations for High-Reliability Passive Components in Electrified Vehicle” was presented by Dean Buzby, Heraeus...",
+			"category": "New Materials & Supply"
+		},
+		{
+			"title": "Johnson’s Approximation Modeling Improves Understanding of MLCC Dielectrics Voltage Dependence",
+			"url": "https://passive-components.eu/johnsons-approximation-modeling-improves-understanding-of-mlcc-dielectrics-voltage-dependence/",
+			"date": "26.6.2024",
+			"excerpt": "Application of Johnson’s approximation in finite element modeling for electric field-dependent materials give improved understanding of voltage dependence and provide...",
+			"category": "New Materials & Supply"
+		},
+		{
+			"title": "Murata Utilizes its Ceramic Capacitor Expertise to Produce Precious Metal Free Gas Catalyst Material",
+			"url": "https://passive-components.eu/murata-utilize-its-ceramic-capacitor-expertise-to-produce-precious-metal-free-gas-catalyst-material/",
+			"date": "15.4.2024",
+			"excerpt": "Murata is pleased to announce a revolutionary ceramic catalyst material designed to reduce the impact of industrial gas exhaust systems....",
+			"category": "New Materials & Supply"
+		},
+		{
+			"title": "Heraeus Electronics Expands Electronic Inks Portfolio Through Acquisition of PriElex",
+			"url": "https://passive-components.eu/heraeus-electronics-expands-electronic-inks-portfolio-through-acquisition-of-prielex/",
+			"date": "8.3.2024",
+			"excerpt": "Heraeus Electronics has announced the successful acquisition of the PriElex electronics inks business line from Kayaku Advanced Materials. The acquisition,...",
+			"category": "New Materials & Supply"
+		},
+		{
+			"title": "Advancing Electrochemical Properties of Metal Oxides for Supercapacitor Electrodes",
+			"url": "https://passive-components.eu/advancing-electrochemical-properties-of-metal-oxides-for-supercapacitor-electrodes/",
+			"date": "5.2.2024",
+			"excerpt": "Oxygen vacancies engineering is widely acknowledged as a potent strategy for augmenting the electrochemical performance of metal oxides in the realm...",
+			"category": "New Materials & Supply"
+		},
+		{
+			"title": "Understanding The Power of Magnetic Fusion",
+			"url": "https://passive-components.eu/opening-up-a-new-energy-source-with-magnetic-fusion/",
+			"date": "21.11.2023",
+			"excerpt": "This article introduces magnetic fusion technology based on Heraeus Conamic article that supplied the qualified raw material for the initial...",
+			"category": "New Materials & Supply"
+		},
+		{
+			"title": "Researchers Developed 2D High‑κ Perovskites Dielectric Nanosheets for High Energy Density of Capacitors",
+			"url": "https://passive-components.eu/researchers-developed-2d-high%e2%80%91%ce%ba-perovskites-dielectric-nanosheets-for-high-energy-density-of-capacitors/",
+			"date": "10.10.2023",
+			"excerpt": "A research group led by Professor Minoru Osada at the Institute for Materials and Systems for Sustainability (IMaSS), Nagoya University...",
+			"category": "New Materials & Supply"
+		},
+		{
+			"title": "Heraeus Unveils Self-Regulating Heater Inks a Breakthrough in Heater Technology",
+			"url": "https://passive-components.eu/heraeus-unveils-self-regulating-heater-inks-a-breakthrough-in-heater-technology/",
+			"date": "10.8.2023",
+			"excerpt": "Heraeus Electronics introduces the PTC4900 Series Self-Regulating Heater Inks, a breakthrough in heater technology. These customizable PTC (Positive Thermal Coefficient)...",
+			"category": "New Materials & Supply"
+		},
+		{
+			"title": "Borealis Launches Stelora™ High-Heat-Resistant Capacitor Polymer Film Dielectric",
+			"url": "https://passive-components.eu/borealis-launches-stelora-high-heat-resistant-capacitor-polymer-film-dielectric/",
+			"date": "3.5.2023",
+			"excerpt": "Borealis, one of the world’s leading providers of advanced and circular polyolefin solutions and a European market leader in base...",
+			"category": "New Materials & Supply"
+		},
+		{
+			"title": "Magnetics Announced New XFlux Ultra Magnetic Powder Cores",
+			"url": "https://passive-components.eu/magnetics-announced-new-xflux-ultra-magnetic-powder-cores/",
+			"date": "3.5.2023",
+			"excerpt": "Magnetics, a global supplier of soft magnetic components and materials to the electronics industry, is proud to announce the release of...",
+			"category": "New Materials & Supply"
+		},
+		{
+			"title": "Researchers to Translate Nitrogen-Doped Graphene into High Energy Supercapacitor Prototypes",
+			"url": "https://passive-components.eu/researchers-to-translate-nitrogen-doped-graphene-into-high-energy-supercapacitor-prototypes/",
+			"date": "31.10.2022",
+			"excerpt": "From laboratory to prototype. Research in the field of energy storage supported by a prestigious European grant. Within a few...",
+			"category": "New Materials & Supply"
+		},
+		{
+			"title": "Ferrorestorable Polarization Investigation May Yield High Energy Storage Ceramic Capacitors",
+			"url": "https://passive-components.eu/ferrorestorable-polarization-investigation-may-yield-high-energy-storage-ceramic-capacitors/",
+			"date": "10.10.2022",
+			"excerpt": "Team of researchers from Kumamoto University in Japan and KYOCERA Corporation’s Monozukuri R&D Laboratory introduced its research in ferrorestorable polarization...",
+			"category": "New Materials & Supply"
+		},
+		{
+			"title": "Vishay Releases 2-Way Wilkinson Divider / Combiner for 15–20 GHz RF Front Ends",
+			"url": "https://passive-components.eu/vishay-releases-2-way-wilkinson-divider-combiner-for-15-20-ghz-rf-front-ends/",
+			"date": "13.4.2026",
+			"excerpt": "The Vishay Sfernice WLKN‑000 is a 2‑way Wilkinson power divider / combiner designed for 15 GHz to 20 GHz RF...",
+			"category": "RF & Microwave"
+		},
+		{
+			"title": "Modelithics Expands COMPLETE+3D Library for Ansys HFSS",
+			"url": "https://passive-components.eu/modelithics-expands-complete3d-library-for-ansys-hfss/",
+			"date": "27.3.2026",
+			"excerpt": "Modelithics has announced a major update of the Modelithics COMPLETE+3D Library v26.0. for Ansys HFSS simulation software, which is now...",
+			"category": "RF & Microwave"
+		},
+		{
+			"title": "Samtec ANSI/VITA 90 Connectors: Rugged Small Form Factor Standard",
+			"url": "https://passive-components.eu/samtec-ansi-vita-90-connectors-rugged-small-form-factor-standard/",
+			"date": "5.3.2026",
+			"excerpt": "The ratification of the ANSI/VITA 90 (VNX+) family of standards marks an important step for compact, rugged embedded systems that...",
+			"category": "RF & Microwave"
+		},
+		{
+			"title": "KYOCERA AVX Extends Ultra‑Broadband RF Capacitor Series",
+			"url": "https://passive-components.eu/kyocera-avx-extends-ultra-broadband-rf-capacitor-series/",
+			"date": "24.2.2026",
+			"excerpt": "Kyocera AVX has extended its 550/560 Series ultra‑broadband RF capacitors (UBC) with four new components aimed at high‑speed, high‑bandwidth optical...",
+			"category": "RF & Microwave"
+		},
+		{
+			"title": "Bourns Extends Multilayer Chip Inductors Offer for RF and Wireless Designs",
+			"url": "https://passive-components.eu/bourns-extends-multilayer-chip-inductors-offer-for-rf-and-wireless-designs/",
+			"date": "20.2.2026",
+			"excerpt": "Bourns has released four new multilayer chip inductor series – CE0603G, CE0603M, CE1005Q and CE1608Q – aimed at compact RF...",
+			"category": "RF & Microwave"
+		},
+		{
+			"title": "Bourns Releases High‑Q Air Coil Inductors for RF Aplications",
+			"url": "https://passive-components.eu/bourns-releases-high-q-air-coil-inductors-for-rf-aplications/",
+			"date": "29.1.2026",
+			"excerpt": "Bourns has introduced a new family of high‑Q air coil inductors covering multiple package footprints and inductance ranges for RF...",
+			"category": "RF & Microwave"
+		},
+		{
+			"title": "Modelithics Releases Component Model Library for SIMULIA CST Studio Suite",
+			"url": "https://passive-components.eu/modelithics-releases-component-model-library-for-simulia-cst-studio-suite/",
+			"date": "27.1.2026",
+			"excerpt": "Modelithics has released a dedicated component model library for SIMULIA CST Studio Suite, bringing its well‑known RF and microwave component...",
+			"category": "RF & Microwave"
+		},
+		{
+			"title": "Modelithics COMPLETE Library v25.8 for Keysight ADS",
+			"url": "https://passive-components.eu/modelithics-complete-library-v25-8-for-keysight-ads/",
+			"date": "7.1.2026",
+			"excerpt": "The latest v25.8 release of the Modelithics COMPLETE Library for Keysight ADS brings new scalable models for RF and microwave...",
+			"category": "RF & Microwave"
+		},
+		{
+			"title": "Common Mode Chokes Selection for RF Circuits in Next-Generation Communication Systems",
+			"url": "https://passive-components.eu/common-mode-chokes-selection-for-dc-and-data-signal-lines/",
+			"date": "30.10.2025",
+			"excerpt": "This presentation from Würth Elektronik by Ashiro Chen and Iván Arias provides characterization and selection of common mode choke parameters for DC...",
+			"category": "RF & Microwave"
+		},
+		{
+			"title": "High-Frequency Ceramic Capacitor Performance of Novel Embedded Electrode Design",
+			"url": "https://passive-components.eu/high-frequency-ceramic-capacitor-performance-of-novel-embedded-electrode-design/",
+			"date": "23.9.2025",
+			"excerpt": "The paper \"High-Frequency Capacitor Performance of Novel Embedded Electrode Design\" was presented by Mark Simpson, Quantic Eulex, Monterey Park, CA, USA, at the 5th PCNS Passive Components Networking....",
+			"category": "RF & Microwave"
+		},
+		{
+			"title": "YAGEO Offers High-Performance Diplexers for Dual-Band Wi-Fi 6E/7Integration",
+			"url": "https://passive-components.eu/yageo-offers-high-performance-diplexers-for-dual-band-wi-fi-6e-7integration/",
+			"date": "30.7.2025",
+			"excerpt": "YAGEO group introduces high-performance diplexers for dual-band Wi-Fi 6E/7 integration offering compact filtering solutions designed for modern wireless applications. YAGEO...",
+			"category": "RF & Microwave"
+		},
+		{
+			"title": "KYOCERA AVX Releases New 3dB Hybrid Couplers",
+			"url": "https://passive-components.eu/kyocera-avx-releases-new-3db-hybrid-couplers/",
+			"date": "1.7.2025",
+			"excerpt": "Designed to facilitate the continued evolution of high-frequency wireless systems in various market segments, the new DB0402 3dB 90° hybrid...",
+			"category": "RF & Microwave"
+		},
+		{
+			"title": "Quantic Eulex Presents Ceramic Gap RF Capacitors",
+			"url": "https://passive-components.eu/quantic-eulex-presents-ceramic-gap-rf-capacitors/",
+			"date": "12.6.2025",
+			"excerpt": "Quantic Eulex unveils the XG series groundbreaking high frequency RF ceramic capacitor technology offering superior performance for next-gen RF and...",
+			"category": "RF & Microwave"
+		},
+		{
+			"title": "Murata Releases World’s First Inner Cavity-Structure Ultra-Low-Loss LCP Flexible Substrate",
+			"url": "https://passive-components.eu/murata-releases-worlds-first-inner-cavity-structure-ultra-low-loss-lcp-flexible-substrate/",
+			"date": "10.12.2025",
+			"excerpt": "Murata Manufacturing Co., Ltd announces the World’s First LCP (liquid crystal polymer) flexible substrate with an Inner Cavity structure, ULTICIRC,...",
+			"category": "Telecommunication"
+		},
+		{
+			"title": "Bourns Releases High Current Metal Alloy-based, Multilayer Power Chip Inductors",
+			"url": "https://passive-components.eu/bourns-releases-high-current-metal-alloy-based-multilayer-power-chip-inductors/",
+			"date": "31.10.2025",
+			"excerpt": "Bourns, Inc., a leading manufacturer and supplier of electronic components for power, protection, and sensing solutions, introduced its CVH160808H Series Multilayer Power Chip...",
+			"category": "Telecommunication"
+		},
+		{
+			"title": "Littelfuse Releases First Reflow-Compatible Illuminated Tactile Switch",
+			"url": "https://passive-components.eu/littelfuse-releases-first-reflow-compatible-illuminated-tactile-switch/",
+			"date": "1.10.2025",
+			"excerpt": "Littelfuse launches first reflow-compatible illuminated tactile switch with SPDT and long travel. The New K5V Series switches combine LED backlighting,...",
+			"category": "Telecommunication"
+		},
+		{
+			"title": "Components Thermal and Frequency Challenges in 6G Base Stations",
+			"url": "https://passive-components.eu/components-thermal-and-frequency-challenges-in-6g-base-stations/",
+			"date": "30.9.2025",
+			"excerpt": "The paper “High-Performance Component Strategies to Address Thermal and Frequency Challenges in Base Stations” was presented by Che-Wei Hsu, Murata...",
+			"category": "Telecommunication"
+		},
+		{
+			"title": "Würth Elektronik Unveils Compact Common-Mode Data Lines Chokes",
+			"url": "https://passive-components.eu/wurth-elektronik-unveils-compact-common-mode-data-lines-chokes/",
+			"date": "3.9.2025",
+			"excerpt": "Würth Elektronik expands its family of common-mode data lines chokes. The new component packages of the WE-CMDC series enable effective...",
+			"category": "Telecommunication"
+		},
+		{
+			"title": "July 2025 Interconnect, Passives and Electromechanical Components Market Insights",
+			"url": "https://passive-components.eu/july-2025-interconnect-passives-and-electromechanical-components-market-insights/",
+			"date": "23.7.2025",
+			"excerpt": "Edgewater researchers report that AI momentum continues to support the second half of 2025, while a broader recovery is still...",
+			"category": "Telecommunication"
+		},
+		{
+			"title": "Vishay Expands Automotive High Frequency Thin Film Chip Resistors",
+			"url": "https://passive-components.eu/vishay-expands-automotive-high-frequency-thin-film-chip-resistors/",
+			"date": "26.6.2025",
+			"excerpt": "Vishay Intertechnology, Inc. announced that it has expanded its CHA series of AEC-Q200 qualified thin film chip resistors with new devices in...",
+			"category": "Telecommunication"
+		},
+		{
+			"title": "YAGEO Unveils PulseChip LAN Transformer",
+			"url": "https://passive-components.eu/yageo-unveils-pulsechip-lan-transformer/",
+			"date": "6.6.2025",
+			"excerpt": "YAGEO Group Pulse Electronics releases advanced PulseChip™ LAN transformers for high-speed ethernet applications. YAGEO Pulse Electronics is proud to announce...",
+			"category": "Telecommunication"
+		},
+		{
+			"title": "Bourns Releases Noise Suppression Common Mode SMD Inductors",
+			"url": "https://passive-components.eu/bourns-releases-noise-suppression-common-mode-smd-inductors/",
+			"date": "4.6.2025",
+			"excerpt": "Bourns announces common mode inductor series ideal for noise suppression in signal transmission line applications. The new inductors feature a...",
+			"category": "Telecommunication"
+		},
+		{
+			"title": "SCHURTER Releases SMT Micro Switch for Compact HMIs",
+			"url": "https://passive-components.eu/schurter-releases-smt-micro-switch-for-compact-hmis/",
+			"date": "30.4.2026",
+			"excerpt": "The SCHURTER TCS43 is a microminiature surface mount tactile (micro) switch aimed at space‑constrained human–machine interfaces that still require clear,...",
+			"category": "Medical"
+		},
+		{
+			"title": "Hirose Introduced BGA connector for PCIe Gen6 for AI and Edge Computing",
+			"url": "https://passive-components.eu/hirose-introduced-bga-connector-for-pcie-gen6-for-ai-and-edge-computing/",
+			"date": "17.4.2026",
+			"excerpt": "Hirose Electric has introduced the IT18 series, a COM‑HPC compliant BGA mezzanine connector designed for high‑speed, high‑density embedded computing modules...",
+			"category": "Medical"
+		},
+		{
+			"title": "Vishay Extends Power Inductors for DC/DC with 1212 Compact Case",
+			"url": "https://passive-components.eu/vishay-extends-power-inductors-for-dc-dc-with-1212-compact-case/",
+			"date": "16.4.2026",
+			"excerpt": "Vishay’s new IHLP1212‑EZ‑1Z power inductors bring the well‑known IHLP low‑profile, high‑current technology into a very compact 1212 case size (3.0...",
+			"category": "Medical"
+		},
+		{
+			"title": "YAGEO Releases Ferrite Shielded Power Inductors for High‑Density Designs",
+			"url": "https://passive-components.eu/yageo-releases-ferrite-shielded-power-inductors-for-high-density-designs/",
+			"date": "15.4.2026",
+			"excerpt": "The new released APCA7045 ferrite shielded power inductors from YAGEO Group target modern high‑current DC‑DC converters and embedded power rails...",
+			"category": "Medical"
+		},
+		{
+			"title": "SCHURTER Releases Compact SMT DIP Switches",
+			"url": "https://passive-components.eu/schurter-releases-compact-smt-dip-switches/",
+			"date": "7.4.2026",
+			"excerpt": "SCHURTER introduces DTCD and DTCJ series ultra‑miniature 1.27 mm pitch SMT DIP switches designed for high‑density electronic assemblies where classic...",
+			"category": "Medical"
+		},
+		{
+			"title": "Bourns Releases Compact High Current Shielded Power Inductors",
+			"url": "https://passive-components.eu/bourns-releases-compact-high-current-shielded-power-inductors/",
+			"date": "2.4.2026",
+			"excerpt": "Bourns has introduced the SRP2008DP Series, a family of low‑profile, high current shielded power inductors in a 2.0 × 1.6...",
+			"category": "Medical"
+		},
+		{
+			"title": "Samtec AcceleRate Slim ARC6 Cable Assemblies with New Signaling Options",
+			"url": "https://passive-components.eu/samtec-accelerate-slim-arc6-cable-assemblies-with-new-signaling-options/",
+			"date": "19.3.2026",
+			"excerpt": "Samtec has expanded its AcceleRate Slim ARC6 high‑speed cable assembly family with new single‑ended and mixed signaling options targeting dense,...",
+			"category": "Medical"
+		},
+		{
+			"title": "Würth Elektronik Presents Differential Pressure Sensor for HVAC and Medical",
+			"url": "https://passive-components.eu/wurth-elektronik-presents-differential-pressure-sensor-for-hvac-and-medical/",
+			"date": "17.3.2026",
+			"excerpt": "Würth Elektronik has introduced the WSEN-PDMS, a compact differential pressure sensor that combines high accuracy, flexible interfaces and multiple port...",
+			"category": "Medical"
+		},
+		{
+			"title": "Binder Extends NCC Circular Connectors for Harsh Environments",
+			"url": "https://passive-components.eu/binder-extends-ncc-circular-connectors-for-harsh-environments/",
+			"date": "13.3.2026",
+			"excerpt": "Binder’s Not Connected Closed (NCC) circular connector family provides sealed, bayonet‑locking interfaces that remain protected even when unmated, targeting demanding...",
+			"category": "Medical"
+		},
+		{
+			"title": "TDK Releases Stackable µPOL 25A Power Modules",
+			"url": "https://passive-components.eu/tdk-releases-stackable-%c2%b5pol-25a-power-modules/",
+			"date": "9.2.2026",
+			"excerpt": "TDK has introduced the FS1525, a new member of its µPOL non‑isolated DC‑DC power module family delivering 25 A per...",
+			"category": "Medical"
+		},
+		{
+			"title": "Exxelia Publishes Micropen White Papers for Printed Electronics",
+			"url": "https://passive-components.eu/exxelia-publishes-micropen-white-papers-for-printed-electronics/",
+			"date": "26.1.2026",
+			"excerpt": "Exxelia has released a set of new Micropen white papers with practical insights for printed electronics in medical and sensor...",
+			"category": "Medical"
+		},
+		{
+			"title": "Würth Elektronik Developed a Custom Transformer for Active Hand Orthosis",
+			"url": "https://passive-components.eu/wurth-elektronik-developed-a-custom-transformer-for-active-hand-orthosis/",
+			"date": "26.1.2026",
+			"excerpt": "A pioneering collaboration between Würth Elektronik and the startup Powered Orthotics is helping people with limited hand function regain independence....",
+			"category": "Medical"
+		},
+		{
+			"title": "Murata Introduces Crystal and NTC Set for Automotive UWB Timing",
+			"url": "https://passive-components.eu/murata-introduces-crystal-and-ntc-set-for-automotive-uwb-timing/",
+			"date": "30.4.2026",
+			"excerpt": "Murata has introduced a discrete timing solution that combines a high‑precision crystal unit with an external NTC thermistor to meet...",
+			"category": "Oscillators"
+		},
+		{
+			"title": "Equivalent Circuit Constants of Crystal Units Explained",
+			"url": "https://passive-components.eu/equivalent-circuit-constants-of-crystal-units-explained/",
+			"date": "26.3.2026",
+			"excerpt": "Crystal units are often modeled as “black boxes” in schematics, but their internal equivalent circuit strongly influences oscillation frequency, stability...",
+			"category": "Oscillators"
+		},
+		{
+			"title": "Kyocera Releases 30fs Jitter Differential Clock Oscillator",
+			"url": "https://passive-components.eu/kyocera-releases-30fs-jitter-differential-clock-oscillator/",
+			"date": "10.3.2026",
+			"excerpt": "Kyocera’s new X Series differential clock crystal oscillators target high‑speed, high‑capacity data communication in AI servers, optical links, storage, and...",
+			"category": "Oscillators"
+		},
+		{
+			"title": "Würth Elektronik IQD Awarded by EcoVadis Gold Sustainability Medal",
+			"url": "https://passive-components.eu/wurth-elektronik-iqd-awarded-by-ecovadis-gold-sustainability-medal/",
+			"date": "4.3.2026",
+			"excerpt": "IQD Frequency Products Ltd, a key member of the Würth Elektronik eiSos Group and specialist in frequency control products like...",
+			"category": "Oscillators"
+		},
+		{
+			"title": "Kyocera Releases Ultra-Compact Low Voltage Clock Oscillators",
+			"url": "https://passive-components.eu/kyocera-releases-ultra-compact-low-voltage-clock-oscillators/",
+			"date": "12.11.2025",
+			"excerpt": "KYOCERA has unveiled the KC1210A Series Clock Oscillators, which are ultra-compact and ultra-low voltage. These oscillators enable energy-efficient design for...",
+			"category": "Oscillators"
+		},
+		{
+			"title": "Murata Releases In-vehicle Compact Crystal in 2016 Size",
+			"url": "https://passive-components.eu/murata-releases-in-vehicle-compact-crystal-in-2016-size/",
+			"date": "23.7.2025",
+			"excerpt": "Murata Manufacturing Co., Ltd. commercialized the ‘XRCGB_F_C’ series compact crystal unit in 2016 size for in-vehicle infotainment*1 and other automotive...",
+			"category": "Oscillators"
+		},
+		{
+			"title": "Minimization of Crystal Oscillator Cosmic Radiation Effects",
+			"url": "https://passive-components.eu/minimization-of-crystal-oscillator-cosmic-radiation-effects/",
+			"date": "28.4.2025",
+			"excerpt": "This paper MINCOR - Minimization Of Crystal Oscillator Cosmic Radiation Effects  was prepared by Nicolas GUFFLET, Laurent COUTELEAU, Frederic VITTRANT...",
+			"category": "Oscillators"
+		},
+		{
+			"title": "Vishay Unveils New SMD Crystals and Oscillators",
+			"url": "https://passive-components.eu/vishay-unveils-new-smd-crystals-and-oscillators/",
+			"date": "7.1.2025",
+			"excerpt": "To simplify the sourcing process for its customers, Vishay Intertechnology, Inc. announced that the company's Inductors Division has expanded its...",
+			"category": "Oscillators"
+		},
+		{
+			"title": "Murata Unveils Innovative Timing Device with Exceptional Accuracy",
+			"url": "https://passive-components.eu/murata-unveils-innovative-timing-device-with-exceptional-accuracy/",
+			"date": "18.11.2024",
+			"excerpt": "Murata Manufacturing Co Ltd unveils a cutting-edge electronic timing device featuring exceptional accuracy ±40ppm and reliability even in wide-temperature -40°C...",
+			"category": "Oscillators"
+		},
+		{
+			"title": "IQD Releases Miniature OCXO Oscillators with Extended Temperature Range",
+			"url": "https://passive-components.eu/iqd-releases-miniature-ocxo-oscillators-with-extended-temperature-range/",
+			"date": "12.11.2024",
+			"excerpt": "IQD, part of the Würth Elektronik eiSos Group, is excited to announce the release of new miniature OCXO oscillators in...",
+			"category": "Oscillators"
+		},
+		{
+			"title": "How Capacitor Selection Affects Crystal Accuracy",
+			"url": "https://passive-components.eu/how-capacitor-selection-affects-crystal-accuracy/",
+			"date": "24.4.2024",
+			"excerpt": "This Würth Elektronik webinar will take a closer look at the load capacitance of quartz crystals and the correct design...",
+			"category": "Oscillators"
+		},
+		{
+			"title": "KYOCERA AVX Establishes New US Facility for High-Quality, Low-Noise Quartz Crystal Frequency Control Products",
+			"url": "https://passive-components.eu/kyocera-avx-establishes-new-us-facility-for-high-quality-low-noise-quartz-crystal-frequency-control-products/",
+			"date": "16.4.2024",
+			"excerpt": "KYOCERA AVX, a leading global manufacturer of advanced electronic components engineered to accelerate technological innovation and build a better future,...",
+			"category": "Oscillators"
+		},
+		{
+			"title": "How Clock Oscillator Works",
+			"url": "https://passive-components.eu/how-clock-oscillator-works/",
+			"date": "23.11.2023",
+			"excerpt": "This article based on KYOCERA technical note explains what is a clock oscillator and how it works. Crystal devices are...",
+			"category": "Oscillators"
+		},
+		{
+			"title": "KYOCERA AVX is Acquiring Bliley Technologies, A Global Leader in Low-Noise Frequency Control Products",
+			"url": "https://passive-components.eu/kyocera-avx-is-acquiring-bliley-technologies-a-global-leader-in-low-noise-frequency-control-products/",
+			"date": "3.10.2023",
+			"excerpt": "KYOCERA AVX, a leading global manufacturer of advanced electronic components engineered to accelerate technological innovation and build a better future,...",
+			"category": "Oscillators"
+		},
+		{
+			"title": "Oscillators Integration, Selection Guide and Design In",
+			"url": "https://passive-components.eu/oscillators-features-and-design-in/",
+			"date": "2.5.2025",
+			"excerpt": "This Würth Elektronik podcast explains oscillators integration, features, design-in rules, selection guide and applications. Frequency Products serve as the essential...",
+			"category": "Oscillators"
+		},
+		{
+			"title": "KYOCERA AVX Introduces High Performance OCXO Crystal Oscillators",
+			"url": "https://passive-components.eu/kyocera-avx-introduces-high-performance-ocxo-crystal-oscillators/",
+			"date": "14.7.2023",
+			"excerpt": "The new KYOCERA AVX high-performance, voltage-controlled KOV and KLN Series OCXOs employ modern layout topologies and robust designs backed by...",
+			"category": "Oscillators"
+		},
+		{
+			"title": "Murata Unveils High-Precision Automotive Crystal in 2016 Size",
+			"url": "https://passive-components.eu/murata-unveils-high-precision-automotive-crystal-in-2016-size/",
+			"date": "19.6.2023",
+			"excerpt": "Murata Manufacturing Co., Ltd. has commercialized the high-precision \"XRCGE_FXA\" series automotive crystal unit in 2016 size. Mass production has already...",
+			"category": "Oscillators"
+		},
+		{
+			"title": "Murata Releases 150C Automotive Crystals",
+			"url": "https://passive-components.eu/murata-releases-150c-automotive-crystals/",
+			"date": "5.6.2023",
+			"excerpt": "Murata Manufacturing Co., Ltd. commercialized the 150°C compatible \"XRCGA_F_A\" series automotive crystal unit in 2016 size. Mass production has already...",
+			"category": "Oscillators"
+		},
+		{
+			"title": "Properties and Characteristics of Crystal Units",
+			"url": "https://passive-components.eu/properties-and-characteristics-of-crystal-units/",
+			"date": "24.5.2023",
+			"excerpt": "This article written by Wataru Muraoka, KYOCERA-AVX Corporation explains properties and characteristics of crystal units. Numerous devices in people‘s lives today are...",
+			"category": "Oscillators"
+		},
+		{
+			"title": "IQD Würth Elektronik Extends Temperature Range of Crystals",
+			"url": "https://passive-components.eu/iqd-wurth-elektronik-extends-temperature-range-of-crystals/",
+			"date": "4.5.2023",
+			"excerpt": "IQD, part of Würth Elektronik group extends temperature range of crystals to -40 to 125 °C. Components capable of withstanding...",
+			"category": "Oscillators"
+		},
+		{
+			"title": "YAGEO Releases Cost Efficient Pt‑RTD Sensors with Ni wires",
+			"url": "https://passive-components.eu/yageo-releases-cost-efficient-pt-rtd-sensors-with-ni-wires/",
+			"date": "3.6.2026",
+			"excerpt": "The MB‑Series Pt‑RTD temperature sensors from YAGEO Group Nexensos are designed for demanding, high‑volume applications that require accurate temperature measurement,...",
+			"category": "Passive Sensors News"
+		},
+		{
+			"title": "Vishay Releases Compact High‑Accuracy Hall Effect Linear Position Sensor",
+			"url": "https://passive-components.eu/vishay-releases-compact-high-accuracy-hall-effect-linear-position-sensor/",
+			"date": "26.3.2026",
+			"excerpt": "Vishay’s new Sfernice 40 LHE is a compact linear position sensor based on non‑contact Hall Effect technology, designed for accurate...",
+			"category": "Passive Sensors News"
+		},
+		{
+			"title": "Murata New Vibration Sensor Targets High‑Frequency Predictive Maintenance",
+			"url": "https://passive-components.eu/murata-new-vibration-sensor-targets-high-frequency-predictive-maintenance/",
+			"date": "10.3.2026",
+			"excerpt": "Murata has introduced the PKGM-210D-R, an SMD vibration sensor device optimized for predictive maintenance and condition monitoring in industrial equipment....",
+			"category": "Passive Sensors News"
+		},
+		{
+			"title": "Bourns SSD‑1000A AEC‑Q Digital Current Sensors",
+			"url": "https://passive-components.eu/bourns-ssd-1000a-aec-q-digital-current-sensors/",
+			"date": "8.1.2026",
+			"excerpt": "Bourns has extended its Riedon SSD-1000A Series digital current sensors with a new assembly option using AEC-Q compliant components, targeting...",
+			"category": "Passive Sensors News"
+		},
+		{
+			"title": "Littelfuse Introduces Automotive Current Sensors for EV Battery, Motor, and Safety Systems",
+			"url": "https://passive-components.eu/littelfuse-introduces-automotive-current-sensors-for-ev-battery-motor-and-safety-systems/",
+			"date": "18.12.2025",
+			"excerpt": "Littelfuse releases a new family of six open-loop hall-effect current sensors that delivers accurate, isolated current measurement with analog or...",
+			"category": "Passive Sensors News"
+		},
+		{
+			"title": "Littelfuse Unveils High-Precision TMR Angle Magnetic Sensors",
+			"url": "https://passive-components.eu/littelfuse-unveils-high-precision-tmr-angle-magnetic-sensors/",
+			"date": "13.8.2025",
+			"excerpt": "Littelfuse introduces new TMR-based magnetic angle sensors for enhanced precision and thermal stability. Littelfuse, Inc., a leading industrial technology manufacturing...",
+			"category": "Passive Sensors News"
+		},
+		{
+			"title": "Würth Elektronik Offers Accessory Humidity Sensor Filter Cap",
+			"url": "https://passive-components.eu/wurth-elektronik-offers-accessory-humidity-sensor-filter-cap/",
+			"date": "6.8.2025",
+			"excerpt": "Würth Elektronik offers now an accessory for its WSEN-HIDS humidity sensor, the WSEN-ACCE filter cap. The protective cap shields the...",
+			"category": "Passive Sensors News"
+		},
+		{
+			"title": "YAGEO Releases High-Sensitivity Residual Current Detectors for Safer EV Charging",
+			"url": "https://passive-components.eu/yageo-releases-high-sensitivity-residual-current-detectors-for-safer-ev-charging/",
+			"date": "17.6.2025",
+			"excerpt": "As global electric vehicle (EV) adoption continues to accelerate, YAGEO Group announces the release of its cutting-edge FG-R Series, a...",
+			"category": "Passive Sensors News"
+		},
+		{
+			"title": "Bourns Releases 250A Shunt Sensor for Battery Monitoring Applications",
+			"url": "https://passive-components.eu/bourns-releases-250a-shunt-sensor-for-battery-monitoring-applications/",
+			"date": "8.1.2025",
+			"excerpt": "Bourns, Inc., a leading manufacturer and supplier of electronic components for power, protection, and sensing solutions, announced that it has further expanded...",
+			"category": "Passive Sensors News"
+		},
+		{
+			"title": "Rogowski Coil Current Sensor Explained",
+			"url": "https://passive-components.eu/rogowski-coil-current-sensor-explained/",
+			"date": "17.12.2024",
+			"excerpt": "In this video prof. Sam Ben-Yaakov explains the principles of Rogowski coil current sensors, its advantages and disadvantages.",
+			"category": "Passive Sensors News"
+		},
+		{
+			"title": "Bourns Unveils High Accuracy Shunt Sensor with Superior Operational Stability",
+			"url": "https://passive-components.eu/bourns-unveils-high-accuracy-shunt-sensor-with-superior-operational-stability/",
+			"date": "3.12.2024",
+			"excerpt": "Bourns, Inc., a leading manufacturer and supplier of electronic components for power, protection, and sensing solutions, released its Riedon™ Model SSA-2 Series Shunt...",
+			"category": "Passive Sensors News"
+		},
+		{
+			"title": "Littelfuse Releases Residual Current Monitor Series for High Current Charging Stations",
+			"url": "https://passive-components.eu/littelfuse-releases-residual-current-monitor-series-for-high-current-charging-stations/",
+			"date": "24.10.2024",
+			"excerpt": "Littelfuse, Inc., an industrial technology manufacturing company empowering a sustainable, connected, and safer world, announced the RCMP20 residual current monitor...",
+			"category": "Passive Sensors News"
+		},
+		{
+			"title": "Würth Elektronik Supports Start-Up that Uses BioT Sensors Electronics and AI to Revolutionize Biodiversity Measurement",
+			"url": "https://passive-components.eu/wurth-elektronik-supports-start-up-that-uses-biot-sensors-electronics-and-ai-to-revolutionize-biodiversity-measurement/",
+			"date": "24.9.2024",
+			"excerpt": "Würth Elektronik and Hula Earth, a deep-tech start-up that specializes in the real-time monitoring of biodiversity, are now working together...",
+			"category": "Passive Sensors News"
+		},
+		{
+			"title": "TDK Unveils Development Kit for Haptic Feedback",
+			"url": "https://passive-components.eu/tdk-unveils-development-kit-for-haptic-feedback/",
+			"date": "6.9.2023",
+			"excerpt": "TDK presents a development starter kit for fast haptics prototyping. It gives mechanical designers and engineers first impressions of the...",
+			"category": "Passive Sensors News"
+		},
+		{
+			"title": "Knowles Releases High-Performance Digital Voice Vibration Sensor",
+			"url": "https://passive-components.eu/knowles-releases-high-performance-digital-voice-vibration-sensor/",
+			"date": "11.4.2023",
+			"excerpt": "Knowles releases high-performance digital voice vibration sensor for high-fidelity voice pick-up in True Wireless Stereo (TWS). Low power, high-performance specialized...",
+			"category": "Passive Sensors News"
+		},
+		{
+			"title": "YAGEO to Acquire Schneider Electric’s Industrial Sensors",
+			"url": "https://passive-components.eu/yageo-to-acquire-schneider-electrics-industrial-sensors/",
+			"date": "31.10.2022",
+			"excerpt": "YAGEO signs binding commitment to acquire Schneider Electric’s industrial sensors business, Telemecanique Sensors. Global electronic component and service provider YAGEO...",
+			"category": "Passive Sensors News"
+		},
+		{
+			"title": "Elektra Awards Published Shortlists for 2022",
+			"url": "https://passive-components.eu/elektra-awards-published-shortlists-for-2022/",
+			"date": "15.9.2022",
+			"excerpt": "Electronics Weekly revealed the shortlists for 2022 Elektra Awards, the industry’s largest technology and business awards. The award also consists...",
+			"category": "Passive Sensors News"
+		},
+		{
+			"title": "Electroninks Enhanced Ultra-Fine Silver Ink Ready for Aerosol Jet Printing",
+			"url": "https://passive-components.eu/electroninks-enhanced-ultra-fine-silver-ink-ready-for-aerosol-jet-printing/",
+			"date": "4.5.2022",
+			"excerpt": "Electroninks, the leader in particle-free metal inks and advanced conductive materials, announced the confirmation of an enhanced particle-free silver ink...",
+			"category": "Passive Sensors News"
+		},
+		{
+			"title": "Strain Gage Resistive Sensor Simulation; Vishay Video",
+			"url": "https://passive-components.eu/strain-gage-resistive-sensor-simulation-vishay-video/",
+			"date": "24.8.2022",
+			"excerpt": "The video presents simulation of the analog hardware temperature compensation of a Wheatstone bridge of resistive strain gages. Vishay thermistors...",
+			"category": "Passive Sensors News"
+		},
+		{
+			"title": "TDK Releases Immersion Temperature Sensors for EV Powertrain Cooling",
+			"url": "https://passive-components.eu/tdk-releases-immersion-temperature-sensors-for-ev-powertrain-cooling/",
+			"date": "27.3.2025",
+			"excerpt": "",
+			"category": "Non-linear Passives"
+		},
+		{
+			"title": "YAGEO Offer Bid for Shibaura Electronics",
+			"url": "https://passive-components.eu/yageo-offer-bid-for-shibaura-electronics/",
+			"date": "6.2.2025",
+			"excerpt": "YAGEO announces that the Board of Directors has approved a tender offer to acquire SHIBAURA ELECTRONICS CO., LTD. , a...",
+			"category": "Non-linear Passives"
+		},
+		{
+			"title": "Vishay Thermistors Modelling with Simulink Simscape",
+			"url": "https://passive-components.eu/vishay-thermistors-modelling-with-simulink-simscape/",
+			"date": "1.11.2024",
+			"excerpt": "In this video Vishay presents a new thermistor simulation composed of components with a new software: MATLAB® Simulink® / Simscape...",
+			"category": "Non-linear Passives"
+		},
+		{
+			"title": "TDK Develops Spin-Memristor for Neuromorphic Devices to Reduce AI Power Consumption to 1/100",
+			"url": "https://passive-components.eu/tdk-develops-spin-memristor-for-neuromorphic-devices-to-reduce-ai-power-consumption-to-1-100/",
+			"date": "3.10.2024",
+			"excerpt": "TDK develops \"spin-memristor\" for neuromorphic devices, and collaborates with CEA and Tohoku University to achieve practical application of neuromorphic devices...",
+			"category": "Non-linear Passives"
+		},
+		{
+			"title": "Vishay Expands Resistor Portfolio Through Ametherm Acquisition",
+			"url": "https://passive-components.eu/vishay-expands-resistor-portfolio-through-ametherm-acquisition/",
+			"date": "10.6.2024",
+			"excerpt": "Vishay Intertechnology, Inc., one of the world’s largest manufacturers of discrete semiconductors and passive electronic components, announced that it has...",
+			"category": "Non-linear Passives"
+		},
+		{
+			"title": "Vishay Releases Inrush Current Limiting PTC Thermistors with Improved Performance",
+			"url": "https://passive-components.eu/vishay-releases-inrush-current-limiting-ptc-thermistors-with-improved-performance/",
+			"date": "7.3.2024",
+			"excerpt": "Vishay Intertechnology, introduced a new series of inrush current limiting positive temperature coefficient (PTC) thermistors. Designed to increase performance in...",
+			"category": "Non-linear Passives"
+		},
+		{
+			"title": "TDK Extends Automotive Varistors with LIN and CAN Models",
+			"url": "https://passive-components.eu/tdk-extends-automotive-varistors-with-lin-and-can-models/",
+			"date": "20.2.2024",
+			"excerpt": "TDK Corporation has announced the addition of two new varistors to its AVRH series for automotive applications. Both are characterized...",
+			"category": "Non-linear Passives"
+		},
+		{
+			"title": "TDK Unveils SMD High Surge Current Varistors",
+			"url": "https://passive-components.eu/tdk-unveils-smd-high-surge-current-varistors/",
+			"date": "31.1.2024",
+			"excerpt": "TDK Corporation presents two new varistor series in SMD design. The types of both series are available for a wide...",
+			"category": "Non-linear Passives"
+		},
+		{
+			"title": "Littelfuse Unveils Automotive SMD MOV Varistor with Higher Temperature and Surge Curren Protection",
+			"url": "https://passive-components.eu/littelfuse-unveils-automotive-smd-mov-varistor-with-higher-temperature-and-surge-curren-protection/",
+			"date": "18.9.2024",
+			"excerpt": "Littelfuse, Inc., an industrial technology manufacturing company empowering a sustainable, connected, and safer world, today announced the SM10 Varistor Series,...",
+			"category": "Non-linear Passives"
+		},
+		{
+			"title": "Chip Varistors Applications for ESD Countermeasures",
+			"url": "https://passive-components.eu/tdk-tech-note-the-optimal-applications-for-chip-varistors-for-esd-countermeasures/",
+			"date": "29.2.2024",
+			"excerpt": "This technical article written by TDK discusses the optimal chip varistor applications for ESD countermeasures. Characteristics of Chip Varistors Chip...",
+			"category": "Non-linear Passives"
+		},
+		{
+			"title": "How to Use Varistors as ESD/Surge Protection Devices",
+			"url": "https://passive-components.eu/how-to-use-varistors-as-esd-surge-protection-devices/",
+			"date": "28.2.2024",
+			"excerpt": "TDK block article explains advantages of different varistor types as ESD / Surge protection devices in examples of typical circuit...",
+			"category": "Non-linear Passives"
+		},
+		{
+			"title": "MLV Varistors vs TVS Diode Benefits in Automotive Applications",
+			"url": "https://passive-components.eu/mlv-varistors-vs-tvs-diode-benefits-in-automotive-applications/",
+			"date": "22.5.2026",
+			"excerpt": "This technical blog article written by George Zhang, KYOCERA-AVX Components Corporation, explains benefits and use of varistors in automotive applications. Multilayer chip...",
+			"category": "Non-linear Passives"
+		},
+		{
+			"title": "Thermistor-Based Temperature Sensing System Explained",
+			"url": "https://passive-components.eu/thermistor-based-temperature-sensing-system-explained/",
+			"date": "20.4.2026",
+			"excerpt": "Thermistors are among the most widely used temperature sensors in electronic systems, yet their strongly nonlinear resistance–temperature characteristic often makes...",
+			"category": "Non-linear Passives"
+		},
+		{
+			"title": "Varistor Selection Guideline",
+			"url": "https://passive-components.eu/varistor-selection-guideline/",
+			"date": "29.2.2024",
+			"excerpt": "This article written by Teddy Won, KYOCERA-AVX Corporation explains varistors characteristics, ESD filtering, types and how they compare with TVS diodes and...",
+			"category": "Non-linear Passives"
+		},
+		{
+			"title": "PTC Thermistors Overview and Supply Chain",
+			"url": "https://passive-components.eu/ptc-thermistors-overview-and-supply-chain/",
+			"date": "22.1.2024",
+			"excerpt": "This article written by Dennis Zogbi, Paumanok Inc. and published by TTI Market Eye provides PTC Thermistor overview of its...",
+			"category": "Non-linear Passives"
+		},
+		{
+			"title": "NTC Thermistors Modeling",
+			"url": "https://passive-components.eu/ntc-thermistors-modeling/",
+			"date": "29.2.2024",
+			"excerpt": "In this video prof. Sam Ben-Yaakov shows how to model temperature sensors NTC thermistors and its time response.",
+			"category": "Non-linear Passives"
+		},
+		{
+			"title": "Metal Oxide Varistors Overview and Supply Chain",
+			"url": "https://passive-components.eu/metal-oxide-varistors-overview-and-supply-chain/",
+			"date": "18.12.2023",
+			"excerpt": "This article written by Dennis Zogbi, Paumanok Inc. and published on TTI Market Eye describe MOV metal oxide varistors overview...",
+			"category": "Non-linear Passives"
+		},
+		{
+			"title": "KYOCERA AVX Industry’s First Automotive MLV Varistors with Flexible Terminations Meets Both AEC-Q200 and VW Standards",
+			"url": "https://passive-components.eu/kyocera-avx-industrys-first-automotive-mlv-varistors-with-flexible-terminations-meets-both-aec-q200-and-vw-standards/",
+			"date": "6.12.2023",
+			"excerpt": "KYOCERA AVX, a leading global manufacturer of advanced electronic components engineered to accelerate technological innovation and build a better future,...",
+			"category": "Non-linear Passives"
+		},
+		{
+			"title": "TDK Releases World’s First SMD Inrush Current Limiter",
+			"url": "https://passive-components.eu/tdk-releases-worlds-first-smd-inrush-current-limiter/",
+			"date": "31.10.2023",
+			"excerpt": "TDK Corporation has developed the J404, the world's first surface-mountable inrush current limiter (ICL) based on PTC (positive temperature coefficient)...",
+			"category": "Non-linear Passives"
+		},
+		{
+			"title": "Circuit Protection Selection Guide",
+			"url": "https://passive-components.eu/circuit-protection-selection-guide/",
+			"date": "22.9.2023",
+			"excerpt": "Littelfuse created Circuit Protection Products Selection Guide to help quickly find a protection solution appropriate for your application. This comprehensive...",
+			"category": "Non-linear Passives"
+		},
+		{
+			"title": "Circuit Protection Components 2023 Market Analysis",
+			"url": "https://passive-components.eu/circuit-protection-components-2023-market-analysis/",
+			"date": "20.9.2023",
+			"excerpt": "Dennis Zogbi, Paumanok Inc. publishes on TTI Market Eye circuit protection components 2023 market analysis. Navigating Regulatory Demands in the...",
+			"category": "Non-linear Passives"
+		},
+		{
+			"title": "Smolteks CNF MIM Capacitor Break 1 µF/mm²",
+			"url": "https://passive-components.eu/smolteks-cnf-mim-capacitor-break-1-%c2%b5f-mm%c2%b2/",
+			"date": "19.6.2025",
+			"excerpt": "Smoltek Semi joins an elite club of companies achieving 1 µF/mm² capacitance density, but stands alone in reaching this milestone...",
+			"category": "Integrated Passives"
+		},
+		{
+			"title": "Researchers Demonstrated Ultrahigh Dielectric Constant HfO Thin-Film Capacitors",
+			"url": "https://passive-components.eu/researchers-demonstrated-ultrahigh-dielectric-constant-hfo-thin-film-capacitors/",
+			"date": "19.3.2025",
+			"excerpt": "Researchers from The HongKong Polytechnic University, China demonstrated ultrahigh dielectric permittivity observed in HfZrO thin-film capacitors published in their article...",
+			"category": "Integrated Passives"
+		},
+		{
+			"title": "Würth Elektronik Expands MagI3C Wide Input-Voltage Range Power Modules",
+			"url": "https://passive-components.eu/wurth-elektronik-expands-magi3c-wide-input-voltage-range-power-modules/",
+			"date": "22.1.2025",
+			"excerpt": "Würth Elektronik expands its MagI³C power module series with variable step-down module in LGA-12EP. With MagI³C-VDLM, Würth Elektronik presents three power...",
+			"category": "Integrated Passives"
+		},
+		{
+			"title": "Exxelia Innovative Integrated Magnetics for DAB Power Converter",
+			"url": "https://passive-components.eu/exxelia-innovative-integrated-magnetics-for-dab-power-converter/",
+			"date": "5.2.2025",
+			"excerpt": "This article is based on ESA SPCD 2024 paper “INNOVATIVE INTEGRATED MAGNETIC FOR DAB POWER CONVERTER” written by Benoit Krafft...",
+			"category": "Integrated Passives"
+		},
+		{
+			"title": "Smoltek’s New Zapping Method Accelerates CNF-MIM Capacitors Development",
+			"url": "https://passive-components.eu/smolteks-new-zapping-method-accelerates-cnf-mim-capacitors-development/",
+			"date": "11.10.2024",
+			"excerpt": "Smoltek innovative “zapping” method drastically reduces development time and costs, enabling us to advance CNF-MIM silicon wafer based capacitor technology...",
+			"category": "Integrated Passives"
+		},
+		{
+			"title": "Murata Expands Silicon Capacitor Production Line in France",
+			"url": "https://passive-components.eu/murata-expands-silicon-capacitor-production-line-in-france/",
+			"date": "7.10.2024",
+			"excerpt": "Murata Manufacturing Ltd has opened a new production line at its site in Caen, France, expanding the scope of its...",
+			"category": "Integrated Passives"
+		},
+		{
+			"title": "Smoltek Boosts its CNF-MIM Capacitance Density by 230 percent",
+			"url": "https://passive-components.eu/smoltek-boosts-its-cnf-mim-capacitance-density-by-230-percent/",
+			"date": "26.9.2024",
+			"excerpt": "Smoltek Nanotech Holding AB reports significant advances in wafer-based carbon nano-fiber CNF-MIM capacitor technology with a 230% boost in capacitance...",
+			"category": "Integrated Passives"
+		},
+		{
+			"title": "Thin Film Integrated Passive Devices: Materials and Technologies Overview",
+			"url": "https://passive-components.eu/thin-film-integrated-passive-devices-materials-and-technologies-overview/",
+			"date": "10.5.2024",
+			"excerpt": "Dennis Zogbi, Paumanok Inc. publishes on TTI Market Eye overview of thin film integrated passive devices, its materials and processes...",
+			"category": "Integrated Passives"
+		},
+		{
+			"title": "Researchers Achieved Record High Energy Density on-chip Capacitors",
+			"url": "https://passive-components.eu/researchers-achieved-record-high-energy-density-on-chip-capacitors/",
+			"date": "7.5.2024",
+			"excerpt": "Scientists at Lawrence Berkeley National Laboratory (Berkeley Lab) and UC Berkeley have achieved record-high energy and power densities in on-chip...",
+			"category": "Integrated Passives"
+		},
+		{
+			"title": "Empower’s Low ESL 1pH Silicon Capacitor Meets Tight AI Chip Requirements",
+			"url": "https://passive-components.eu/empowers-low-esl-1ph-silicon-capacitor-meets-tight-ai-chip-requirement/",
+			"date": "6.5.2024",
+			"excerpt": "Empower Semiconductor, the world leader in integrated voltage regulators (IVRs), unveiled the largest capacitance low ESL silicon capacitor in its...",
+			"category": "Integrated Passives"
+		},
+		{
+			"title": "Smoltek CTO Updates its CNF-MIM Capacitors Status and Market",
+			"url": "https://passive-components.eu/smoltek-cto-updates-its-cnf-mim-capacitors-status-and-market/",
+			"date": "2.5.2024",
+			"excerpt": "Smoltek published and interview with Farzan Ghavanini, CTO of Smoltek on the company's unique technology for manufacturing of ultra-thin carbon...",
+			"category": "Integrated Passives"
+		},
+		{
+			"title": "Smoltek CEO Interview about CNF Capacitor Milestones and Future Roadmap",
+			"url": "https://passive-components.eu/smoltek-ceo-interview-about-cnf-capacitor-milestones-and-future-roadmap/",
+			"date": "9.2.2024",
+			"excerpt": "Smoltek Nanotech Holding AB has published a newsletter addressed to shareholders, investors and other stakeholders. The newsletter includes an interview...",
+			"category": "Integrated Passives"
+		},
+		{
+			"title": "Elohim and Daeduck Electronics Achieve Milestone in Embedded Silicon Capacitor Integration",
+			"url": "https://passive-components.eu/elohim-and-daeduck-electronics-achieve-milestone-in-embedded-silicon-capacitor-integration/",
+			"date": "23.1.2024",
+			"excerpt": "Elohim Inc., a leading innovator in embedded silicon capacitor technology, proudly announces a transformative collaboration with Daeduck Electronics, an esteemed...",
+			"category": "Integrated Passives"
+		},
+		{
+			"title": "Smoltek Announces Exclusive License for CNF-MIM Carbon Nanofiber Capacitors with YAGEO",
+			"url": "https://passive-components.eu/smoltek-announces-exclusive-license-for-cnf-mim-carbon-nanofiber-capacitors-with-yageo/",
+			"date": "7.12.2023",
+			"excerpt": "Smoltek Nanotech Holding AB announces its intention to enter into a license and services agreement between its subsidiary Smoltek Semi...",
+			"category": "Integrated Passives"
+		},
+		{
+			"title": "X-FAB Provides Foundry Service for Passive Device Integration",
+			"url": "https://passive-components.eu/x-fab-provides-foundry-service-for-passive-device-integration/",
+			"date": "19.9.2023",
+			"excerpt": "X-FAB Silicon Foundries SE, the leading analog/mixed-signal and specialty foundry, has further added to its broad proficiency in RF by...",
+			"category": "Integrated Passives"
+		},
+		{
+			"title": "Thin Film Integrated Passives Market Outlook for Ultra-Small Devices",
+			"url": "https://passive-components.eu/thin-film-integrated-passives-market-outlook-for-ultra-small-devices/",
+			"date": "3.10.2023",
+			"excerpt": "Dennis Zogbi, Paumanok Inc. publishes on TTI Market Eye outlook on thin film integrated passive devices and its market assessment....",
+			"category": "Integrated Passives"
+		},
+		{
+			"title": "Knowles Offers Build-to-Print Services for Thin Film Circuits",
+			"url": "https://passive-components.eu/knowles-offers-build-to-print-services-for-thin-film-circuits/",
+			"date": "18.5.2023",
+			"excerpt": "Knowles Precision Devices now offers build-to-print services to facilitate thin-film circuits product design, manufacturing, and testing. As the name implies, “thin film”...",
+			"category": "Integrated Passives"
+		},
+		{
+			"title": "Integrated Passive Components Market Trend",
+			"url": "https://passive-components.eu/integrated-passive-components-market-trend/",
+			"date": "17.5.2023",
+			"excerpt": "Dennis Zogbi, Paumanok Inc. publishes on TTI Market Eye outlook on integrated passive components market trends, demand and technologies. The...",
+			"category": "Integrated Passives"
+		},
+		{
+			"title": "Littelfuse Presents Ultra-Miniature Half-Pitch SMT DIP Switches",
+			"url": "https://passive-components.eu/littelfuse-presents-ultra-miniature-half-pitch-smt-dip-switches/",
+			"date": "7.4.2026",
+			"excerpt": "Littelfuse introduces TDB series ultra‑miniature, half‑pitch surface‑mount DIP switches that are designed for high‑density PCB layouts where space, reliability, and...",
+			"category": "Electro-mechanical News"
+		},
+		{
+			"title": "Würth Elektronik Releases Heat Sinks for TO and IC packages",
+			"url": "https://passive-components.eu/wurth-elektronik-releases-heat-sinks-for-to-and-ic-packages/",
+			"date": "31.3.2026",
+			"excerpt": "Würth Elektronik has expanded its thermal management range with a modular heat sink portfolio for power semiconductors in TO packages...",
+			"category": "Electro-mechanical News"
+		},
+		{
+			"title": "Würth Elektronik Offers Halogen‑Free EMC Gaskets for Displays and Housings",
+			"url": "https://passive-components.eu/wurth-elektronik-offers-halogen-free-emc-gaskets-for-displays-and-housings/",
+			"date": "28.1.2026",
+			"excerpt": "Würth Elektronik has extended its WE‑LT conductive textile gasket family with a new halogen‑free variant aimed at enclosure and display...",
+			"category": "Electro-mechanical News"
+		},
+		{
+			"title": "Littelfuse Unveils Ultra-Low-Power TMR Magnetic Switches",
+			"url": "https://passive-components.eu/littelfuse-unveils-ultra-low-power-tmr-magnetic-switches/",
+			"date": "13.1.2026",
+			"excerpt": "Littelfuse has introduced two new omnipolar TMR magnetic switches, LF21173TMR and LF21177TMR, targeting space‑constrained, battery‑powered electronics that need precise, low‑power...",
+			"category": "Electro-mechanical News"
+		},
+		{
+			"title": "Panasonic Releases Compact Tactile Switch with 3N Operation Force and 500K Cycles Life",
+			"url": "https://passive-components.eu/panasonic-releases-compact-tactile-switch-with-3n-operation-force-and-500k-cycles-life/",
+			"date": "16.12.2025",
+			"excerpt": "Panasonic Industry Europe has launched a new tiny tactile switch which provides a unique tactile feeling and a new operation force of 3 N.  The switch’s very small footprint...",
+			"category": "Electro-mechanical News"
+		},
+		{
+			"title": "Industry Smallest Dual-Pole Reed Relay Wins Elektra Awards 2025",
+			"url": "https://passive-components.eu/industry-smallest-dual-pole-reed-relay-wins-elektra-awards-2025/",
+			"date": "10.12.2025",
+			"excerpt": "Electronics Weekly announced the winners of the prestigious industry awards Elektra Awards 2025.  The nomination in the category of Passive/Interconnection/Electromechanical...",
+			"category": "Electro-mechanical News"
+		},
+		{
+			"title": "Littelfuse Releases TMR Switches with Ultra-Low Power Magnetic Sensing",
+			"url": "https://passive-components.eu/littelfuse-releases-tmr-switches-with-ultra-low-power-magnetic-sensing/",
+			"date": "12.11.2025",
+			"excerpt": "Littelfuse unveils omnipolar and bipolar TMR switches that combine high sensitivity with minimal power draw for smart meters, IoT devices,...",
+			"category": "Electro-mechanical News"
+		},
+		{
+			"title": "Littelfuse Releases Load-Powered Compact Relay",
+			"url": "https://passive-components.eu/littelfuse-releases-load-powered-compact-relay/",
+			"date": "5.11.2025",
+			"excerpt": "Littelfuse unveils ultra-compact relay that enables battery-less or low-power operation for thermostats, building automation, HVAC, and security systems. Littelfuse, Inc.,...",
+			"category": "Electro-mechanical News"
+		},
+		{
+			"title": "Würth Elektronik Releases Push-Button and Main Switches",
+			"url": "https://passive-components.eu/wurth-elektronik-releases-push-button-and-main-switches/",
+			"date": "13.8.2025",
+			"excerpt": "Würth Elektronik expands its switch program. The popular SMT-mountable short-travel push-button switches are now joined by a new size version:...",
+			"category": "Electro-mechanical News"
+		},
+		{
+			"title": "SCHURTER Introduces Reliable Arc-Free Switching Technology",
+			"url": "https://passive-components.eu/schurter-introduces-reliable-arc-free-switching-technology/",
+			"date": "4.8.2025",
+			"excerpt": "SCHURTER announces its latest technological breakthrough: a completely arc-free EDC (Electronic Direct Current) switching solution. Arcing has long been one...",
+			"category": "Electro-mechanical News"
+		},
+		{
+			"title": "Panasonic Releases Enhanced Reliability Sealed Sliding Switches",
+			"url": "https://passive-components.eu/panasonic-releases-enhanced-reliability-sealed-sliding-switches/",
+			"date": "28.7.2025",
+			"excerpt": "Panasonic Industry has recently introduced the ASQD1 series of Seal Type Sliding Switches, a new state-of-the-art line of micro switches...",
+			"category": "Electro-mechanical News"
+		},
+		{
+			"title": "Littelfuse Compact Tactile Switch Offers Low-Noise Switching and Dust Protection",
+			"url": "https://passive-components.eu/littelfuse-compact-tactile-switch-offers-low-noise-switching-and-dust-protection/",
+			"date": "10.7.2025",
+			"excerpt": "Littelfuse relaunched its compact PTS647 tactile switch series with updated variants that offer low-noise switching for audio, industrial, and medical...",
+			"category": "Electro-mechanical News"
+		},
+		{
+			"title": "Littelfuse Releases Harsh Environment Robust Tactile Switches",
+			"url": "https://passive-components.eu/littelfuse-releases-harsh-environment-robust-tactile-switches/",
+			"date": "5.6.2025",
+			"excerpt": "Littelfuse unveils potting process friendly tactile switches, rated for up to 1 million cycles, deliver exceptional durability and reliability for...",
+			"category": "Electro-mechanical News"
+		},
+		{
+			"title": "Littelfuse Unveils High-Use Tactile Switches with 2 Million Cycle Lifespan",
+			"url": "https://passive-components.eu/littelfuse-unveils-high-use-tactile-switches-with-2-million-cycle-lifespan/",
+			"date": "9.5.2025",
+			"excerpt": "Littelfuse, Inc., an industrial technology manufacturing company empowering a sustainable, connected, and safer world, released the TLSM Series Tactile Switches for surface-mount...",
+			"category": "Electro-mechanical News"
+		},
+		{
+			"title": "W-band Self-Biased Circulators for Next Gen VHTS Satellites",
+			"url": "https://passive-components.eu/w-band-self-biased-circulators-for-next-gen-vhts-satellites/",
+			"date": "1.5.2025",
+			"excerpt": "This paper Towards W-Band Self-Biased Circulators For Next Generation Of Vhts Payload Was presented by Evan Roue, Univ Brest, France during...",
+			"category": "Electro-mechanical News"
+		},
+		{
+			"title": "Highly Integrated W-Band Circulators Based on SIW Technology",
+			"url": "https://passive-components.eu/highly-integrated-w-band-circulators-based-on-siw-technology/",
+			"date": "28.4.2025",
+			"excerpt": "This paper on Development Of Highly Integrated W-Band Circulators/Isolators Based On Substrate Integrated Waveguide (SIW) Technology was presented by Henrik...",
+			"category": "Electro-mechanical News"
+		},
+		{
+			"title": "Hirose Releases Ultra‑low Profile FPC‑to‑board Connector",
+			"url": "https://passive-components.eu/hirose-releases-ultra-low-profile-fpc-to-board-connector/",
+			"date": "17.6.2026",
+			"excerpt": "Hirose’s new BK19 series is an ultra‑miniature single‑row FPC‑to‑board connector that combines signal and power in one interface for space‑constrained...",
+			"category": "Inter-connect News"
+		},
+		{
+			"title": "Hirose Releases 0.5 mm Floating Board-to-Board Connector for EV Powertrain Designs",
+			"url": "https://passive-components.eu/hirose-releases-0-5-mm-floating-board-to-board-connector-for-ev-powertrain-designs/",
+			"date": "15.6.2026",
+			"excerpt": "Hirose Electric’s new FX36 series is a 0.5 mm pitch board-to-board connector with a floating and vibration absorption structure designed for...",
+			"category": "Inter-connect News"
+		},
+		{
+			"title": "Hirose Expands Compact High‑Voltage EV connectors",
+			"url": "https://passive-components.eu/hirose-expands-compact-high-voltage-ev-connectors/",
+			"date": "21.5.2026",
+			"excerpt": "Hirose’s ZE150HV and ZG05HV connector families are compact wire‑to‑board solutions for high‑voltage circuits in electric and hybrid vehicles as well...",
+			"category": "Inter-connect News"
+		},
+		{
+			"title": "YAGEO Releases Compact RJ45 Connector for Multi‑Gigabit Ethernet",
+			"url": "https://passive-components.eu/yageo-releases-compact-rj45-connector-for-multi-gigabit-ethernet/",
+			"date": "18.5.2026",
+			"excerpt": "YAGEO’s new JXF0‑series PulseJack integrated connector modules (ICMs) combine a compact RJ45 jack with integrated magnetics and 90 W PoE+...",
+			"category": "Inter-connect News"
+		},
+		{
+			"title": "Binder Hybrid Connector Simplifies One Cable Automation",
+			"url": "https://passive-components.eu/binder-hybrid-connector-simplifies-one-cable-automation/",
+			"date": "13.5.2026",
+			"excerpt": "The Binder B23 series is a new generation of hybrid circular connectors that combines power and shielded Ethernet in a...",
+			"category": "Inter-connect News"
+		},
+		{
+			"title": "binder Releases Tool‑Tightenable M12 Connectors for Improved Reliability",
+			"url": "https://passive-components.eu/binder-releases-tool-tightenable-m12-connectors-for-improved-reliability/",
+			"date": "30.4.2026",
+			"excerpt": "M12 circular connectors are a staple interface in industrial automation for carrying sensor signals, communication data and low‑voltage power in...",
+			"category": "Inter-connect News"
+		},
+		{
+			"title": "Heatsink Design and Thermal Interface Materials for Reliable Electronics",
+			"url": "https://passive-components.eu/heatsink-design-and-thermal-interface-materials-for-reliable-electronics/",
+			"date": "27.4.2026",
+			"excerpt": "Thermal management is a challenge for any electronics designer. Among the possible solutions, heatsinks are a key element that aids...",
+			"category": "Inter-connect News"
+		},
+		{
+			"title": "Amphenol Explanded Liquid Cooling Connectors for AI, ESS and EV Systems",
+			"url": "https://passive-components.eu/amphenol-explanded-liquid-cooling-connectors-for-ai-ess-and-ev-systems/",
+			"date": "17.4.2026",
+			"excerpt": "Amphenol Industrial Operations has expanded its Liquid Cooling Systems portfolio with new MQD, UQD/UQDB Rev 2.0 and SHQD connector families...",
+			"category": "Inter-connect News"
+		},
+		{
+			"title": "Binder Introduces Triangular Moulding for M16 and M12 Cable Connectors",
+			"url": "https://passive-components.eu/binder-introduces-triangular-moulding-for-m16-and-m12-cable-connectors/",
+			"date": "31.3.2026",
+			"excerpt": "Binder has introduced a new triangular moulding design for selected M16 and M12 cable connectors to improve mechanical robustness, strain...",
+			"category": "Inter-connect News"
+		},
+		{
+			"title": "Bourns Expands its Modular Contacts for Power-Dense Systems",
+			"url": "https://passive-components.eu/bourns-expands-its-modular-contacts-for-power-dense-systems/",
+			"date": "19.3.2026",
+			"excerpt": "Bourns has expanded its modular contacts portfolio with new five, six and eight amp versions addressing higher power delivery requirements...",
+			"category": "Inter-connect News"
+		},
+		{
+			"title": "Hirose Electric to Establish Automotive Connector Plant in India",
+			"url": "https://passive-components.eu/hirose-electric-to-establish-automotive-connector-plant-in-india/",
+			"date": "19.3.2026",
+			"excerpt": "Hirose Electric has announced plans to establish a new manufacturing site in Chennai, Tamil Nadu, India, with partial operations scheduled...",
+			"category": "Inter-connect News"
+		},
+		{
+			"title": "Molex Extends Cardinal Multi‑Port Coax Assemblies to 145 GHz for AI and 6G Test",
+			"url": "https://passive-components.eu/molex-extends-cardinal-multi-port-coax-assemblies-to-145-ghz-for-ai-and-6g-test/",
+			"date": "25.2.2026",
+			"excerpt": "Molex has extended its Cardinal RF product family with new multi‑port high‑frequency coaxial assemblies supporting measurements up to 145 GHz....",
+			"category": "Inter-connect News"
+		},
+		{
+			"title": "Earthing Systems and IEC Classification Explained",
+			"url": "https://passive-components.eu/earthing-systems-and-iec-classification-explained/",
+			"date": "25.3.2026",
+			"excerpt": "Earthing (grounding) systems are a fundamental part of low‑voltage electrical installations, directly influencing fault current paths, touch voltages and the...",
+			"category": "Inter-connect News"
+		},
+		{
+			"title": "Modeling Planar Magnetics Temperature: Practical Guidelines for Power Electronics Engineers",
+			"url": "https://passive-components.eu/modeling-planar-magnetics-temperature-practical-guidelines-for-power-electronics-engineers/",
+			"date": "15.4.2026",
+			"excerpt": "Planar magnetics are an attractive option for high‑density power converters thanks to their low profile, excellent repeatability and large surface...",
+			"category": "Modelling and Simulation"
+		},
+		{
+			"title": "Thermal Modeling of Magnetics",
+			"url": "https://passive-components.eu/thermal-modeling-of-magnetics/",
+			"date": "16.3.2026",
+			"excerpt": "Accurate thermal prediction in magnetics is critical to avoid overheating, improve loss estimation and shorten design cycles. The Frenetic magnetic...",
+			"category": "Modelling and Simulation"
+		},
+		{
+			"title": "How Modern Tools Model Magnetic Components for Power Electronics",
+			"url": "https://passive-components.eu/how-modern-tools-model-magnetic-components-for-power-electronics/",
+			"date": "5.3.2026",
+			"excerpt": "Magnetic components such as inductors and transformers are central to every switched‑mode power supply, yet their design is notoriously difficult...",
+			"category": "Modelling and Simulation"
+		},
+		{
+			"title": "Advanced Loss Modeling for Planar Magnetics in the Frenetic Planar Tool",
+			"url": "https://passive-components.eu/advanced-loss-modeling-for-planar-magnetics-in-the-frenetic-planar-tool/",
+			"date": "4.3.2026",
+			"excerpt": "Planar magnetics promise compact, low‑profile magnetics, but accurate loss, leakage, and capacitance modeling is significantly more complex than for conventional...",
+			"category": "Modelling and Simulation"
+		},
+		{
+			"title": "Modelithics Library for MATLAB: Measurement-Based Models for Microwave and RF Passive Components",
+			"url": "https://passive-components.eu/modelithics-library-for-matlab-measurement-based-models-for-microwave-and-rf-passive-components/",
+			"date": "20.2.2026",
+			"excerpt": "The Modelithics Library for MathWorks MATLAB provides an extensive set of high‑accuracy, measurement‑based models for RF, microwave and high‑speed designs...",
+			"category": "Modelling and Simulation"
+		},
+		{
+			"title": "Selecting Current Sense Transformers with Würth Elektronik REDEXPERT",
+			"url": "https://passive-components.eu/selecting-current-sense-transformers-with-wurth-elektronik-redexpert/",
+			"date": "3.2.2026",
+			"excerpt": "Würth Elektronik has added a dedicated Current Sense Transformer Selector to its REDEXPERT online design environment, aimed at simplifying current...",
+			"category": "Modelling and Simulation"
+		},
+		{
+			"title": "Power Electronics Tools for Passives and Magnetic Designs",
+			"url": "https://passive-components.eu/power-electronics-tools-for-passives-and-magnetic-designs/",
+			"date": "3.2.2026",
+			"excerpt": "Modern power electronics design relies on a diverse toolbox, from general‑purpose circuit simulators to highly specialized magnetics and component‑selection platforms....",
+			"category": "Modelling and Simulation"
+		},
+		{
+			"title": "Modelithics Unveils Qorvo GaN Library v25.5.9",
+			"url": "https://passive-components.eu/modelithics-unveils-qorvo-gan-library-v25-5-9/",
+			"date": "16.12.2025",
+			"excerpt": "Modelithics Unveils Modelithics Qorvo GaN Library v25.5.9 with Enhanced Compatibility and New Non-Linear Models. Modelithics®, a leading provider of innovative...",
+			"category": "Modelling and Simulation"
+		},
+		{
+			"title": "Digital Twin of a Tantalum Capacitor Anode: From Powder to Formation",
+			"url": "https://passive-components.eu/digital-twin-of-a-tantalum-capacitor-anode-from-powder-to-formation/",
+			"date": "23.2.2026",
+			"excerpt": "Vladimir Azbel, Independent consultant on tantalum capacitors presents a computational module that significantly accelerates the development of new tantalum capacitor designs...",
+			"category": "Modelling and Simulation"
+		},
+		{
+			"title": "ROHM Expands Its High-Accuracy EROM Models for Shunt Resistors",
+			"url": "https://passive-components.eu/rohm-expands-its-high-accuracy-erom-models-for-shunt-resistors/",
+			"date": "26.11.2025",
+			"excerpt": "ROHM has expanded its lineup of EROM (Embeddable BCI-ROM) models for shunt resistors and has made them available on ROHM’s...",
+			"category": "Modelling and Simulation"
+		},
+		{
+			"title": "Modelithics Unveils COMPLETE Library v25.7 for Cadence AWR Design Environment",
+			"url": "https://passive-components.eu/modelithics-unveils-complete-library-v25-7-for-cadence-awr-design-environment/",
+			"date": "25.11.2025",
+			"excerpt": "Modelithics announced the release of the latest version, v25.7, of the Modelithics COMPLETE Library™ for the Cadence® AWR Design Environment Platform. This release...",
+			"category": "Modelling and Simulation"
+		},
+		{
+			"title": "Guerrilla RF Sponsors Modelithics Models for GaN Power Transistor Line",
+			"url": "https://passive-components.eu/guerrilla-rf-sponsors-modelithics-models-for-gan-power-transistor-line/",
+			"date": "5.11.2025",
+			"excerpt": "Modelithics®, the industry-leading provider of scalable and high-accuracy RF/microwave simulation models, is pleased to announce that Guerrilla RF, Inc. has...",
+			"category": "Modelling and Simulation"
+		},
+		{
+			"title": "Murata Integrates Component Models into Cadence EDA Tools",
+			"url": "https://passive-components.eu/murata-integrates-component-models-into-cadence-eda-tools/",
+			"date": "21.10.2025",
+			"excerpt": "Murata Manufacturing Co., Ltd. announces a significant collaboration with Cadence Design Systems, Inc., making product libraries directly accessible within Cadence’s...",
+			"category": "Modelling and Simulation"
+		},
+		{
+			"title": "Wk 24 Electronics Supply Chain Digest",
+			"url": "https://passive-components.eu/wk-24-electronics-supply-chain-digest-3/",
+			"date": "15.6.2026",
+			"excerpt": "",
+			"category": "Weekly Digest"
+		},
+		{
+			"title": "Wk 23 Electronics Supply Chain Digest",
+			"url": "https://passive-components.eu/wk-23-electronics-supply-chain-digest-3/",
+			"date": "8.6.2026",
+			"excerpt": "Electronics Supply Chain Weekly Digest 6-5-26. DATAPOINT OF THE WEEK: S&P reported May Eurozone mfg PMI decreased to 51.6 from 52.2...",
+			"category": "Weekly Digest"
+		},
+		{
+			"title": "Wk 22 Electronics Supply Chain Digest",
+			"url": "https://passive-components.eu/wk-22-electronics-supply-chain-digest-3/",
+			"date": "1.6.2026",
+			"excerpt": "Electronics Supply Chain Weekly Digest 5-29-26. DATAPOINT OF THE WEEK: April new car registrations in Europe totaled 1.15M, surpassing the 1M...",
+			"category": "Weekly Digest"
+		},
+		{
+			"title": "Wk 19 Electronics Supply Chain Digest",
+			"url": "https://passive-components.eu/wk-19-electronics-supply-chain-digest-3/",
+			"date": "11.5.2026",
+			"excerpt": "Electronics Supply Chain Weekly Digest 5-8-26. DATAPOINT OF THE WEEK: S&P reported Apr Eurozone mfg PMI increased to 52.2 from 51.6...",
+			"category": "Weekly Digest"
+		},
+		{
+			"title": "Wk 18 Electronics Supply Chain Digest",
+			"url": "https://passive-components.eu/wk-18-electronics-supply-chain-digest-3/",
+			"date": "4.5.2026",
+			"excerpt": "Electronics Supply Chain Weekly Digest 5-1-26. DATAPOINT OF THE WEEK: S&P reported US mfg PMI surged to 54.5 in Apr, up...",
+			"category": "Weekly Digest"
+		},
+		{
+			"title": "Wk 17 Electronics Supply Chain Digest",
+			"url": "https://passive-components.eu/wk-17-electronics-supply-chain-digest-2/",
+			"date": "27.4.2026",
+			"excerpt": "Electronics Supply Chain Weekly Digest 4-24-26. DATAPOINTS OF THE WEEK: March new car registrations in Europe totaled 1.58, surpassing the 1M mark...",
+			"category": "Weekly Digest"
+		},
+		{
+			"title": "Wk 16 Electronics Supply Chain Digest",
+			"url": "https://passive-components.eu/wk-16-electronics-supply-chain-digest-2/",
+			"date": "20.4.2026",
+			"excerpt": "Electronics Supply Chain Weekly Digest 4-17-26 DATAPOINT OF THE WEEK: TSMC announced its 1Q26 net profit hit a record $18.06B, up...",
+			"category": "Weekly Digest"
+		},
+		{
+			"title": "Wk 15 Electronics Supply Chain Digest",
+			"url": "https://passive-components.eu/wk-15-electronics-supply-chain-digest-3/",
+			"date": "13.4.2026",
+			"excerpt": "Electronics Supply Chain Weekly Digest 4-10-26. DATAPOINT OF THE WEEK: Passenger car retail sales in China totaled 1.65M units in March,...",
+			"category": "Weekly Digest"
+		},
+		{
+			"title": "Wk 14 Electronics Supply Chain Digest",
+			"url": "https://passive-components.eu/wk-14-electronics-supply-chain-digest-2/",
+			"date": "6.4.2026",
+			"excerpt": "Electronics Supply Chain Weekly Digest 4-3-26. DATAPOINT OF THE WEEK: S&P reported Mar Eurozone mfg PMI increased to 51.6 from 50.8...",
+			"category": "Weekly Digest"
+		},
+		{
+			"title": "Wk 13 Electronics Supply Chain Digest",
+			"url": "https://passive-components.eu/wk-13-electronics-supply-chain-digest-2/",
+			"date": "30.3.2026",
+			"excerpt": "Electronics Supply Chain Weekly Digest 3-27-26. Auto/Transportation Chinese EV makers outpace Tesla in Europe's budget segment as BYD surges 162%...",
+			"category": "Weekly Digest"
+		},
+		{
+			"title": "Wk 12 Electronics Supply Chain Digest",
+			"url": "https://passive-components.eu/wk-12-electronics-supply-chain-digest-3/",
+			"date": "23.3.2026",
+			"excerpt": "Electronics Supply Chain Weekly Digest 3-20-26. DATAPOINT OF THE WEEK: This week, both onsemi and Alpha and Omega semiconductor announced price...",
+			"category": "Weekly Digest"
+		},
+		{
+			"title": "Wk 11 Electronics Supply Chain Digest",
+			"url": "https://passive-components.eu/wk-11-electronics-supply-chain-digest-3/",
+			"date": "16.3.2026",
+			"excerpt": "Electronics Supply Chain Weekly Digest 3-13-26. DATAPOINT OF THE WEEK: Passenger car retail sales in China totaled 1.03M in Feb, down...",
+			"category": "Weekly Digest"
+		},
+		{
+			"title": "Wk 10 Electronics Supply Chain Digest",
+			"url": "https://passive-components.eu/wk-10-electronics-supply-chain-digest-3/",
+			"date": "9.3.2026",
+			"excerpt": "Electronics Supply Chain Weekly Digest 3-6-26. DATAPOINT OF THE WEEK: S&P reported Feb Eurozone mfg PMI increased to 50.8, from 49.5...",
+			"category": "Weekly Digest"
+		},
+		{
+			"title": "Wk 9 Electronics Supply Chain Digest",
+			"url": "https://passive-components.eu/wk-9-electronics-supply-chain-digest-2/",
+			"date": "2.3.2026",
+			"excerpt": "Electronics Supply Chain Weekly Digest 2-27-26. DATAPOINT OF THE WEEK: January new car registrations in Europe totaled 961k, not reaching 1M...",
+			"category": "Weekly Digest"
+		},
+		{
+			"title": "Wk 8 Electronics Supply Chain Digest",
+			"url": "https://passive-components.eu/wk-8-electronics-supply-chain-digest-2/",
+			"date": "23.2.2026",
+			"excerpt": "Electronics Supply Chain Weekly Digest 2-20-26. DATAPOINTS OF THE WEEK:  S&P reported February Flash Eurozone manufacturing PMI rose to 50.8...",
+			"category": "Weekly Digest"
+		},
+		{
+			"title": "Wk 6 Electronics Supply Chain Digest",
+			"url": "https://passive-components.eu/wk-6-electronics-supply-chain-digest-2/",
+			"date": "9.2.2026",
+			"excerpt": "Electronics Supply Chain Weekly Digest 2-6-26. DATAPOINT OF THE WEEK: S&P reported December Eurozone mfg PMI increased to 49.5, from...",
+			"category": "Weekly Digest"
+		},
+		{
+			"title": "Wk 5 Electronics Supply Chain Digest",
+			"url": "https://passive-components.eu/wk-5-electronics-supply-chain-digest-2/",
+			"date": "2.2.2026",
+			"excerpt": "Electronics Supply Chain Weekly Digest 1-23-26. DATAPOINT OF THE WEEK: New car registrations in Europe increased up 2.06% Y/Y in...",
+			"category": "Weekly Digest"
+		},
+		{
+			"title": "Wk 4 Electronics Supply Chain Digest",
+			"url": "https://passive-components.eu/wk-4-electronics-supply-chain-digest-2/",
+			"date": "26.1.2026",
+			"excerpt": "Electronics Supply Chain Weekly Digest 1-23-26. DATAPOINT OF THE WEEK: &P reported that the January Flash Eurozone mfg PMI increased...",
+			"category": "Weekly Digest"
+		},
+		{
+			"title": "Wk 3 Electronics Supply Chain Digest",
+			"url": "https://passive-components.eu/wk-3-electronics-supply-chain-digest-2/",
+			"date": "19.1.2026",
+			"excerpt": "Electronics Supply Chain Weekly Digest 1-16-26. DATAPOINT OF THE WEEK: Passenger car retail sales in China continued to weaken in...",
+			"category": "Weekly Digest"
+		},
+		{
+			"title": "Wk 2 Electronics Supply Chain Digest",
+			"url": "https://passive-components.eu/wk-2-electronics-supply-chain-digest-2/",
+			"date": "12.1.2026",
+			"excerpt": "Electronics Supply Chain Weekly Digest 1-9-26. DATAPOINT OF THE WEEK: S&P reported that the December Eurozone mfg PMI decrease to...",
+			"category": "Weekly Digest"
+		},
+		{
+			"title": "Wk 51 Electronics Supply Chain Digest",
+			"url": "https://passive-components.eu/wk-51-electronics-supply-chain-digest-2/",
+			"date": "22.12.2025",
+			"excerpt": "Electronics Supply Chain Weekly Digest 12-19-25. DATAPOINT OF THE WEEK: S&P December Flash Eurozone mfg PMI decreased to 49.2 from...",
+			"category": "Weekly Digest"
+		},
+		{
+			"title": "Why Isolated DC/DC Power Supplies Fail Late, Würth Elektronik Podcast",
+			"url": "https://passive-components.eu/why-isolated-dc-dc-power-supplies-fail-late-wurth-elektronik-podcast/",
+			"date": "8.6.2026",
+			"excerpt": "",
+			"category": "Applications"
+		},
+		{
+			"title": "DigiKey Launches “Engineering Unlocked” Video Series",
+			"url": "https://passive-components.eu/digikey-launches-engineering-unlocked-video-series/",
+			"date": "26.3.2026",
+			"excerpt": "DigiKey has introduced a new three-part video series, Engineering Unlocked, focused on how today’s tools, communities and education initiatives are...",
+			"category": "Applications"
+		},
+		{
+			"title": "Würth Elektronik and Grinn Launch Edge AI Cooperation",
+			"url": "https://passive-components.eu/wurth-elektronik-and-grinn-launch-edge-ai-cooperation/",
+			"date": "13.3.2026",
+			"excerpt": "Würth Elektronik and embedded systems developer Grinn have announced a strategic cooperation in the field of edge AI solutions. The...",
+			"category": "Applications"
+		},
+		{
+			"title": "Murata Publishes Power Delivery Guide for AI Servers",
+			"url": "https://passive-components.eu/murata-publishes-power-delivery-guide-for-ai-servers/",
+			"date": "4.2.2026",
+			"excerpt": "Murata has released a new technical guide on power delivery networks (PDNs) for AI servers in next‑generation data centers, focusing...",
+			"category": "Applications"
+		},
+		{
+			"title": "DigiKey Introduces Industry-First Power Supply Configuration Tool",
+			"url": "https://passive-components.eu/digikey-introduces-industry-first-power-supply-configuration-tool/",
+			"date": "26.11.2025",
+			"excerpt": "DigiKey online tool speeds access to power supply solutions, offering time savings and an accelerated design process. DigiKey, the leading...",
+			"category": "Applications"
+		},
+		{
+			"title": "Efficient Power Converters: Duty Cycle vs Conduction Losses",
+			"url": "https://passive-components.eu/efficient-power-converters-duty-cycle-vs-conduction-losses/",
+			"date": "29.9.2025",
+			"excerpt": "Professor Sam Ben-Yaakov in this video explains the impact of the duty cycle of a PWM converter on conduction losses...",
+			"category": "Applications"
+		},
+		{
+			"title": "DigiKey Announces Back to School Giveaway to Empower Tomorrow’s Innovators",
+			"url": "https://passive-components.eu/digikey-announces-back-to-school-giveaway-to-empower-tomorrows-innovators/",
+			"date": "27.8.2025",
+			"excerpt": "DigiKey, the leading global electronic components and automation products distributor, announces its annual Back to School Prize Giveaway, which offers university...",
+			"category": "Applications"
+		},
+		{
+			"title": "Würth Elektronik Expands MagI³C with Variable Step-Down Modules",
+			"url": "https://passive-components.eu/wurth-elektronik-expands-magi%c2%b3c-with-variable-step-down-modules/",
+			"date": "30.7.2025",
+			"excerpt": "Würth Elektronik expands its MagI³C power module series with variable step-down modules featuring high current outputs. Würth Elektronik has expanded...",
+			"category": "Applications"
+		},
+		{
+			"title": "Switched Capacitor Converter Explained",
+			"url": "https://passive-components.eu/switched-capacitor-converter-explained/",
+			"date": "28.11.2025",
+			"excerpt": "This article provides a switched-capacitor DC-DC converter design guide. Video from prof. Sam Ben-Yaakov explains principle of switched capacitor converter...",
+			"category": "Applications"
+		},
+		{
+			"title": "DigiKey Offers Zephyr Operating System Workshop and Training Videos",
+			"url": "https://passive-components.eu/digikey-offers-zephyr-operating-system-workshop-and-training-videos/",
+			"date": "6.6.2025",
+			"excerpt": "DigiKey offers virtual zephyr operating system workshop and training videos. Students and engineers can learn how to write a Zephyr...",
+			"category": "Applications"
+		},
+		{
+			"title": "How to design a 60W Flyback Transformer",
+			"url": "https://passive-components.eu/how-to-design-a-60w-flyback-transformer/",
+			"date": "12.5.2025",
+			"excerpt": "Designing a 60W Flyback Transformer requires careful selection of core materials, winding configurations, and optimization techniques. In this video, Iain...",
+			"category": "Applications"
+		},
+		{
+			"title": "Würth Elektronik Offers New Power Supplies Development Kit",
+			"url": "https://passive-components.eu/wurth-elektronik-offers-new-power-supplies-development-kit/",
+			"date": "29.4.2025",
+			"excerpt": "Würth Elektronik is excited to announce the launch of the SN6507 Development Kit , featuring the Texas Instruments (TI) SN6507EVM...",
+			"category": "Applications"
+		},
+		{
+			"title": "DigiKey Announces Sponsorship of KiCad to Support Open-Source EDA Development",
+			"url": "https://passive-components.eu/digikey-announces-sponsorship-of-kicad-to-support-open-source-eda-development/",
+			"date": "9.4.2025",
+			"excerpt": "DigiKey, a leading global commerce distributor offering the largest selection of technical components and automation products in stock for immediate...",
+			"category": "Applications"
+		},
+		{
+			"title": "Impedance Matching with RF LC Circuits",
+			"url": "https://passive-components.eu/impedance-matching-with-rf-lc-circuits/",
+			"date": "20.3.2025",
+			"excerpt": "This article based on Knowles Precision Devices blog discusses relationship of capacitors and inductors in RF circuits. Capacitors and inductors are two closely related components...",
+			"category": "Applications"
+		},
+		{
+			"title": "DigiKey Partners with SparkFun to Equip Young Engineers with XRP Robotics Kits",
+			"url": "https://passive-components.eu/digikey-partners-with-sparkfun-to-equip-engineers-with-xrp-robotics-kits/",
+			"date": "18.3.2025",
+			"excerpt": "DigiKey, a leading global commerce distributor offering the largest selection of technical components and automation products in stock for immediate...",
+			"category": "Applications"
+		},
+		{
+			"title": "Fly-Buck vs Flyback Converters",
+			"url": "https://passive-components.eu/fly-buck-converter-explained-and-comparison-to-flyback/",
+			"date": "28.11.2025",
+			"excerpt": "This article provides a detailed technical explanation of the Fly-Buck converter and compares it with the traditional Flyback topology. Key...",
+			"category": "Applications"
+		},
+		{
+			"title": "RLC Circuit Switching Response Explained",
+			"url": "https://passive-components.eu/rlc-circuit-switching-response-explained/",
+			"date": "22.5.2026",
+			"excerpt": "This article based on Knowles Precision Devices blog explains how an RLC circuit responds to a switching pulse. One of the fundamental roles...",
+			"category": "Applications"
+		},
+		{
+			"title": "Murata Releases 1210 in-vehicle High Current PoC Inductors",
+			"url": "https://passive-components.eu/murata-releases-1210-in-vehicle-high-current-poc-inductors/",
+			"date": "27.9.2024",
+			"excerpt": "Murata Manufacturing Co., Ltd. has commercialized the in-vehicle high current PoC automotive inductor LQW32FT_8H series. Mass production began in September...",
+			"category": "Applications"
+		},
+		{
+			"title": "Flyback Converter Design and Calculation",
+			"url": "https://passive-components.eu/flyback-converter-design-and-calculation/",
+			"date": "4.6.2026",
+			"excerpt": "This article elaborates on design and calculation of Flyback DC/DC converters. The post is based on Würth Elektronik‘s “DC/DC Converter Handbook”...",
+			"category": "Applications"
+		},
+		{
+			"title": "Boost Converter Design and Calculation",
+			"url": "https://passive-components.eu/boost-converter-design-and-calculation/",
+			"date": "1.6.2026",
+			"excerpt": "This article elaborates on design and calculation of Boost DC/DC converters. The post is based on Würth Elektronik‘s “DC/DC Converter Handbook”...",
+			"category": "Applications"
+		},
+		{
+			"title": "SEPIC Converter Design and Calculation",
+			"url": "https://passive-components.eu/sepic-converter-design-and-calculation/",
+			"date": "25.3.2026",
+			"excerpt": "This article elaborates on design and calculation of SEPIC DC/DC converters. The post is based on Würth Elektronik‘s “DC/DC Converter Handbook”...",
+			"category": "Applications"
+		}
+	],
+	"categories_order": [
+		"Latest",
+		"Capacitors",
+		"Inductors",
+		"Resistors",
+		"Circuit Protection Devices",
+		"Fuses",
+		"Filters",
+		"Automotive",
+		"Aerospace & Defence",
+		"Antenna",
+		"Market & Supply Chain",
+		"Market Insights",
+		"New Technologies",
+		"New Materials & Supply",
+		"RF & Microwave",
+		"Telecommunication",
+		"Medical",
+		"Industrial",
+		"Oscillators",
+		"Passive Sensors News",
+		"Non-linear Passives",
+		"Integrated Passives",
+		"Electro-mechanical News",
+		"Inter-connect News",
+		"Modelling and Simulation",
+		"Weekly Digest",
+		"Applications"
+	]
+}

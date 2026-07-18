@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { SearchIcon, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 // 热门品牌推荐数据
 const hotBrands = [
@@ -32,6 +33,7 @@ export const SearchBarWithSuggestions = ({
 	const [searchValue, setSearchValue] = useState("");
 	const containerRef = useRef<HTMLDivElement>(null);
 	const router = useRouter();
+	const t = useTranslations("search.suggestions") as unknown as (key: string) => string;
 
 	// 点击外部关闭下拉框
 	useEffect(() => {
@@ -81,7 +83,7 @@ export const SearchBarWithSuggestions = ({
 						type="submit"
 						className="absolute right-1 top-1/2 -translate-y-1/2 rounded-md bg-[#1a237e] px-4 py-1.5 text-sm font-medium text-white transition-colors hover:bg-[#2b5ba9]"
 					>
-						Search
+						{t("searchBtn")}
 					</button>
 				</label>
 			</form>
@@ -90,7 +92,9 @@ export const SearchBarWithSuggestions = ({
 			{isOpen && (
 				<div className="absolute left-0 right-0 top-full z-50 mt-1 rounded-lg border border-border bg-white shadow-lg">
 					<div className="p-4">
-						<h3 className="mb-3 text-xs font-medium uppercase tracking-wider text-gray-500">Hot Brands</h3>
+						<h3 className="mb-3 text-xs font-medium uppercase tracking-wider text-gray-500">
+							{t("hotBrands")}
+						</h3>
 						<div className="space-y-1">
 							{hotBrands.map((brand) => (
 								<Link
@@ -106,7 +110,7 @@ export const SearchBarWithSuggestions = ({
 										</span>
 									</div>
 									<span className="flex items-center text-sm text-gray-500 hover:text-[#1a237e]">
-										View Products
+										{t("viewProducts")}
 										<ChevronRight className="ml-0.5 h-3 w-3" />
 									</span>
 								</Link>
