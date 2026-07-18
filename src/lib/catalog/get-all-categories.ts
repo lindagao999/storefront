@@ -14,7 +14,7 @@ export async function getAllCategories(channel: string, localeSlug: string): Pro
 	applyCacheProfile(CACHE_PROFILES.categories, "all");
 
 	const result = await executePublicGraphQL(CategoriesGetAllDocument, {
-		variables: { channel, ...graphqlLanguageCodeVariables(localeSlug) },
+		variables: { ...graphqlLanguageCodeVariables(localeSlug) },
 	});
 
 	if (!result.ok) {
