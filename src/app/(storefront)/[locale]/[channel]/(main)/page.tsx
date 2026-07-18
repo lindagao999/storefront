@@ -380,7 +380,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 	let categoryItems: CategoryItem[] = fallbackCategories;
 	// TODO: Uncomment after running pnpm generate
 	// try {
-	// 	const categories = await getAllCategories(channel, locale);
+	// 	const categories = await getAllCategories(locale);
 	// 	categoryItems = categories.map((cat) => ({
 	// 		name: cat.name,
 	// 		href: `/categories/${cat.slug}`,
