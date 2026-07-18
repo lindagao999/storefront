@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import { Suspense } from "react";
 import { NewsPageClient } from "./news-page-client";
 
 interface NewsArticle {
@@ -83,8 +84,7 @@ export async function generateMetadata({
 	};
 }
 
-export default async function NewsPage({ params }: { params: Promise<{ locale: string }> }) {
-	const { locale } = await params;
+async function NewsPageContent({ locale }: { locale: string }) {
 	const t = await getTranslations({ locale, namespace: "news" });
 	const { articles, updated, total } = await loadNewsData();
 	const groups = groupByCategory(articles);
@@ -103,5 +103,15 @@ export default async function NewsPage({ params }: { params: Promise<{ locale: s
 			pageTitle={pageTitle}
 			locale={locale}
 		/>
+	);
+}
+
+export default async function NewsPage({ params }: { params: Promise<{ locale: string }> }) {
+	const { locale } = await params;
+
+	return (
+		<Suspense fallback={null}>
+			<NewsPageContent locale={locale} />
+		</Suspense>
 	);
 }
