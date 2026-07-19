@@ -15,7 +15,7 @@ import { buildStorefrontPath } from "@/lib/storefront-path";
 import { ProductsPageClient } from "./products-client";
 
 // Mock products for local styling/debugging only. Never committed.
-const MOCK_PRODUCTS = (() => {
+const MOCK_PRODUCTS: import("@/ui/components/plp/product-card-data").ProductCardData[] = (() => {
 	const useMock = process.env.NEXT_PUBLIC_USE_MOCK_PRODUCTS === "true";
 	if (!useMock) return null;
 
