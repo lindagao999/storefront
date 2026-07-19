@@ -18,7 +18,7 @@ import { ProductsPageClient } from "./products-client";
 // Mock products for local styling/debugging only. Never committed.
 const MOCK_PRODUCTS: ProductCardData[] = (() => {
 	const useMock = process.env.NEXT_PUBLIC_USE_MOCK_PRODUCTS === "true";
-	if (!useMock) return null;
+	if (!useMock) return [];
 
 	const colors = [
 		{ name: "Black", hex: "#000000" },
