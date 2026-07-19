@@ -64,7 +64,7 @@ export interface GalleryVariant {
 function StandardGallerySkeleton() {
 	return (
 		<ProductGalleryShell imageCount={1} showChrome={false}>
-			<div className={galleryImageFrameClass("aspect-[4/5] w-full animate-pulse bg-muted")} />
+			<div className={galleryImageFrameClass("aspect-[2/3] w-full animate-pulse bg-muted")} />
 		</ProductGalleryShell>
 	);
 }

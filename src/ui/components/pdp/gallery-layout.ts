@@ -25,7 +25,7 @@
 export type PdpGalleryLayout = "standard" | "immersive" | "mosaic";
 
 /** Active gallery layout for the whole storefront. */
-export const PDP_GALLERY_LAYOUT: PdpGalleryLayout = "immersive";
+export const PDP_GALLERY_LAYOUT: PdpGalleryLayout = "standard";
 
 export interface PdpLayoutClasses {
 	/** `<main>` wrapper. */
@@ -69,9 +69,9 @@ const STICKY_BELOW_HEADER = "lg:top-[calc(var(--header-height)_+_2rem)]";
 export const PDP_LAYOUT_CLASSES: Record<PdpGalleryLayout, PdpLayoutClasses> = {
 	standard: {
 		main: "container-content flex-1 py-4 sm:py-6 lg:py-10",
-		grid: "grid gap-8 lg:grid-cols-2 lg:gap-16",
-		galleryColumn: `lg:sticky ${STICKY_BELOW_HEADER} lg:self-start`,
-		infoColumn: "flex flex-col gap-3",
+		grid: "grid gap-8 lg:grid-cols-[1fr_4fr] lg:gap-16",
+		galleryColumn: "",
+		infoColumn: `flex flex-col gap-3 lg:sticky ${STICKY_BELOW_HEADER} lg:self-start`,
 		attributesPlacement: "info",
 	},
 	immersive: {

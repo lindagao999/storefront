@@ -24,7 +24,7 @@ export function CategoryHero({
 	const hasImage = !!backgroundImage;
 
 	return (
-		<section className="relative h-[340px] overflow-hidden border-b border-border">
+		<section className="relative h-[180px] overflow-hidden border-b border-border">
 			{/* Background */}
 			<div className="absolute inset-0">
 				{hasImage ? (
@@ -41,32 +41,21 @@ export function CategoryHero({
 						<div className="absolute inset-0 bg-gradient-to-r from-foreground/70 via-foreground/40 to-transparent" />
 					</>
 				) : (
-					<WavePattern className="h-full w-full" />
+					<div className="h-full w-full bg-gradient-to-br from-[#1a237e] via-[#1e3a8a] to-[#2b5ba9]" />
 				)}
 			</div>
 
 			{/* Content */}
-			<div className="container-content relative flex h-full flex-col justify-end pb-10">
+			<div className="container-content relative flex h-full flex-col justify-end pb-6">
 				<Breadcrumbs
 					items={breadcrumbs}
 					ariaLabel={breadcrumbAriaLabel}
-					surface={hasImage ? "pill" : "default"}
-					className="mb-4"
+					surface={hasImage ? "pill" : "dark"}
+					className="mb-3"
 				/>
 
-				<h1 className={cn("text-balance text-h1", hasImage ? "text-background" : "text-foreground")}>
-					{title}
-				</h1>
-				{description && (
-					<p
-						className={cn(
-							"mt-5 max-w-lg text-pretty text-lead",
-							hasImage ? "text-background" : "text-muted-foreground",
-						)}
-					>
-						{description}
-					</p>
-				)}
+				<h1 className="text-balance text-h1 text-white">{title}</h1>
+				{description && <p className="mt-2 max-w-lg text-pretty text-lead text-white/80">{description}</p>}
 			</div>
 		</section>
 	);

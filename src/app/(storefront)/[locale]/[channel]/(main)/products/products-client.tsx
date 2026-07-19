@@ -17,6 +17,64 @@ interface ProductsPageClientProps {
 	resolvedCategories?: Array<{ slug: string; id: string; name: string }>;
 }
 
+// Mock products for local styling/debugging only. Never committed.
+const MOCK_PRODUCTS: ProductCardData[] = (() => {
+	const useMock = process.env.NEXT_PUBLIC_USE_MOCK_PRODUCTS === "true";
+	if (!useMock) return [];
+
+	const colors = [
+		{ name: "Black", hex: "#000000" },
+		{ name: "White", hex: "#FFFFFF" },
+		{ name: "Red", hex: "#DC2626" },
+		{ name: "Blue", hex: "#2563EB" },
+		{ name: "Green", hex: "#16A34A" },
+	];
+	const names = [
+		"Classic T-Shirt",
+		"Slim Fit Jeans",
+		"Leather Jacket",
+		"Running Shoes",
+		"Wool Sweater",
+		"Cotton Hoodie",
+		"Denim Jacket",
+		"Silk Scarf",
+		"Canvas Backpack",
+		"Ray-Ban Sunglasses",
+		"Merino Beanie",
+		"Linen Pants",
+		"Cashmere Coat",
+		"Sport Watch",
+		"Travel Duffel",
+		"Crew Socks Pack",
+		"Bomber Jacket",
+		"Chino Shorts",
+		"Polo Shirt",
+		"Ankle Boots",
+		"Crossbody Bag",
+		"Flannel Shirt",
+		"Down Vest",
+		"Yoga Pants",
+		"Fleece Pullover",
+	];
+	return names.map((name, i) => {
+		const slug = name.toLowerCase().replace(/\s+/g, "-");
+		const price = 29.99 + i * 15;
+		return {
+			id: `mock-${i + 1}`,
+			name,
+			slug,
+			price,
+			currency: "USD",
+			image: `https://picsum.photos/seed/${i + 100}/600/800`,
+			hoverImage: `https://picsum.photos/seed/${i + 200}/600/800`,
+			href: `/en/global-store/products/${slug}`,
+			badge: i % 5 === 0 ? "Sale" : i % 7 === 0 ? "New" : null,
+			isBestseller: i % 4 === 0,
+			colors: colors.slice(0, 2 + (i % 3)),
+		};
+	});
+})();
+
 function PaginationSkeleton() {
 	return (
 		<nav className="flex items-center justify-center gap-x-4 px-4 pt-12">
@@ -27,6 +85,7 @@ function PaginationSkeleton() {
 }
 
 export function ProductsPageClient({ products, pageInfo, resolvedCategories = [] }: ProductsPageClientProps) {
+	const displayProducts = MOCK_PRODUCTS.length > 0 ? MOCK_PRODUCTS : products;
 	const {
 		filteredProducts,
 		categoryOptions,
@@ -47,7 +106,7 @@ export function ProductsPageClient({ products, pageInfo, resolvedCategories = []
 		handleRemoveFilter,
 		handleClearFilters,
 	} = useProductFilters({
-		products,
+		products: displayProducts,
 		resolvedCategories,
 		enableCategoryFilter: true,
 	});

@@ -14,6 +14,60 @@ import { resolveCategorySlugsToIds } from "@/ui/components/plp/filter-utils.serv
 import { buildStorefrontPath } from "@/lib/storefront-path";
 import { ProductsPageClient } from "./products-client";
 
+// Mock products for local styling/debugging only. Never committed.
+const MOCK_PRODUCTS = (() => {
+	const useMock = process.env.NEXT_PUBLIC_USE_MOCK_PRODUCTS === "true";
+	if (!useMock) return null;
+
+	const colors = [
+		{ name: "Black", hex: "#000000" },
+		{ name: "White", hex: "#FFFFFF" },
+		{ name: "Red", hex: "#DC2626" },
+		{ name: "Blue", hex: "#2563EB" },
+		{ name: "Green", hex: "#16A34A" },
+	];
+	const names = [
+		"Classic T-Shirt",
+		"Slim Fit Jeans",
+		"Leather Jacket",
+		"Running Shoes",
+		"Wool Sweater",
+		"Cotton Hoodie",
+		"Denim Jacket",
+		"Silk Scarf",
+		"Canvas Backpack",
+		"Ray-Ban Sunglasses",
+		"Merino Beanie",
+		"Linen Pants",
+		"Cashmere Coat",
+		"Sport Watch",
+		"Travel Duffel",
+		"Crew Socks Pack",
+		"Bomber Jacket",
+		"Chino Shorts",
+		"Polo Shirt",
+		"Ankle Boots",
+		"Crossbody Bag",
+		"Flannel Shirt",
+		"Down Vest",
+		"Yoga Pants",
+		"Fleece Pullover",
+	];
+	return names.map((name, i) => ({
+		id: `mock-${i + 1}`,
+		name,
+		slug: name.toLowerCase().replace(/\s+/g, "-"),
+		price: 29.99 + i * 15,
+		currency: "USD",
+		image: `https://picsum.photos/seed/${i + 100}/600/800`,
+		hoverImage: `https://picsum.photos/seed/${i + 200}/600/800`,
+		href: `/en/global-store/products/${name.toLowerCase().replace(/\s+/g, "-")}`,
+		badge: i % 5 === 0 ? "Sale" : i % 7 === 0 ? "New" : null,
+		isBestseller: i % 4 === 0,
+		colors: colors.slice(0, 2 + (i % 3)),
+	}));
+})();
+
 export async function generateMetadata(props: {
 	params: Promise<{ locale: string; channel: string }>;
 }): Promise<Metadata> {
@@ -91,6 +145,19 @@ async function ProductsContent({
 	params: Promise<{ locale: string; channel: string }>;
 	searchParams: PageProps["searchParams"];
 }) {
+	// Use mock data for local styling/debugging
+	if (MOCK_PRODUCTS) {
+		const [params] = await Promise.all([paramsPromise, searchParamsPromise]);
+		return (
+			<ProductsPageClient
+				products={MOCK_PRODUCTS}
+				pageInfo={{ hasNextPage: false, hasPreviousPage: false }}
+				totalCount={MOCK_PRODUCTS.length}
+				resolvedCategories={[]}
+			/>
+		);
+	}
+
 	const [params, searchParams] = await Promise.all([paramsPromise, searchParamsPromise]);
 
 	const paginationVariables = getPaginatedListVariables({ params: searchParams });
@@ -148,12 +215,12 @@ async function ProductsContent({
 function ProductsGridSkeleton() {
 	return (
 		<div className="container-content animate-skeleton-delayed py-8 opacity-0">
-			{/* Matches ProductGrid: grid-cols-2 lg:grid-cols-3 */}
-			<div className="grid grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-6">
-				{Array.from({ length: 6 }).map((_, i) => (
+			{/* Matches ProductGrid: grid-cols-2 lg:grid-cols-6 */}
+			<div className="grid grid-cols-2 gap-4 lg:grid-cols-6 lg:gap-6">
+				{Array.from({ length: 12 }).map((_, i) => (
 					<div key={i} className="animate-pulse">
-						{/* Matches ProductCard: aspect-[3/4] rounded-xl */}
-						<div className="mb-4 aspect-[3/4] rounded-xl bg-muted" />
+						{/* Matches ProductCard: aspect-[2/3] rounded-card */}
+						<div className="mb-4 aspect-[2/3] rounded-card bg-muted" />
 						<div className="space-y-1.5">
 							<div className="h-4 w-3/4 rounded bg-muted" />
 							<div className="h-4 w-1/2 rounded bg-muted" />

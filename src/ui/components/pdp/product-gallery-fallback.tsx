@@ -18,7 +18,7 @@ interface ProductGalleryFallbackProps {
 export function ProductGalleryFallback({ src, alt, imageCount, showChrome }: ProductGalleryFallbackProps) {
 	return (
 		<ProductGalleryShell imageCount={imageCount} showChrome={showChrome}>
-			<GalleryImageFrame className="aspect-[4/5] w-full">
+			<GalleryImageFrame className="aspect-[2/3] w-full">
 				<Image
 					src={src}
 					alt={alt}

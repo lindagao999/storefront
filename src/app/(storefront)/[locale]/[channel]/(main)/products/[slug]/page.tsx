@@ -35,12 +35,116 @@ import {
 } from "@/ui/components/pdp";
 
 // ============================================================================
+// Mock Product Data (local styling/debugging only)
+// ============================================================================
+
+function getMockProduct(slug: string) {
+	const useMock = process.env.NEXT_PUBLIC_USE_MOCK_PRODUCTS === "true";
+	if (!useMock) return null;
+
+	// Factory to build a mock product from name + index
+	const makeProduct = (name: string, index: number) => {
+		const imgSeed = `${name.toLowerCase().replace(/[^a-z0-9]/g, "")}${index}`;
+		const price = 29.99 + index * 15;
+		return {
+			name,
+			slug,
+			seoTitle: name,
+			seoDescription: `${name}. Premium quality product built to last.`,
+			description: JSON.stringify([
+				{ type: "paragraph", text: `${name}. Premium quality product built to last.` },
+			]),
+			media: [
+				{ url: `https://picsum.photos/seed/${imgSeed}/800/1066`, alt: `${name} front view`, type: "IMAGE" },
+				{ url: `https://picsum.photos/seed/${imgSeed}b/800/1066`, alt: `${name} back view`, type: "IMAGE" },
+			],
+			thumbnail: { url: `https://picsum.photos/seed/${imgSeed}/800/1066` },
+			pricing: {
+				priceRange: {
+					start: { gross: { amount: price, currency: "USD" } },
+					stop: { gross: { amount: price, currency: "USD" } },
+				},
+			},
+			variants: [
+				{
+					id: `v${index * 2 + 1}`,
+					name: `${name} - Blue / M`,
+					quantityAvailable: 50,
+					selectionAttributes: [
+						{ attribute: { slug: "color", name: "Color" }, values: [{ name: "Blue", value: "blue" }] },
+						{ attribute: { slug: "size", name: "Size" }, values: [{ name: "M", value: "m" }] },
+					],
+				},
+				{
+					id: `v${index * 2 + 2}`,
+					name: `${name} - Blue / L`,
+					quantityAvailable: 30,
+					selectionAttributes: [
+						{ attribute: { slug: "color", name: "Color" }, values: [{ name: "Blue", value: "blue" }] },
+						{ attribute: { slug: "size", name: "Size" }, values: [{ name: "L", value: "l" }] },
+					],
+				},
+			],
+			attributes: [
+				{ attribute: { name: "Material", slug: "material" }, values: [{ name: "Premium" }] },
+				{ attribute: { name: "Color", slug: "color" }, values: [{ name: "Default" }] },
+				{ attribute: { name: "Size", slug: "size" }, values: [{ name: "M" }, { name: "L" }] },
+			],
+		} as Partial<ProductDetailsQuery["product"]>;
+	};
+
+	const productMap: Record<string, Partial<ProductDetailsQuery["product"]>> = {
+		"classic-t-shirt": makeProduct("Classic T-Shirt", 0),
+		"slim-fit-jeans": makeProduct("Slim Fit Jeans", 1),
+		"leather-jacket": makeProduct("Leather Jacket", 2),
+		"running-shoes": makeProduct("Running Shoes", 3),
+		"wool-sweater": makeProduct("Wool Sweater", 4),
+		"cotton-hoodie": makeProduct("Cotton Hoodie", 5),
+		"denim-jacket": makeProduct("Denim Jacket", 6),
+		"silk-scarf": makeProduct("Silk Scarf", 7),
+		"canvas-backpack": makeProduct("Canvas Backpack", 8),
+		"ray-ban-sunglasses": makeProduct("Ray-Ban Sunglasses", 9),
+		"merino-beanie": makeProduct("Merino Beanie", 10),
+		"linen-pants": makeProduct("Linen Pants", 11),
+		"cashmere-coat": makeProduct("Cashmere Coat", 12),
+		"sport-watch": makeProduct("Sport Watch", 13),
+		"travel-duffel": makeProduct("Travel Duffel", 14),
+		"crew-socks-pack": makeProduct("Crew Socks Pack", 15),
+		"bomber-jacket": makeProduct("Bomber Jacket", 16),
+		"chino-shorts": makeProduct("Chino Shorts", 17),
+		"polo-shirt": makeProduct("Polo Shirt", 18),
+		"ankle-boots": makeProduct("Ankle Boots", 19),
+		"crossbody-bag": makeProduct("Crossbody Bag", 20),
+		"flannel-shirt": makeProduct("Flannel Shirt", 21),
+		"down-vest": makeProduct("Down Vest", 22),
+		"yoga-pants": makeProduct("Yoga Pants", 23),
+		"fleece-pullover": makeProduct("Fleece Pullover", 24),
+	};
+
+	const base = productMap[slug];
+	return base ? ({ ...base } as ProductDetailsQuery["product"]) : null;
+}
+
+// ============================================================================
 // Cached Data Fetching
 // ============================================================================
 
 async function getProductData(slug: string, channel: string, localeSlug: string) {
 	"use cache";
 	applyCacheProfile(CACHE_PROFILES.products, slug);
+
+	// Use mock data for local styling/debugging
+	const mockProduct = getMockProduct(decodeURIComponent(slug));
+	if (mockProduct) {
+		return withTranslatedProductFields(mockProduct);
+	}
+
+	// In mock mode, reject unknown slugs immediately without hitting the API
+	const isMockMode = process.env.NEXT_PUBLIC_USE_MOCK_PRODUCTS === "true";
+	if (isMockMode) {
+		console.log(`[getProductData] Mock mode — slug "${slug}" not found, skipping API call`);
+		return null;
+	}
 
 	const result = await executePublicGraphQL(ProductDetailsDocument, {
 		variables: {

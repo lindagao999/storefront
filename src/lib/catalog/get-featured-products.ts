@@ -16,6 +16,11 @@ export async function getFeaturedProducts(
 	"use cache";
 	applyCacheProfile(CACHE_PROFILES.collections, collectionSlug);
 
+	// Mock mode: skip API, return empty so the section renders as empty
+	if (process.env.NEXT_PUBLIC_USE_MOCK_PRODUCTS === "true") {
+		return [];
+	}
+
 	const result = await executePublicGraphQL(ProductListByCollectionDocument, {
 		variables: {
 			slug: collectionSlug,
