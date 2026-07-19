@@ -16,9 +16,9 @@ import { buildStorefrontPath } from "@/lib/storefront-path";
 import { ProductsPageClient } from "./products-client";
 
 // Mock products for local styling/debugging only. Never committed.
-const MOCK_PRODUCTS: ProductCardData[] = (() => {
+const MOCK_PRODUCTS: ProductCardData[] | null = (() => {
 	const useMock = process.env.NEXT_PUBLIC_USE_MOCK_PRODUCTS === "true";
-	if (!useMock) return [];
+	if (!useMock) return null;
 
 	const colors = [
 		{ name: "Black", hex: "#000000" },
@@ -149,7 +149,7 @@ async function ProductsContent({
 	const [params, searchParams] = await Promise.all([paramsPromise, searchParamsPromise]);
 
 	// Use mock data for local styling/debugging
-	if (MOCK_PRODUCTS) {
+	if (MOCK_PRODUCTS && MOCK_PRODUCTS.length > 0) {
 		return (
 			<ProductsPageClient
 				products={MOCK_PRODUCTS}
