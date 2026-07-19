@@ -145,9 +145,10 @@ async function ProductsContent({
 	params: Promise<{ locale: string; channel: string }>;
 	searchParams: PageProps["searchParams"];
 }) {
+	const [params, searchParams] = await Promise.all([paramsPromise, searchParamsPromise]);
+
 	// Use mock data for local styling/debugging
 	if (MOCK_PRODUCTS) {
-		const [params] = await Promise.all([paramsPromise, searchParamsPromise]);
 		return (
 			<ProductsPageClient
 				products={MOCK_PRODUCTS}
@@ -157,8 +158,6 @@ async function ProductsContent({
 			/>
 		);
 	}
-
-	const [params, searchParams] = await Promise.all([paramsPromise, searchParamsPromise]);
 
 	const paginationVariables = getPaginatedListVariables({ params: searchParams });
 	const sortBy = buildSortVariables(searchParams.sort);
