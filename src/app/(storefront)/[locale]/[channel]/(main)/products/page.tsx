@@ -9,13 +9,14 @@ import { getPaginatedListVariables } from "@/lib/utils";
 import { buildBrowsePageMetadata } from "@/lib/seo";
 import { getStorefrontContent } from "@/lib/content/server";
 import { CategoryHero, toProductCardData } from "@/ui/components/plp";
+import type { ProductCardData } from "@/ui/components/plp/product-card-data";
 import { buildSortVariables, buildFilterVariables } from "@/ui/components/plp/filter-utils";
 import { resolveCategorySlugsToIds } from "@/ui/components/plp/filter-utils.server";
 import { buildStorefrontPath } from "@/lib/storefront-path";
 import { ProductsPageClient } from "./products-client";
 
 // Mock products for local styling/debugging only. Never committed.
-const MOCK_PRODUCTS: import("@/ui/components/plp/product-card-data").ProductCardData[] = (() => {
+const MOCK_PRODUCTS: ProductCardData[] = (() => {
 	const useMock = process.env.NEXT_PUBLIC_USE_MOCK_PRODUCTS === "true";
 	if (!useMock) return null;
 
