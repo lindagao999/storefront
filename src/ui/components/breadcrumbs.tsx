@@ -26,10 +26,10 @@ export function Breadcrumbs({ items, ariaLabel, surface = "default", className }
 	const isPill = surface === "pill";
 	const isDark = surface === "dark";
 
-	let crumbClass = "text-muted-foreground";
+	let crumbClass: string | undefined = "text-muted-foreground";
 	let currentClass = "font-medium text-foreground";
 	let linkClass = "text-muted-foreground transition-colors hover:text-foreground";
-	let chevronClass = undefined;
+	let chevronClass: string | undefined = undefined;
 
 	if (isPill) {
 		crumbClass = undefined;
