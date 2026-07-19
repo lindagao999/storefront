@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { PLP_HERO_IMAGE_SIZES, PRODUCT_IMAGE_QUALITY } from "@/lib/images";
 import { Breadcrumbs, type BreadcrumbItem } from "@/ui/components/breadcrumbs";
-import { WavePattern } from "./wave-pattern";
 
 export type { BreadcrumbItem };
 
