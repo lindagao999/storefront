@@ -147,7 +147,7 @@ async function ProductsContent({
 }) {
 	// Use mock data for local styling/debugging
 	if (MOCK_PRODUCTS) {
-		const [params] = await Promise.all([paramsPromise, searchParamsPromise]);
+		await Promise.all([paramsPromise, searchParamsPromise]);
 		return (
 			<ProductsPageClient
 				products={MOCK_PRODUCTS}
