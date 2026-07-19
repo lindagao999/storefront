@@ -54,8 +54,8 @@ export function CategoryHero({
 					className="mb-3"
 				/>
 
-				<h1 className="text-balance text-h1 text-white">{title}</h1>
-				{description && <p className="mt-2 max-w-lg text-pretty text-lead text-white/80">{description}</p>}
+				<h1 className="text-balance text-xl text-white">{title}</h1>
+				{description && <p className="mt-1 max-w-lg text-pretty text-sm text-white/80">{description}</p>}
 			</div>
 		</section>
 	);
