@@ -351,12 +351,14 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 	}
 
 	// Fetch categories from Saleor with dynamic product counts
-	function mapCategoryToItem(cat: {
+	type CategorySource = {
 		name: string;
 		slug: string;
 		productCount?: number;
-		children?: { name: string; slug: string; productCount?: number; children?: unknown[] }[];
-	}): CategoryItem {
+		children?: CategorySource[];
+	};
+
+	function mapCategoryToItem(cat: CategorySource): CategoryItem {
 		return {
 			name: cat.name,
 			href: `/categories/${cat.slug}`,
