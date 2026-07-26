@@ -21,7 +21,7 @@ export async function getAllCategories(channel: string): Promise<Category[]> {
 	let after: string | null = null;
 
 	while (hasNextPage) {
-		const afterClause = after ? `, after: "${after}"` : "";
+		const afterClause: string = after ? `, after: "${after}"` : "";
 		const query = `query {
   categories(first: 100${afterClause}) {
     edges {
