@@ -40,11 +40,18 @@ export async function getAllCategories(channel: string): Promise<Category[]> {
 }`;
 
 		const url = process.env.NEXT_PUBLIC_SALEOR_API_URL;
-		const response = await fetch(url!, {
-			method: "POST",
-			headers: { "Content-Type": "application/json" },
-			body: JSON.stringify({ query }),
-		});
+		let response: Response;
+		try {
+			response = await fetch(url!, {
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify({ query }),
+			});
+		} catch {
+			// During prerendering, fetch() rejects when prerender completes — skip gracefully
+			console.warn("[getAllCategories] fetch rejected (likely prerender), skipping batch");
+			break;
+		}
 
 		if (!response.ok) {
 			console.error("[getAllCategories] HTTP error:", response.status);

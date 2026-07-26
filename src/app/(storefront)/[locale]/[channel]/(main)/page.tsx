@@ -8,7 +8,6 @@ import { StatsBar } from "@/ui/sections/stats-bar/stats-bar";
 import { BrandShowcase, type BrandItem } from "@/ui/sections/brand-showcase/brand-showcase";
 import { NavHrefLink } from "@/ui/atoms/nav-href-link";
 import { buildStorefrontPath } from "@/lib/storefront-path";
-import { connection } from "next/server";
 
 export const metadata = {
 	description: brandConfig.description,
@@ -327,9 +326,6 @@ function WhyUsSection({
  * Homepage — fully static with AnFully Electronics style.
  */
 export default async function Page({ params }: { params: Promise<{ locale: string; channel: string }> }) {
-	// Opt out of prerendering for this route (must be before any await)
-	connection();
-
 	const { locale, channel } = await params;
 	const t = await getTranslations({ locale, namespace: "home" });
 	const isZh = locale === "zh";
