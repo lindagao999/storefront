@@ -1,36 +1,114 @@
-import { CategoriesGetAllDocument } from "@/gql/graphql";
-import { graphqlLanguageCodeVariables } from "@/lib/graphql-locale";
-import { executePublicGraphQL } from "@/lib/graphql";
-import { CACHE_PROFILES, applyCacheProfile } from "@/lib/cache-manifest";
-
 export interface Category {
 	id: string;
 	name: string;
 	slug: string;
+	productCount?: number;
+	children?: Category[];
+	parentId?: string;
 }
 
-export async function getAllCategories(localeSlug: string): Promise<Category[]> {
-	"use cache";
-	applyCacheProfile(CACHE_PROFILES.categories, "all");
+// Module-level cache so dev mode doesn't re-fetch every request
+let cachedCategories: Category[] | null = null;
 
-	const result = await executePublicGraphQL(CategoriesGetAllDocument, {
-		variables: { ...graphqlLanguageCodeVariables(localeSlug) },
-	});
-
-	if (!result.ok) {
-		console.error("[getAllCategories] Failed to fetch categories:", result.error.message);
-		return [];
+export async function getAllCategories(channel: string): Promise<Category[]> {
+	if (cachedCategories) {
+		return cachedCategories;
 	}
 
-	const edges = result.data.categories?.edges ?? [];
-	return edges.map((edge) => {
-		const node = edge.node;
-		// Use translated name if available
-		const name = node.translation?.name || node.name;
-		return {
-			id: node.id,
-			name,
-			slug: node.slug,
-		};
-	});
+	// Fetch all categories using pagination (API limits first to 100)
+	const allEdges: any[] = [];
+	let hasNextPage = true;
+	let after: string | null = null;
+
+	while (hasNextPage) {
+		const afterClause = after ? `, after: "${after}"` : "";
+		const query = `query {
+  categories(first: 100${afterClause}) {
+    edges {
+      node {
+        id
+        name
+        slug
+        level
+        parent { id }
+        products(channel: "${channel}", first: 0) { totalCount }
+      }
+      cursor
+    }
+    pageInfo { hasNextPage endCursor }
+  }
+}`;
+
+		const url = process.env.NEXT_PUBLIC_SALEOR_API_URL;
+		const response = await fetch(url!, {
+			method: "POST",
+			headers: { "Content-Type": "application/json" },
+			body: JSON.stringify({ query }),
+		});
+
+		if (!response.ok) {
+			console.error("[getAllCategories] HTTP error:", response.status);
+			return [];
+		}
+
+		const json = await response.json();
+		if (json.errors) {
+			console.error("[getAllCategories] GraphQL errors:", json.errors);
+			return [];
+		}
+
+		const edges = json.data?.categories?.edges ?? [];
+		allEdges.push(...edges);
+		hasNextPage = json.data?.categories?.pageInfo?.hasNextPage ?? false;
+		after = json.data?.categories?.pageInfo?.endCursor ?? null;
+	}
+
+	console.log("[getAllCategories] fetched", allEdges.length, "categories total");
+
+	// Build flat list first
+	const flatCategories: (Category & { level: number; parentId: string | null })[] = allEdges.map(
+		(edge: any) => {
+			const node = edge.node;
+			return {
+				id: node.id,
+				name: node.name,
+				slug: node.slug,
+				productCount: node.products?.totalCount ?? undefined,
+				level: node.level,
+				parentId: node.parent?.id ?? null,
+			};
+		},
+	);
+
+	// Build tree: group children under their parent
+	const categoryMap = new Map<string, Category>();
+	const topLevelCategories: Category[] = [];
+
+	// First pass: create all entries
+	for (const cat of flatCategories) {
+		categoryMap.set(cat.id, {
+			id: cat.id,
+			name: cat.name,
+			slug: cat.slug,
+			productCount: cat.productCount,
+			parentId: cat.parentId ?? undefined,
+			children: [],
+		});
+	}
+
+	// Second pass: nest children under parents
+	for (const cat of flatCategories) {
+		const node = categoryMap.get(cat.id)!;
+		if (cat.parentId && categoryMap.has(cat.parentId)) {
+			const parent = categoryMap.get(cat.parentId)!;
+			parent.children!.push(node);
+		} else {
+			topLevelCategories.push(node);
+		}
+	}
+
+	console.log("[getAllCategories] ✅", topLevelCategories.length, "top-level, total:", flatCategories.length);
+
+	cachedCategories = topLevelCategories;
+	return topLevelCategories;
 }

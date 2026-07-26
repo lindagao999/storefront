@@ -1,12 +1,13 @@
-query CategoriesGetAll($languageCode: LanguageCodeEnum!) {
+query CategoriesGetAll {
 	categories(first: 100) {
 		edges {
 			node {
 				id
 				name
 				slug
-				translation(languageCode: $languageCode) {
-					name
+				level
+				parent {
+					id
 				}
 			}
 		}

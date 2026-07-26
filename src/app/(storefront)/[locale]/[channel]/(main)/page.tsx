@@ -1,6 +1,7 @@
 import { brandConfig } from "@/config/brand";
 import { getTranslations } from "next-intl/server";
 import { getFeaturedProducts } from "@/lib/catalog/get-featured-products";
+import { getAllCategories } from "@/lib/catalog/get-all-categories";
 import { getStorefrontContent } from "@/lib/content/server";
 import { CategorySidebar, type CategoryItem } from "@/ui/components/category-sidebar/category-sidebar";
 import { StatsBar } from "@/ui/sections/stats-bar/stats-bar";
@@ -11,33 +12,6 @@ import { buildStorefrontPath } from "@/lib/storefront-path";
 export const metadata = {
 	description: brandConfig.description,
 };
-
-// Fallback categories - matching backend Saleor categories
-const fallbackCategories: CategoryItem[] = [
-	{ name: "Integrated Circuit", href: "/categories/integrated-circuit", productCount: 204 },
-	{ name: "Connector", href: "/categories/connector", productCount: 124 },
-	{ name: "Resistor", href: "/categories/resistor", productCount: 43 },
-	{ name: "Diode", href: "/categories/diode", productCount: 42 },
-	{ name: "Optocouplers/LED/Infrared", href: "/categories/optocouplers-led-infrared", productCount: 42 },
-	{ name: "Driver", href: "/categories/driver", productCount: 34 },
-	{ name: "Relay/Transformer", href: "/categories/relay-transformer", productCount: 31 },
-	{ name: "Capacitor", href: "/categories/capacitor", productCount: 30 },
-	{ name: "Memory", href: "/categories/memory", productCount: 26 },
-	{
-		name: "Processors and Microcontrollers",
-		href: "/categories/processors-microcontrollers",
-		productCount: 24,
-	},
-	{ name: "Triode", href: "/categories/triode", productCount: 24 },
-	{ name: "Switch", href: "/categories/switch", productCount: 21 },
-	{ name: "Crystal Oscillator", href: "/categories/crystal-oscillator", productCount: 16 },
-	{ name: "Ferrite Bead", href: "/categories/ferrite-bead", productCount: 16 },
-	{ name: "Inductor", href: "/categories/inductor", productCount: 16 },
-	{ name: "Fuse", href: "/categories/fuse", productCount: 15 },
-	{ name: "Buzzer/Microphone", href: "/categories/buzzer-microphone", productCount: 7 },
-	{ name: "Thyristor", href: "/categories/thyristor", productCount: 4 },
-	{ name: "Power Management IC", href: "/categories/power-management-ic", productCount: 2 },
-];
 
 // Default brands
 const defaultBrands: BrandItem[] = [
@@ -376,18 +350,28 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 		console.error("[Homepage] Failed to load products:", e);
 	}
 
-	// Fetch categories from Saleor (fallback to hardcoded if API fails)
-	let categoryItems: CategoryItem[] = fallbackCategories;
-	// TODO: Uncomment after running pnpm generate
-	// try {
-	// 	const categories = await getAllCategories(locale);
-	// 	categoryItems = categories.map((cat) => ({
-	// 		name: cat.name,
-	// 		href: `/categories/${cat.slug}`,
-	// 	}));
-	// } catch (e) {
-	// 	console.error("[Homepage] Failed to load categories:", e);
-	// }
+	// Fetch categories from Saleor with dynamic product counts
+	function mapCategoryToItem(cat: {
+		name: string;
+		slug: string;
+		productCount?: number;
+		children?: { name: string; slug: string; productCount?: number; children?: unknown[] }[];
+	}): CategoryItem {
+		return {
+			name: cat.name,
+			href: `/categories/${cat.slug}`,
+			productCount: cat.productCount,
+			children: cat.children?.length ? cat.children.map(mapCategoryToItem) : undefined,
+		};
+	}
+
+	let categoryItems: CategoryItem[] = [];
+	try {
+		const categories = await getAllCategories(channel);
+		categoryItems = categories.map(mapCategoryToItem);
+	} catch (e) {
+		console.error("[Homepage] Failed to load categories:", e);
+	}
 
 	return (
 		<>
