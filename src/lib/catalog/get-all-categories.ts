@@ -1,3 +1,5 @@
+import { CACHE_PROFILES, applyCacheProfile } from "@/lib/cache-manifest";
+
 export interface Category {
 	id: string;
 	name: string;
@@ -7,13 +9,9 @@ export interface Category {
 	parentId?: string;
 }
 
-// Module-level cache so dev mode doesn't re-fetch every request
-let cachedCategories: Category[] | null = null;
-
 export async function getAllCategories(channel: string): Promise<Category[]> {
-	if (cachedCategories) {
-		return cachedCategories;
-	}
+	"use cache";
+	applyCacheProfile(CACHE_PROFILES.categories, "all");
 
 	// Fetch all categories using pagination (API limits first to 100)
 	const allEdges: any[] = [];
@@ -48,9 +46,8 @@ export async function getAllCategories(channel: string): Promise<Category[]> {
 				body: JSON.stringify({ query }),
 			});
 		} catch {
-			// During prerendering, fetch() rejects when prerender completes — skip gracefully
-			console.warn("[getAllCategories] fetch rejected (likely prerender), skipping batch");
-			break;
+			console.warn("[getAllCategories] fetch rejected (likely prerender), returning empty");
+			return [];
 		}
 
 		if (!response.ok) {
@@ -114,8 +111,5 @@ export async function getAllCategories(channel: string): Promise<Category[]> {
 		}
 	}
 
-	console.log("[getAllCategories] ✅", topLevelCategories.length, "top-level, total:", flatCategories.length);
-
-	cachedCategories = topLevelCategories;
 	return topLevelCategories;
 }
