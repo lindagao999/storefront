@@ -8,12 +8,11 @@ import { StatsBar } from "@/ui/sections/stats-bar/stats-bar";
 import { BrandShowcase, type BrandItem } from "@/ui/sections/brand-showcase/brand-showcase";
 import { NavHrefLink } from "@/ui/atoms/nav-href-link";
 import { buildStorefrontPath } from "@/lib/storefront-path";
+import { connection } from "next/server";
 
 export const metadata = {
 	description: brandConfig.description,
 };
-
-export const dynamic = "force-dynamic";
 
 // Default brands
 const defaultBrands: BrandItem[] = [
@@ -331,6 +330,9 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 	const { locale, channel } = await params;
 	const t = await getTranslations({ locale, namespace: "home" });
 	const isZh = locale === "zh";
+
+	// Opt out of prerendering for this route
+	connection();
 
 	// Fetch data with error handling - using AnFully English version defaults
 	let collectionSlug = "featured-products";
