@@ -355,7 +355,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 		name: string;
 		slug: string;
 		productCount?: number;
-		children?: { name: string; slug: string; productCount?: number; children?: unknown[] }[];
+		children?: { name: string; slug: string; productCount?: number; children?: any[] }[];
 	}): CategoryItem {
 		return {
 			name: cat.name,
