@@ -126,7 +126,7 @@ function CategoryLink({
 	item,
 	depth = 0,
 	onHover,
-	onLeave,
+	onLeave: _onLeave,
 }: {
 	item: CategoryItem;
 	depth?: number;
