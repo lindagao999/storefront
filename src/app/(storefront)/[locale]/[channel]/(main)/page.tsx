@@ -327,12 +327,12 @@ function WhyUsSection({
  * Homepage — fully static with AnFully Electronics style.
  */
 export default async function Page({ params }: { params: Promise<{ locale: string; channel: string }> }) {
+	// Opt out of prerendering for this route (must be before any await)
+	connection();
+
 	const { locale, channel } = await params;
 	const t = await getTranslations({ locale, namespace: "home" });
 	const isZh = locale === "zh";
-
-	// Opt out of prerendering for this route
-	connection();
 
 	// Fetch data with error handling - using AnFully English version defaults
 	let collectionSlug = "featured-products";
