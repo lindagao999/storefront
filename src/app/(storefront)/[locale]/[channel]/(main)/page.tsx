@@ -13,6 +13,8 @@ export const metadata = {
 	description: brandConfig.description,
 };
 
+export const dynamic = "force-dynamic";
+
 // Default brands
 const defaultBrands: BrandItem[] = [
 	{
