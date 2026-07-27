@@ -99,7 +99,7 @@ export function CategorySidebar({
 			{/* 右侧弹出子分类浮层 */}
 			{flyout && flyout.category.children && flyout.category.children.length > 0 && (
 				<div
-					className="fixed z-50 w-80 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-xl"
+					className="fixed z-50 w-80 rounded-lg border border-gray-200 bg-white shadow-xl"
 					style={{ left: flyout.left, top: flyout.top }}
 					onMouseEnter={() => setFlyout(flyout)}
 					onMouseLeave={() => setFlyout(null)}
@@ -107,7 +107,7 @@ export function CategorySidebar({
 					<div className="border-b border-gray-100 bg-gradient-to-r from-[#1a237e]/5 to-transparent px-4 py-2.5 text-sm font-semibold text-[#1a237e]">
 						{flyout.category.name}
 					</div>
-					<div className="max-h-[600px] overflow-y-auto">
+					<div className="max-h-[480px] overflow-y-auto">
 						<ul className="divide-y divide-gray-50">
 							{flyout.category.children.map((child) => (
 								<li key={child.href || child.id}>
