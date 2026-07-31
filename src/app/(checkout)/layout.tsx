@@ -1,6 +1,5 @@
 import "../globals.css";
 import { type ReactNode } from "react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { getDefaultLocaleSlug, resolveLocaleFromSlug } from "@/config/locale";
 import { getRootHtmlFontProps } from "@/lib/fonts";
 
@@ -20,7 +19,6 @@ export default function CheckoutLayout(props: { children: ReactNode }) {
 		<html {...htmlProps}>
 			<body className="min-h-dvh font-sans">
 				<main className="min-h-dvh">{props.children}</main>
-				<SpeedInsights />
 			</body>
 		</html>
 	);

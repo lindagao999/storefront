@@ -44,7 +44,7 @@ export function CategorySidebar({
 	}, []);
 
 	return (
-		<div ref={sidebarRef} className="relative">
+		<div ref={sidebarRef} className="relative" suppressHydrationWarning>
 			<aside
 				className={cn("w-80 shrink-0 overflow-hidden rounded-lg bg-white shadow-lg", className)}
 				onMouseLeave={() => setFlyout(null)}

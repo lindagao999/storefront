@@ -2,7 +2,6 @@ import "../../globals.css";
 import { type ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { rootMetadata } from "@/lib/seo";
 import { getConfiguredLocaleChannelPairs } from "@/config/locale-channel";
 import {
@@ -56,7 +55,6 @@ export default async function LocaleRootLayout({
 				<NextIntlClientProvider locale={localeSlug} messages={messages}>
 					<PersistBrowseLocaleCookie locale={localeSlug} />
 					{children}
-					<SpeedInsights />
 				</NextIntlClientProvider>
 			</body>
 		</html>
