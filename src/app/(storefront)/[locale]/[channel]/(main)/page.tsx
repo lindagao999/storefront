@@ -350,7 +350,12 @@ async function CategorySidebarLoader({
 	heading: string;
 	allCategoriesHref: string;
 }) {
-	const categories = await getAllCategories(channel);
+	let categories: Awaited<ReturnType<typeof getAllCategories>> = [];
+	try {
+		categories = await getAllCategories(channel);
+	} catch (e) {
+		console.error("[Homepage] Failed to load categories:", e);
+	}
 	return (
 		<CategorySidebar
 			categories={categories.map(mapCategoryToItem)}

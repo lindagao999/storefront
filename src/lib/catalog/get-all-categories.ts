@@ -55,7 +55,13 @@ export async function getAllCategories(channel: string): Promise<Category[]> {
 			return [];
 		}
 
-		const json: any = await response.json();
+		let json: any;
+		try {
+			json = await response.json();
+		} catch {
+			console.warn("[getAllCategories] invalid JSON response, stopping pagination");
+			break;
+		}
 		if (json.errors) {
 			console.error("[getAllCategories] GraphQL errors:", json.errors);
 			return [];
