@@ -250,7 +250,10 @@ export function CategorySidebarClient({
 
 	if (loading) {
 		return (
-			<div className={cn("w-80 shrink-0 overflow-hidden rounded-lg bg-white shadow-lg", className)}>
+			<div
+				className={cn("w-80 shrink-0 overflow-hidden rounded-lg bg-white shadow-lg", className)}
+				suppressHydrationWarning
+			>
 				<div className="h-[52px] animate-pulse bg-gradient-to-r from-[#1a237e] to-[#2b5ba9] opacity-40" />
 				{[...Array(8)].map((_, i) => (
 					<div key={i} className="h-12 animate-pulse border-b border-gray-100 px-4 py-3">
