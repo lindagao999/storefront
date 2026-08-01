@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useCallback } from "react";
+import { useState, useRef, useCallback, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { ChevronRight, Layers } from "lucide-react";
 import { LinkWithChannel } from "@/ui/atoms/link-with-channel";
@@ -206,5 +206,66 @@ function CategoryLink({
 				</ul>
 			)}
 		</div>
+	);
+}
+
+/**
+ * Client-side loader: fetches categories after mount so the server always
+ * renders the skeleton — no hydration mismatch possible.
+ */
+export function CategorySidebarClient({
+	channel,
+	heading = "Products",
+	allCategoriesHref = "/products",
+	className,
+}: {
+	channel: string;
+	heading?: string;
+	allCategoriesHref?: string;
+	className?: string;
+}) {
+	const [items, setItems] = useState<CategoryItem[]>([]);
+	const [loading, setLoading] = useState(true);
+
+	useEffect(() => {
+		let cancelled = false;
+		fetch(`/api/categories?channel=${encodeURIComponent(channel)}`)
+			.then((res) => res.json())
+			.then((data: { categories: CategoryItem[] }) => {
+				if (!cancelled) {
+					setItems(data.categories ?? []);
+					setLoading(false);
+				}
+			})
+			.catch(() => {
+				if (!cancelled) {
+					setLoading(false);
+				}
+			});
+		return () => {
+			cancelled = true;
+		};
+	}, [channel]);
+
+	if (loading) {
+		return (
+			<div className={cn("w-80 shrink-0 overflow-hidden rounded-lg bg-white shadow-lg", className)}>
+				<div className="h-[52px] animate-pulse bg-gradient-to-r from-[#1a237e] to-[#2b5ba9] opacity-40" />
+				{[...Array(8)].map((_, i) => (
+					<div key={i} className="h-12 animate-pulse border-b border-gray-100 px-4 py-3">
+						<div className="h-4 w-3/4 rounded bg-gray-200" />
+					</div>
+				))}
+			</div>
+		);
+	}
+
+	return (
+		<CategorySidebar
+			categories={items}
+			heading={heading}
+			allCategoriesHref={allCategoriesHref}
+			className={className}
+		/>
 	);
 }

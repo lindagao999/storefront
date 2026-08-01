@@ -1,10 +1,8 @@
-import { Suspense } from "react";
 import { brandConfig } from "@/config/brand";
 import { getTranslations } from "next-intl/server";
 import { getFeaturedProducts } from "@/lib/catalog/get-featured-products";
-import { getAllCategories } from "@/lib/catalog/get-all-categories";
 import { getStorefrontContent } from "@/lib/content/server";
-import { CategorySidebar, type CategoryItem } from "@/ui/components/category-sidebar/category-sidebar";
+import { CategorySidebarClient } from "@/ui/components/category-sidebar/category-sidebar";
 import { StatsBar } from "@/ui/sections/stats-bar/stats-bar";
 import { BrandShowcase, type BrandItem } from "@/ui/sections/brand-showcase/brand-showcase";
 import { NavHrefLink } from "@/ui/atoms/nav-href-link";
@@ -323,61 +321,6 @@ function WhyUsSection({
 	);
 }
 
-// ============================================================================
-// Category Sidebar — loaded in Suspense so prerendered shell stays consistent
-// ============================================================================
-
-function mapCategoryToItem(cat: {
-	name: string;
-	slug: string;
-	productCount?: number;
-	children?: { name: string; slug: string; productCount?: number; children?: any[] }[];
-}): CategoryItem {
-	return {
-		name: cat.name,
-		href: `/categories/${cat.slug}`,
-		productCount: cat.productCount,
-		children: cat.children?.length ? cat.children.map(mapCategoryToItem) : undefined,
-	};
-}
-
-async function CategorySidebarLoader({
-	channel,
-	heading,
-	allCategoriesHref,
-}: {
-	channel: string;
-	heading: string;
-	allCategoriesHref: string;
-}) {
-	let categories: Awaited<ReturnType<typeof getAllCategories>> = [];
-	try {
-		categories = await getAllCategories(channel);
-	} catch (e) {
-		console.error("[Homepage] Failed to load categories:", e);
-	}
-	return (
-		<CategorySidebar
-			categories={categories.map(mapCategoryToItem)}
-			heading={heading}
-			allCategoriesHref={allCategoriesHref}
-		/>
-	);
-}
-
-function CategorySidebarSkeleton() {
-	return (
-		<div className="w-80 shrink-0 overflow-hidden rounded-lg bg-white shadow-lg">
-			<div className="h-[52px] animate-pulse bg-gradient-to-r from-[#1a237e] to-[#2b5ba9] opacity-40" />
-			{[...Array(8)].map((_, i) => (
-				<div key={i} className="h-12 animate-pulse border-b border-gray-100 px-4 py-3">
-					<div className="h-4 w-3/4 rounded bg-gray-200" />
-				</div>
-			))}
-		</div>
-	);
-}
-
 /**
  * Homepage — fully static with AnFully Electronics style.
  */
@@ -410,13 +353,11 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 		<>
 			{/* Hero Section */}
 			<div className="mx-10 mt-6 flex gap-6">
-				<Suspense fallback={<CategorySidebarSkeleton />}>
-					<CategorySidebarLoader
-						channel={channel}
-						heading={t("categorySidebar")}
-						allCategoriesHref={buildStorefrontPath(locale, channel, "/products")}
-					/>
-				</Suspense>
+				<CategorySidebarClient
+					channel={channel}
+					heading={t("categorySidebar")}
+					allCategoriesHref={buildStorefrontPath(locale, channel, "/products")}
+				/>
 				<div className="flex flex-1 flex-col gap-5">
 					<section
 						className="relative overflow-hidden rounded-xl bg-gradient-to-r from-[#1a237e] to-[#2b5ba9] px-12 py-10 text-white"
