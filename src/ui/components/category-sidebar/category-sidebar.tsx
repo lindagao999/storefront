@@ -231,9 +231,10 @@ export function CategorySidebarClient({
 		let cancelled = false;
 		fetch(`/api/categories?channel=${encodeURIComponent(channel)}`)
 			.then((res) => res.json())
-			.then((data: { categories: CategoryItem[] }) => {
+			.then((data: unknown) => {
 				if (!cancelled) {
-					setItems(data.categories ?? []);
+					const result = data as { categories: CategoryItem[] };
+					setItems(result.categories ?? []);
 					setLoading(false);
 				}
 			})
