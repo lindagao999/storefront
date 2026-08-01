@@ -1,4 +1,5 @@
 import { type ReactNode, Suspense } from "react";
+import { connection } from "next/server";
 import { Footer } from "@/ui/components/footer";
 import { Header } from "@/ui/components/header";
 import { ScrollToTopOnNavigate } from "@/ui/components/shared/scroll-to-top-on-navigate";
@@ -6,6 +7,12 @@ import { Logo } from "@/ui/components/shared/logo";
 // import { AnnouncementBarSkeleton } from "@/ui/sections/announcement-bar/announcement-bar";
 // import { AnnouncementBarSlot, type BrowseRouteParams } from "./browse-chrome-slots";
 import { type BrowseRouteParams } from "./browse-chrome-slots";
+
+/** Defer the page content subtree to request time (PPR dynamic marker). */
+async function DynamicContentBoundary({ children }: { children: ReactNode }) {
+	await connection();
+	return children;
+}
 
 function HeaderSkeleton() {
 	return (
@@ -67,11 +74,15 @@ function FooterSkeleton() {
 }
 
 async function HeaderSlot({ params }: { params: BrowseRouteParams }) {
+	// Defer to request time so usePathname()/useParams() in header get real values
+	await connection();
 	const { locale, channel } = await params;
 	return <Header locale={locale} channel={channel} />;
 }
 
 async function FooterSlot({ params }: { params: BrowseRouteParams }) {
+	// Defer to request time
+	await connection();
 	const { locale, channel } = await params;
 	return <Footer locale={locale} channel={channel} />;
 }
@@ -95,7 +106,12 @@ export function MainChrome({ params, children }: { params: BrowseRouteParams; ch
 				<HeaderSlot params={params} />
 			</Suspense>
 			<div className="flex min-h-[calc(100dvh-var(--chrome-offset))] flex-col">
-				<main className="flex-1">{children}</main>
+				{/* Defer page content to request time so prerendered shell stays consistent */}
+				<Suspense fallback={null}>
+					<DynamicContentBoundary>
+						<main className="flex-1">{children}</main>
+					</DynamicContentBoundary>
+				</Suspense>
 				<Suspense fallback={<FooterSkeleton />}>
 					<FooterSlot params={params} />
 				</Suspense>
