@@ -49,6 +49,7 @@ export function LanguageToggle({ className }: { className?: string }) {
 							isActive ? "bg-[#1a237e] text-white" : "text-muted-foreground hover:bg-muted",
 						)}
 						lang={def?.bcp47 ?? slug}
+						suppressHydrationWarning
 					>
 						{slug.toUpperCase()}
 					</a>
