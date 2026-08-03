@@ -52,7 +52,7 @@ export default async function LocaleRootLayout({
 	return (
 		<html {...htmlProps}>
 			<body className="min-h-dvh font-sans">
-				<NextIntlClientProvider locale={localeSlug} messages={messages}>
+				<NextIntlClientProvider locale={localeSlug} messages={messages} timeZone="UTC">
 					<PersistBrowseLocaleCookie locale={localeSlug} />
 					{children}
 				</NextIntlClientProvider>
