@@ -1,10 +1,10 @@
 import { brandConfig } from "@/config/brand";
 import { getTranslations } from "next-intl/server";
-import { getFeaturedProducts } from "@/lib/catalog/get-featured-products";
 import { getStorefrontContent } from "@/lib/content/server";
 import { CategorySidebarClient } from "@/ui/components/category-sidebar/category-sidebar";
 import { StatsBar } from "@/ui/sections/stats-bar/stats-bar";
 import { BrandShowcase, type BrandItem } from "@/ui/sections/brand-showcase/brand-showcase";
+import { FeaturedCollectionSection } from "@/ui/sections/featured-collection-section/featured-collection-section";
 import { NavHrefLink } from "@/ui/atoms/nav-href-link";
 import { buildStorefrontPath } from "@/lib/storefront-path";
 
@@ -28,90 +28,6 @@ const defaultBrands: BrandItem[] = [
 		logo: null,
 	},
 	{ name: "Murata", description: "Passive Components, Sensors", href: "/brands/murata", logo: null },
-];
-
-// Hot Products - 热销产品
-const hotProducts = [
-	{
-		icon: "💻",
-		model: "STM32F103C8T6",
-		category: "Integrated Circuit",
-		description: "ARM Cortex-M3 MCU, 72MHz, 64KB Flash",
-		price: "$1.25",
-		moq: "100",
-		href: "/products/stm32f103c8t6",
-		inStock: true,
-	},
-	{
-		icon: "🌐",
-		model: "ESP32-WROOM-32",
-		category: "WiFi Module",
-		description: "Dual-core WiFi & Bluetooth Module",
-		price: "$2.80",
-		moq: "50",
-		href: "/products/esp32-wroom-32",
-		inStock: true,
-	},
-	{
-		icon: "⚡",
-		model: "GRM188R71H104KA93D",
-		category: "Capacitor",
-		description: "MLCC 0.1uF 50V X7R 0603",
-		price: "$0.015",
-		moq: "1000",
-		href: "/products/grm188r71h104ka93d",
-		inStock: true,
-	},
-	{
-		icon: "🔌",
-		model: "USB Type-C 3.1",
-		category: "Connector",
-		description: "24Pin SMD USB-C Female Connector",
-		price: "$0.45",
-		moq: "500",
-		href: "/products/usb-type-c-3-1",
-		inStock: false,
-	},
-	{
-		icon: "⚙️",
-		model: "1N4148W",
-		category: "Diode",
-		description: "Fast Switching Diode 100V 150mA",
-		price: "$0.008",
-		moq: "2000",
-		href: "/products/1n4148w",
-		inStock: true,
-	},
-	{
-		icon: "🔧",
-		model: "L298N",
-		category: "Driver",
-		description: "Dual H-Bridge Motor Driver IC",
-		price: "$1.50",
-		moq: "100",
-		href: "/products/l298n",
-		inStock: true,
-	},
-	{
-		icon: "🔄",
-		model: "SRD-05VDC-SL-C",
-		category: "Relay",
-		description: "5V DC Power Relay 10A 250VAC",
-		price: "$0.35",
-		moq: "500",
-		href: "/products/srd-05vdc-sl-c",
-		inStock: true,
-	},
-	{
-		icon: "💾",
-		model: "AT24C256",
-		category: "Memory",
-		description: "256Kbit I2C EEPROM 1MHz",
-		price: "$0.28",
-		moq: "500",
-		href: "/products/at24c256",
-		inStock: true,
-	},
 ];
 
 // Hot search keywords
@@ -330,7 +246,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 	const isZh = locale === "zh";
 
 	// Fetch data with error handling - using AnFully English version defaults
-	let collectionSlug = "featured-products";
+	let collectionSlug = "core-components-collection";
 	let limit = 8;
 
 	try {
@@ -341,12 +257,6 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 		limit = featuredCollection.limit;
 	} catch (e) {
 		console.error("[Homepage] Failed to load content, using defaults:", e);
-	}
-
-	try {
-		await getFeaturedProducts(channel, locale, limit, collectionSlug);
-	} catch (e) {
-		console.error("[Homepage] Failed to load products:", e);
 	}
 
 	return (
@@ -482,52 +392,19 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 				</div>
 			</div>
 
-			{/* Hot Products - 热销产品 */}
-			<section className="mx-10 mb-20 mt-10">
-				<div className="mb-8 flex items-center justify-between">
-					<h2 className="text-[28px] font-bold text-[#1a237e]">{t("hotProducts")}</h2>
-					<NavHrefLink
-						href="/products"
-						className="text-sm font-medium text-[#2b5ba9] hover:text-[#1a237e] hover:underline"
-					>
-						{t("viewAll")}
-					</NavHrefLink>
-				</div>
-				<div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-					{hotProducts.map((product, index) => (
-						<NavHrefLink
-							key={index}
-							href={product.href}
-							className="group relative overflow-hidden rounded-xl bg-white p-5 shadow-[0_2px_8px_rgba(0,0,0,0.08)] transition-all hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)]"
-						>
-							{/* 库存状态标签 */}
-							<span
-								className={`absolute right-3 top-3 rounded-full px-2 py-0.5 text-xs font-medium ${product.inStock ? "bg-green-100 text-green-700" : "bg-amber-100 text-amber-700"}`}
-							>
-								{product.inStock ? t("inStock") : t("limited")}
-							</span>
-
-							{/* 产品图片占位 */}
-							<div className="mb-4 flex h-32 items-center justify-center rounded-lg bg-gray-50 text-4xl">
-								{product.icon}
-							</div>
-
-							{/* 产品信息 */}
-							<div className="space-y-2">
-								<div className="text-xs text-muted-foreground">{product.category}</div>
-								<h3 className="line-clamp-1 font-semibold text-foreground transition-colors group-hover:text-[#1a237e]">
-									{product.model}
-								</h3>
-								<p className="line-clamp-2 text-sm text-muted-foreground">{product.description}</p>
-								<div className="flex items-center justify-between pt-2">
-									<span className="text-lg font-bold text-[#1a237e]">{product.price}</span>
-									<span className="text-xs text-muted-foreground">MOQ: {product.moq}</span>
-								</div>
-							</div>
-						</NavHrefLink>
-					))}
-				</div>
-			</section>
+			{/* Hot Products - 来自后端集合（Core Components Collection） */}
+			<FeaturedCollectionSection
+				locale={locale}
+				channel={channel}
+				heading={t("hotProducts")}
+				collectionSlug={collectionSlug}
+				limit={limit}
+				cta={{
+					label: t("viewAll"),
+					href: buildStorefrontPath(locale, channel, "/products"),
+				}}
+				className="mx-10 mb-20 mt-10"
+			/>
 
 			{/* Brands */}
 			<div className="mb-20">
