@@ -401,11 +401,12 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 				limit={limit}
 				desktopColumns={6}
 				width="full"
+				spacing="none"
 				cta={{
 					label: t("viewAll"),
 					href: buildStorefrontPath(locale, channel, "/products"),
 				}}
-				className="mx-10 mb-20 mt-10"
+				className="mx-10 mb-10 mt-10"
 			/>
 
 			{/* AI & Machine Learning Collection */}
@@ -417,7 +418,8 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 				limit={limit}
 				desktopColumns={6}
 				width="full"
-				className="mx-10 mb-20"
+				spacing="none"
+				className="mx-10 mb-10"
 			/>
 
 			{/* DIY & Hobbyist Collection */}
@@ -429,7 +431,8 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 				limit={limit}
 				desktopColumns={6}
 				width="full"
-				className="mx-10 mb-20"
+				spacing="none"
+				className="mx-10 mb-10"
 			/>
 
 			{/* Brands */}
