@@ -408,6 +408,30 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 				className="mx-10 mb-20 mt-10"
 			/>
 
+			{/* AI & Machine Learning Collection */}
+			<FeaturedCollectionSection
+				locale={locale}
+				channel={channel}
+				heading="AI & Machine Learning"
+				collectionSlug="ai-machine-learning-collection"
+				limit={limit}
+				desktopColumns={6}
+				width="full"
+				className="mx-10 mb-20"
+			/>
+
+			{/* DIY & Hobbyist Collection */}
+			<FeaturedCollectionSection
+				locale={locale}
+				channel={channel}
+				heading="DIY & Hobbyist"
+				collectionSlug="resistors-leds-sensors-breadboards-all-in-one-kit-for-makers-tinkerers-weekend-projects"
+				limit={limit}
+				desktopColumns={6}
+				width="full"
+				className="mx-10 mb-20"
+			/>
+
 			{/* Brands */}
 			<div className="mb-20">
 				<BrandShowcase
