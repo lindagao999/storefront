@@ -43,7 +43,7 @@ export async function searchProducts(options: SearchOptions): Promise<SearchResu
 		sortBy = "relevance",
 	} = options;
 
-	const { field, order } = mapSortToSaleor(sortBy);
+	const { field, order } = mapSortToSaleor(sortBy, Boolean(query));
 
 	// Build pagination - Saleor uses cursor-based pagination
 	const isBackward = direction === "backward" && cursor;
@@ -90,7 +90,10 @@ export async function searchProducts(options: SearchOptions): Promise<SearchResu
 	};
 }
 
-function mapSortToSaleor(sortBy: SearchOptions["sortBy"]): {
+function mapSortToSaleor(
+	sortBy: SearchOptions["sortBy"],
+	hasSearch: boolean,
+): {
 	field: ProductOrderField;
 	order: OrderDirection;
 } {
@@ -105,7 +108,10 @@ function mapSortToSaleor(sortBy: SearchOptions["sortBy"]): {
 			return { field: ProductOrderField.Date, order: OrderDirection.Desc };
 		case "relevance":
 		default:
-			// Saleor ranks results when sorting by RANK with the search filter
-			return { field: ProductOrderField.Rank, order: OrderDirection.Desc };
+			// RANK is only available when a search filter is present (brand-only
+			// searches have no search term), so fall back to Rating.
+			return hasSearch
+				? { field: ProductOrderField.Rank, order: OrderDirection.Desc }
+				: { field: ProductOrderField.Rating, order: OrderDirection.Desc };
 	}
 }
