@@ -43,7 +43,7 @@ export const defaultStorefrontContent = {
 			featuredCollection: {
 				heading: "Featured products",
 				collectionSlug: "core-components-collection",
-				limit: 8,
+				limit: 12,
 			},
 			categories: {
 				heading: "Shop by category",

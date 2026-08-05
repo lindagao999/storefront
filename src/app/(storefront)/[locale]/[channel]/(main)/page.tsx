@@ -247,7 +247,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 
 	// Fetch data with error handling - using AnFully English version defaults
 	let collectionSlug = "core-components-collection";
-	let limit = 8;
+	let limit = 12;
 
 	try {
 		const content = await getStorefrontContent(channel, locale);
