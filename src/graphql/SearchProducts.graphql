@@ -1,5 +1,6 @@
 query SearchProducts(
-	$search: String!
+	$search: String
+	$brandAttribute: [AttributeInput!]
 	$sortBy: ProductOrderField!
 	$sortDirection: OrderDirection!
 	$first: Int
@@ -16,7 +17,7 @@ query SearchProducts(
 		before: $before
 		channel: $channel
 		sortBy: { field: $sortBy, direction: $sortDirection }
-		filter: { search: $search }
+		filter: { search: $search, attributes: $brandAttribute }
 	) {
 		totalCount
 		edges {

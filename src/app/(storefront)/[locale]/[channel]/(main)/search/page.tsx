@@ -31,6 +31,7 @@ export async function generateMetadata(props: {
 
 type SearchParams = {
 	query?: string | string[];
+	brand?: string | string[];
 	cursor?: string | string[];
 	direction?: string | string[];
 	sort?: string | string[];
@@ -66,22 +67,24 @@ async function SearchContent({
 	const [searchParams, params] = await Promise.all([searchParamsPromise, paramsPromise]);
 	const t = await getTranslations({ locale: params.locale, namespace: "search" });
 
-	// Extract and validate query
+	// Extract and validate query / brand
 	const queryParam = searchParams.query;
-	if (!queryParam) {
+	const brandParam = Array.isArray(searchParams.brand) ? searchParams.brand[0] : searchParams.brand;
+
+	if (!queryParam && !brandParam) {
 		notFound();
 	}
 
 	// Handle array values (redirect to first valid)
 	const query = Array.isArray(queryParam) ? queryParam.find((v) => v.length > 0) : queryParam;
 
-	if (!query) {
+	if (!query && !brandParam) {
 		notFound();
 	}
 
 	if (Array.isArray(queryParam)) {
 		redirect(
-			`${buildStorefrontPath(params.locale, params.channel, "/search")}?query=${encodeURIComponent(query)}`,
+			`${buildStorefrontPath(params.locale, params.channel, "/search")}?query=${encodeURIComponent(query!)}`,
 		);
 	}
 
@@ -93,9 +96,10 @@ async function SearchContent({
 	const sortParam = Array.isArray(searchParams.sort) ? searchParams.sort[0] : searchParams.sort;
 	const sortBy = parseSearchSortParam(sortParam);
 
-	// Search using Saleor
+	// Search using Saleor (brand filter takes precedence over full-text query)
 	const result = await searchProducts({
 		query,
+		brandSlug: brandParam,
 		channel: params.channel,
 		locale: params.locale,
 		limit: 20,
@@ -105,11 +109,12 @@ async function SearchContent({
 	});
 
 	const { products, pagination } = result;
+	const displayQuery = query || brandParam!.toUpperCase();
 
 	if (pagination.totalCount === 0) {
 		return (
 			<EmptyState
-				title={t("noResultsTitle", { query })}
+				title={t("noResultsTitle", { query: displayQuery })}
 				body={t("noResultsBody")}
 				browseAllProducts={t("browseAllProducts")}
 				goToHomepage={t("goToHomepage")}
@@ -122,7 +127,7 @@ async function SearchContent({
 			{/* Header with count and sort */}
 			<div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
 				<div>
-					<h1 className="text-balance text-h1">{t("resultsFor", { query })}</h1>
+					<h1 className="text-balance text-h1">{t("resultsFor", { query: displayQuery })}</h1>
 					<p className="mt-1 text-sm text-muted-foreground">
 						{t("resultCount", { count: pagination.totalCount })}
 					</p>

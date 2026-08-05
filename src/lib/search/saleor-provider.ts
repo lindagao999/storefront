@@ -14,7 +14,9 @@ import type { SearchResult, SearchPagination } from "./types";
 import type { SearchSortBy } from "./sort-options";
 
 interface SearchOptions {
-	query: string;
+	query?: string;
+	/** Brand attribute value slug, e.g. "yageo" — filters by Brand attribute instead of full-text search */
+	brandSlug?: string;
 	channel: string;
 	locale: string;
 	limit?: number;
@@ -30,7 +32,16 @@ interface SearchOptions {
  * See the examples in ./index.ts for Typesense, Algolia, Meilisearch.
  */
 export async function searchProducts(options: SearchOptions): Promise<SearchResult<ProductCardData>> {
-	const { query, channel, locale, limit = 20, cursor, direction = "forward", sortBy = "relevance" } = options;
+	const {
+		query,
+		brandSlug,
+		channel,
+		locale,
+		limit = 20,
+		cursor,
+		direction = "forward",
+		sortBy = "relevance",
+	} = options;
 
 	const { field, order } = mapSortToSaleor(sortBy);
 
@@ -39,7 +50,8 @@ export async function searchProducts(options: SearchOptions): Promise<SearchResu
 
 	const result = await executePublicGraphQL(SearchProductsDocument, {
 		variables: {
-			search: query,
+			search: query || null,
+			brandAttribute: brandSlug ? [{ slug: "brand", values: [brandSlug] }] : undefined,
 			channel,
 			sortBy: field,
 			sortDirection: order,
