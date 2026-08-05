@@ -6,16 +6,12 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 
-// 热门品牌推荐数据
+// 热门品牌推荐数据（只保留当前库里有产品的品牌）
 const hotBrands = [
 	{ name: "SAMSUNG", slug: "samsung", category: "MLCC Capacitors" },
 	{ name: "Murata", slug: "murata", category: "MLCC · Inductors" },
 	{ name: "TDK", slug: "tdk", category: "Inductors · Beads" },
 	{ name: "YAGEO", slug: "yageo", category: "Chip Resistors" },
-	{ name: "TI", slug: "ti", category: "Power Management IC" },
-	{ name: "ST", slug: "st", category: "MCU Microcontrollers" },
-	{ name: "ADI", slug: "adi", category: "Data Acquisition" },
-	{ name: "Infineon", slug: "infineon", category: "Power Devices" },
 ];
 
 export const SearchBarWithSuggestions = ({
