@@ -93,7 +93,7 @@ function mapSortToSaleor(sortBy: SearchOptions["sortBy"]): {
 			return { field: ProductOrderField.Date, order: OrderDirection.Desc };
 		case "relevance":
 		default:
-			// Saleor doesn't have relevance sort, use Rating as proxy
-			return { field: ProductOrderField.Rating, order: OrderDirection.Desc };
+			// Saleor ranks results when sorting by RANK with the search filter
+			return { field: ProductOrderField.Rank, order: OrderDirection.Desc };
 	}
 }
