@@ -1,7 +1,7 @@
 import { getFeaturedProducts } from "@/lib/catalog/get-featured-products";
 import { FEATURED_COLLECTION_IMAGE_SIZES } from "@/lib/images";
 import { ProductGrid, type ProductGridDesktopColumns } from "@/ui/components/plp/product-grid";
-import { Section, type SectionTone, type SectionWidth } from "@/ui/sections/section";
+import { Section, type SectionTone, type SectionWidth, type SectionSpacing } from "@/ui/sections/section";
 import { SectionHeader, type SectionHeaderCta } from "@/ui/sections/section-header";
 
 export interface FeaturedCollectionSectionProps {
@@ -17,6 +17,7 @@ export interface FeaturedCollectionSectionProps {
 	desktopColumns?: ProductGridDesktopColumns;
 	tone?: SectionTone;
 	width?: SectionWidth;
+	spacing?: SectionSpacing;
 	className?: string;
 }
 
@@ -32,6 +33,7 @@ export async function FeaturedCollectionSection({
 	desktopColumns = 4,
 	tone = "default",
 	width = "content",
+	spacing,
 	className,
 }: FeaturedCollectionSectionProps) {
 	const products = await getFeaturedProducts(channel, locale, limit, collectionSlug);
@@ -41,6 +43,7 @@ export async function FeaturedCollectionSection({
 		<Section
 			tone={tone}
 			width={width}
+			spacing={spacing}
 			className={className}
 			aria-labelledby={heading ? headingId : undefined}
 		>
