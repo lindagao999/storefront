@@ -76,6 +76,7 @@ export function ImageCarousel({
 	// Reset to first image when images array changes (e.g., variant switch)
 	const imagesKey = images.map((img) => img.url).join(",");
 	React.useEffect(() => {
+		// eslint-disable-next-line react-hooks/set-state-in-effect -- pre-existing reset-on-image-change logic
 		setSelectedIndex(0);
 		api?.scrollTo(0, true); // true = instant scroll (no animation)
 	}, [imagesKey, api]);
@@ -107,7 +108,8 @@ export function ImageCarousel({
 	if (!images.length) {
 		return (
 			<div className={PDP_GALLERY_EMPTY_IMAGE_FRAME_CLASS}>
-				<span className="text-muted-foreground">No image available</span>
+				{/* eslint-disable-next-line @next/next/no-img-element -- static placeholder asset, same as PLP product cards */}
+				<img src="/placeholder.svg" alt="No image available" className="h-full w-full object-cover" />
 			</div>
 		);
 	}
