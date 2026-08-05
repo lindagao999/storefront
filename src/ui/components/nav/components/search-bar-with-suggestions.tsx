@@ -8,14 +8,14 @@ import { useTranslations } from "next-intl";
 
 // 热门品牌推荐数据
 const hotBrands = [
-	{ name: "SAMSUNG", category: "MLCC Capacitors", href: "/categories" },
-	{ name: "Murata", category: "MLCC · Inductors", href: "/categories" },
-	{ name: "TDK", category: "Inductors · Beads", href: "/categories" },
-	{ name: "YAGEO", category: "Chip Resistors", href: "/categories" },
-	{ name: "TI", category: "Power Management IC", href: "/categories" },
-	{ name: "ST", category: "MCU Microcontrollers", href: "/categories" },
-	{ name: "ADI", category: "Data Acquisition", href: "/categories" },
-	{ name: "Infineon", category: "Power Devices", href: "/categories" },
+	{ name: "SAMSUNG", category: "MLCC Capacitors" },
+	{ name: "Murata", category: "MLCC · Inductors" },
+	{ name: "TDK", category: "Inductors · Beads" },
+	{ name: "YAGEO", category: "Chip Resistors" },
+	{ name: "TI", category: "Power Management IC" },
+	{ name: "ST", category: "MCU Microcontrollers" },
+	{ name: "ADI", category: "Data Acquisition" },
+	{ name: "Infineon", category: "Power Devices" },
 ];
 
 export const SearchBarWithSuggestions = ({
@@ -99,7 +99,7 @@ export const SearchBarWithSuggestions = ({
 							{hotBrands.map((brand) => (
 								<Link
 									key={brand.name}
-									href={`/${locale}/${channel}${brand.href}`}
+									href={`/${locale}/${channel}/search?query=${encodeURIComponent(brand.name)}`}
 									onClick={() => setIsOpen(false)}
 									className="flex items-center justify-between rounded-md px-2 py-2 transition-colors hover:bg-gray-50"
 								>
