@@ -117,5 +117,27 @@ export async function getAllCategories(channel: string): Promise<Category[]> {
 		}
 	}
 
-	return topLevelCategories;
+	return filterEmptyCategories(topLevelCategories);
+}
+
+/**
+ * Recursively removes categories that have no products (and no children with
+ * products). A parent category is kept when it has products itself or when any
+ * of its children survive the filter; for such kept-but-empty parents the
+ * `productCount` badge is suppressed by setting it to `undefined`.
+ */
+function filterEmptyCategories(categories: Category[]): Category[] {
+	const result: Category[] = [];
+	for (const category of categories) {
+		const children = category.children?.length ? filterEmptyCategories(category.children) : [];
+		const hasProducts = (category.productCount ?? 0) > 0;
+		if (hasProducts || children.length > 0) {
+			result.push({
+				...category,
+				children: children.length > 0 ? children : undefined,
+				productCount: hasProducts ? category.productCount : undefined,
+			});
+		}
+	}
+	return result;
 }
