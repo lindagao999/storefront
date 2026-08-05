@@ -400,6 +400,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 				collectionSlug={collectionSlug}
 				limit={limit}
 				desktopColumns={6}
+				width="full"
 				cta={{
 					label: t("viewAll"),
 					href: buildStorefrontPath(locale, channel, "/products"),
