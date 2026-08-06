@@ -172,6 +172,7 @@
 		},
 		"home": "首页",
 		"products": "产品中心",
+		"newest": "最新产品",
 		"brands": "核心品牌",
 		"news": "新闻动态",
 		"support": "技术支持",
@@ -748,6 +749,14 @@
 		"news3Desc": "被动元件市场走势分析，包括供应链更新和价格预测。",
 		"news4Title": "安富立通过ISO 9001:2015质量体系认证",
 		"news4Desc": "安富立成功通过ISO 9001:2015质量管理体系认证。"
+	},
+	"newest": {
+		"metaTitle": "最新产品 - AnFully",
+		"metaDescription": "安富立产品库中最新的产品。",
+		"breadcrumbHome": "首页",
+		"breadcrumbCurrent": "最新产品",
+		"pageTitle": "最新产品",
+		"noProducts": "暂无产品，敬请期待。"
 	},
 	"support": {
 		"metaTitle": "技术支持 - AnFully",

@@ -172,6 +172,7 @@
 		},
 		"home": "Home",
 		"products": "Products",
+		"newest": "Newest Products",
 		"brands": "Brands",
 		"news": "News",
 		"support": "Support",
@@ -748,6 +749,14 @@
 		"news3Desc": "Analysis of current market trends in passive components, including supply chain updates and pricing forecasts.",
 		"news4Title": "AnFully Achieves ISO 9001:2015 Certification",
 		"news4Desc": "We are proud to announce that AnFully has successfully obtained ISO 9001:2015 quality management system certification."
+	},
+	"newest": {
+		"metaTitle": "Newest Products - AnFully",
+		"metaDescription": "The latest products added to AnFully's catalog.",
+		"breadcrumbHome": "Home",
+		"breadcrumbCurrent": "Newest Products",
+		"pageTitle": "Newest Products",
+		"noProducts": "No products yet. Check back soon."
 	},
 	"support": {
 		"metaTitle": "Technical Support - AnFully",

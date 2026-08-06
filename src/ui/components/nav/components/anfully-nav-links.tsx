@@ -10,6 +10,7 @@ import { stripStorefrontPrefix } from "@/lib/storefront-path";
 const navItems = [
 	{ labelKey: "home", href: "/", exact: true },
 	{ labelKey: "products", href: "/products" },
+	{ labelKey: "newest", href: "/newest" },
 	{ labelKey: "brands", href: "/brands" },
 	{ labelKey: "news", href: "/news" },
 	{ labelKey: "support", href: "/support" },
