@@ -30,6 +30,16 @@ const defaultBrands: BrandItem[] = [
 	{ name: "Murata", description: "Passive Components, Sensors", href: "/brands/murata", logo: null },
 ];
 
+// Featured Manufacturers - 品牌 logo（点击进入该品牌搜索）
+const featuredManufacturers = [
+	{ name: "Analog Devices", href: "/search?brand=adi", logo: "/brand-logos/analog-devices.webp" },
+	{ name: "Vishay", href: "/search?brand=vishay", logo: "/brand-logos/vishay.webp" },
+	{ name: "Microchip", href: "/search?brand=microchip", logo: "/brand-logos/microchip.webp" },
+	{ name: "Amphenol", href: "/search?brand=amphenol", logo: "/brand-logos/amphenol.webp" },
+	{ name: "NXP Semiconductors", href: "/search?brand=nxp", logo: "/brand-logos/nxp-semiconductors.webp" },
+	{ name: "Murata", href: "/search?brand=murata", logo: "/brand-logos/murata.webp" },
+];
+
 // Hot search keywords
 const hotSearchKeywords = [
 	"STM32F103",
@@ -445,6 +455,31 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 					viewAllLabel={t("viewAll")}
 				/>
 			</div>
+
+			{/* Featured Manufacturers - 品牌 logo */}
+			<section className="mx-10 mb-20">
+				<div className="mb-8 flex items-center justify-between">
+					<h2 className="text-[28px] font-bold text-[#1a237e]">Featured Manufacturers</h2>
+					<NavHrefLink
+						href="/brands"
+						className="text-sm font-medium text-[#2b5ba9] hover:text-[#1a237e] hover:underline"
+					>
+						View All Manufacturers
+					</NavHrefLink>
+				</div>
+				<div className="grid grid-cols-3 gap-4 sm:grid-cols-6">
+					{featuredManufacturers.map((mfr) => (
+						<NavHrefLink
+							key={mfr.name}
+							href={mfr.href}
+							className="flex h-24 items-center justify-center rounded-lg bg-white p-4 shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-all hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)]"
+						>
+							{/* eslint-disable-next-line @next/next/no-img-element -- static brand logo */}
+							<img src={mfr.logo} alt={mfr.name} className="max-h-full max-w-full object-contain" />
+						</NavHrefLink>
+					))}
+				</div>
+			</section>
 
 			{/* Core Values - Server Component */}
 			<div className="mb-20">
