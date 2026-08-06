@@ -758,6 +758,11 @@
 		"pageTitle": "Newest Products",
 		"noProducts": "No products yet. Check back soon."
 	},
+	"manufacturer": {
+		"metaTitle": "Manufacturers - AnFully",
+		"metaDescription": "Browse all manufacturers and brands available at AnFully.",
+		"pageTitle": "All Manufacturers"
+	},
 	"support": {
 		"metaTitle": "Technical Support - AnFully",
 		"metaDescription": "Get technical support and answers to frequently asked questions.",

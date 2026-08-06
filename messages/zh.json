@@ -758,6 +758,11 @@
 		"pageTitle": "最新产品",
 		"noProducts": "暂无产品，敬请期待。"
 	},
+	"manufacturer": {
+		"metaTitle": "制造商 - AnFully",
+		"metaDescription": "浏览安富立提供的所有制造商与品牌。",
+		"pageTitle": "全部制造商"
+	},
 	"support": {
 		"metaTitle": "技术支持 - AnFully",
 		"metaDescription": "获取技术支持和常见问题解答。",

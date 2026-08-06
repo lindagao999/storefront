@@ -461,7 +461,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 				<div className="mb-8 flex items-center justify-between">
 					<h2 className="text-[28px] font-bold text-[#1a237e]">Featured Manufacturers</h2>
 					<NavHrefLink
-						href="/brands"
+						href="/manufacturer"
 						className="text-sm font-medium text-[#2b5ba9] hover:text-[#1a237e] hover:underline"
 					>
 						View All Manufacturers
